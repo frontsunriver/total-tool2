@@ -1,0 +1,175 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/distance_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/distance_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/eta_time"
+            app:layout_constraintBottom_toTopOf="@id/eta_text"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/distance_remained"
+            app:layout_constraintBottom_toTopOf="@+id/distance_text"
+            app:layout_constraintHorizontal_bias="0.65"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/distance_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@id/eta_text"
+            app:layout_constraintStart_toStartOf="@+id/time_label" />
+
+        <TextView
+            android:id="@+id/eta_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:text="-"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toTopOf="@+id/cost_label"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/cost_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/cost"
+            app:layout_constraintBottom_toTopOf="@+id/cost_text"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/cost_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="-"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toTopOf="@id/layout_buttons"
+            app:layout_constraintStart_toStartOf="@+id/cost_label" />
+
+        <LinearLayout
+            android:id="@+id/layout_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:divider="@drawable/divider_8dp"
+            android:dividerPadding="8dp"
+            android:orientation="vertical"
+            android:showDividers="middle"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:id="@+id/contact_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/chat_button"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:tint="#9E9E9E"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/chat_button"
+                    android:focusable="true" />
+                <ng.max.slideview.SlideView
+                    android:id="@+id/slide_call"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:sv_buttonBackgroundColor="@color/accent_cyan"
+                    app:sv_buttonImage="@drawable/call"
+                    app:sv_slideBackgroundColor="?attr/colorSurface"
+                    app:sv_slideTextColor="?attr/colorOnSurface"
+                    app:sv_strokeColor="?attr/colorOnSurface"
+                    app:sv_slideText="@string/call"
+                    app:sv_reverseSlide="true"/>
+            </LinearLayout>
+            <ng.max.slideview.SlideView
+                android:id="@+id/slide_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:sv_buttonBackgroundColor="@color/accent_green"
+                app:sv_buttonImage="@drawable/start_travel"
+                app:sv_slideBackgroundColor="?attr/colorSurface"
+                app:sv_slideTextColor="?attr/colorOnSurface"
+                app:sv_strokeColor="?attr/colorOnSurface"
+                app:sv_slideText="@string/start_travel" />
+            <ng.max.slideview.SlideView
+                android:id="@+id/slide_arrived"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:sv_buttonBackgroundColor="@color/accent_green"
+                app:sv_buttonImage="@drawable/slide_arrived"
+                app:sv_slideBackgroundColor="?attr/colorSurface"
+                app:sv_slideTextColor="?attr/colorOnSurface"
+                app:sv_strokeColor="?attr/colorOnSurface"
+                app:sv_slideText="@string/slide_arrived" />
+
+            <ng.max.slideview.SlideView
+                android:id="@+id/slide_finish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:sv_buttonBackgroundColor="@color/accent_orange"
+                app:sv_buttonImage="@drawable/finish_travel"
+                app:sv_slideBackgroundColor="?attr/colorSurface"
+                app:sv_slideTextColor="?attr/colorOnSurface"
+                app:sv_strokeColor="?attr/colorOnSurface"
+                app:sv_slideText="@string/finish_travel" />
+
+            <ng.max.slideview.SlideView
+                android:id="@+id/slide_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:sv_buttonBackgroundColor="@color/accent_red"
+                app:sv_buttonImage="@drawable/cancel"
+                app:sv_reverseSlide="true"
+                app:sv_slideBackgroundColor="?attr/colorSurface"
+                app:sv_slideTextColor="?attr/colorOnSurface"
+                app:sv_strokeColor="?attr/colorOnSurface"
+                app:sv_slideText="@string/cancel_travel" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

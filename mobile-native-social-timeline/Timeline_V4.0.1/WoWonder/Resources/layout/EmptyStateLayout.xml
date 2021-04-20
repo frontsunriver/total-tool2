@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/emtyicon"
+            android:text="I"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content"
+            android:textColor="@color/accent"
+            android:textSize="110sp"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_below="@+id/emtyicon"
+            android:layout_width="210dp"
+            android:layout_alignParentTop="true"
+            app:lottie_repeatCount="4"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_height="210dp"
+            app:lottie_autoPlay="true" />
+        <TextView
+            android:layout_below="@+id/animation_view"
+            android:id="@+id/headText"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:text="@string/Lbl_NoConnection_TitleText"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/headText"
+            android:id="@+id/seconderyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:maxLines="6"
+            android:gravity="center_horizontal"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/Lbl_NoConnection_DescriptionText"
+            android:textColor="@color/text_color_in_between"
+            android:layout_gravity="center"
+            android:textAlignment="center" />
+        <Button
+            android:layout_below="@+id/seconderyText"
+            android:background="@xml/background_signup"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:padding="10dp"
+            android:text="@string/Lbl_NoConnection_Button"
+            android:textColor="@color/textLight_color"
+            android:textSize="15sp"
+            android:clickable="true"
+            android:textAllCaps="false"
+            android:layout_marginStart="65dp"
+            android:layout_marginEnd="65dp"
+            android:id="@+id/button" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="Lbl_country1">United States</string>
+	<string name="Lbl_country2">Canada</string>
+	<string name="Lbl_country3">Afghanistan</string>
+	<string name="Lbl_country4">Albania</string>
+	<string name="Lbl_country5">Algeria</string>
+	<string name="Lbl_country6">American Samoa</string>
+	<string name="Lbl_country7">Andorra</string>
+	<string name="Lbl_country8">Angola</string>
+	<string name="Lbl_country9">Anguilla</string>
+	<string name="Lbl_country10">Antarctica</string>
+	<string name="Lbl_country11">Antigua and/or Barbuda</string>
+	<string name="Lbl_country12">Argentina</string>
+	<string name="Lbl_country13">Armenia</string>
+	<string name="Lbl_country14">Aruba</string>
+	<string name="Lbl_country15">Australia</string>
+	<string name="Lbl_country16">Austria</string>
+	<string name="Lbl_country17">Azerbaijan</string>
+	<string name="Lbl_country18">Bahamas</string>
+	<string name="Lbl_country19">Bahrain</string>
+	<string name="Lbl_country20">Bangladesh</string>
+	<string name="Lbl_country21">Barbados</string>
+	<string name="Lbl_country22">Belarus</string>
+	<string name="Lbl_country23">Belgium</string>
+	<string name="Lbl_country24">Belize</string>
+	<string name="Lbl_country25">Benin</string>
+	<string name="Lbl_country26">Bermuda</string>
+	<string name="Lbl_country27">Bhutan</string>
+	<string name="Lbl_country28">Bolivia</string>
+	<string name="Lbl_country29">Bosnia and Herzegovina</string>
+	<string name="Lbl_country30">Botswana</string>
+	<string name="Lbl_country31">Bouvet Island</string>
+	<string name="Lbl_country32">Brazil</string>
+	<string name="Lbl_country34">Brunei Darussalam</string>
+	<string name="Lbl_country35">Bulgaria</string>
+	<string name="Lbl_country36">Burkina Faso</string>
+	<string name="Lbl_country37">Burundi</string>
+	<string name="Lbl_country38">Cambodia</string>
+	<string name="Lbl_country39">Cameroon</string>
+	<string name="Lbl_country40">Cape Verde</string>
+	<string name="Lbl_country41">Cayman Islands</string>
+	<string name="Lbl_country42">Central African Republic</string>
+	<string name="Lbl_country43">Chad</string>
+	<string name="Lbl_country44">Chile</string>
+	<string name="Lbl_country45">China</string>
+	<string name="Lbl_country46">Christmas Island</string>
+	<string name="Lbl_country47">Cocos (Keeling) Islands</string>
+	<string name="Lbl_country48">Colombia</string>
+	<string name="Lbl_country49">Comoros</string>
+	<string name="Lbl_country50">Congo</string>
+	<string name="Lbl_country51">Cook Islands</string>
+	<string name="Lbl_country52">Costa Rica</string>
+	<string name="Lbl_country53">Croatia (Hrvatska)</string>
+	<string name="Lbl_country54">Cuba</string>
+	<string name="Lbl_country55">Cyprus</string>
+	<string name="Lbl_country56">Czech Republic</string>
+	<string name="Lbl_country57">Denmark</string>
+	<string name="Lbl_country58">Djibouti</string>
+	<string name="Lbl_country59">Dominica</string>
+	<string name="Lbl_country60">Dominican Republic</string>
+	<string name="Lbl_country61">East Timor</string>
+	<string name="Lbl_country62">Ecuador</string>
+	<string name="Lbl_country63">Egypt</string>
+	<string name="Lbl_country64">El Salvador</string>
+	<string name="Lbl_country65">Equatorial Guinea</string>
+	<string name="Lbl_country66">Eritrea</string>
+	<string name="Lbl_country67">Estonia</string>
+	<string name="Lbl_country68">Ethiopia</string>
+	<string name="Lbl_country69">Falkland Islands (Malvinas)</string>
+	<string name="Lbl_country70">Faroe Islands</string>
+	<string name="Lbl_country71">Fiji</string>
+	<string name="Lbl_country72">Finland</string>
+	<string name="Lbl_country73">France</string>
+	<string name="Lbl_country74">France, Metropolitan</string>
+	<string name="Lbl_country75">French Guiana</string>
+	<string name="Lbl_country76">French Polynesia</string>
+	<string name="Lbl_country77">French Southern Territories</string>
+	<string name="Lbl_country78">Gabon</string>
+	<string name="Lbl_country79">Gambia</string>
+	<string name="Lbl_country80">Georgia</string>
+	<string name="Lbl_country81">Germany</string>
+	<string name="Lbl_country82">Ghana</string>
+	<string name="Lbl_country83">Gibraltar</string>
+	<string name="Lbl_country84">Greece</string>
+	<string name="Lbl_country85">Greenland</string>
+	<string name="Lbl_country86">Grenada</string>
+	<string name="Lbl_country87">Guadeloupe</string>
+	<string name="Lbl_country88">Guam</string>
+	<string name="Lbl_country89">Guatemala</string>
+	<string name="Lbl_country90">Guinea</string>
+	<string name="Lbl_country91">Guinea-Bissau</string>
+	<string name="Lbl_country92">Guyana</string>
+	<string name="Lbl_country93">Haiti</string>
+	<string name="Lbl_country94">Heard and Mc Donald Islands</string>
+	<string name="Lbl_country95">Honduras</string>
+	<string name="Lbl_country96">Hong Kong</string>
+	<string name="Lbl_country97">Hungary</string>
+	<string name="Lbl_country98">Iceland</string>
+	<string name="Lbl_country99">India</string>
+	<string name="Lbl_country100">Indonesia</string>
+	<string name="Lbl_country101">Iran (Islamic Republic of)</string>
+	<string name="Lbl_country102">Iraq</string>
+	<string name="Lbl_country103">Ireland</string>
+	<string name="Lbl_country104">Israel</string>
+	<string name="Lbl_country105">Italy</string>
+	<string name="Lbl_country106">Ivory Coast</string>
+	<string name="Lbl_country107">Jamaica</string>
+	<string name="Lbl_country108">Japan</string>
+	<string name="Lbl_country109">Jordan</string>
+	<string name="Lbl_country110">Kazakhstan</string>
+	<string name="Lbl_country111">Kenya</string>
+	<string name="Lbl_country112">Kiribati</string>
+	<string name="Lbl_country113">"Korea, Democratic Peoplet&apos;s Republic of"</string>
+	<string name="Lbl_country114">Korea, Republic of</string>
+	<string name="Lbl_country115">Kosovo</string>
+	<string name="Lbl_country116">Kuwait</string>
+	<string name="Lbl_country117">Kyrgyzstan</string>
+	<string name="Lbl_country118">"Lao Peoplet&apos;s Democratic Republic"</string>
+	<string name="Lbl_country119">Latvia</string>
+	<string name="Lbl_country120">Lebanon</string>
+	<string name="Lbl_country121">Lesotho</string>
+	<string name="Lbl_country122">Liberia</string>
+	<string name="Lbl_country123">Libyan Arab Jamahiriya</string>
+	<string name="Lbl_country124">Liechtenstein</string>
+	<string name="Lbl_country125">Lithuania</string>
+	<string name="Lbl_country126">Luxembourg</string>
+	<string name="Lbl_country127">Macau</string>
+	<string name="Lbl_country128">Macedonia</string>
+	<string name="Lbl_country129">Madagascar</string>
+	<string name="Lbl_country130">Malawi</string>
+	<string name="Lbl_country131">Malaysia</string>
+	<string name="Lbl_country132">Maldives</string>
+	<string name="Lbl_country133">Mali</string>
+	<string name="Lbl_country134">Malta</string>
+	<string name="Lbl_country135">Marshall Islands</string>
+	<string name="Lbl_country136">Martinique</string>
+	<string name="Lbl_country137">Mauritania</string>
+	<string name="Lbl_country138">Mauritius</string>
+	<string name="Lbl_country139">Mayotte</string>
+	<string name="Lbl_country140">Mexico</string>
+	<string name="Lbl_country141">Micronesia, Federated States of</string>
+	<string name="Lbl_country142">Moldova, Republic of</string>
+	<string name="Lbl_country143">Monaco</string>
+	<string name="Lbl_country144">Mongolia</string>
+	<string name="Lbl_country145">Montenegro</string>
+	<string name="Lbl_country146">Montserrat</string>
+	<string name="Lbl_country147">Morocco</string>
+	<string name="Lbl_country148">Mozambique</string>
+	<string name="Lbl_country149">Myanmar</string>
+	<string name="Lbl_country150">Namibia</string>
+	<string name="Lbl_country151">Nauru</string>
+	<string name="Lbl_country152">Nepal</string>
+	<string name="Lbl_country153">Netherlands</string>
+	<string name="Lbl_country154">Netherlands Antilles</string>
+	<string name="Lbl_country155">New Caledonia</string>
+	<string name="Lbl_country156">New Zealand</string>
+	<string name="Lbl_country157">Nicaragua</string>
+	<string name="Lbl_country158">Niger</string>
+	<string name="Lbl_country159">Nigeria</string>
+	<string name="Lbl_country160">Niue</string>
+	<string name="Lbl_country161">Norfork Island</string>
+	<string name="Lbl_country162">Northern Mariana Islands</string>
+	<string name="Lbl_country163">Norway</string>
+	<string name="Lbl_country164">Oman</string>
+	<string name="Lbl_country165">Pakistan</string>
+	<string name="Lbl_country166">Palau</string>
+	<string name="Lbl_country167">Panama</string>
+	<string name="Lbl_country168">Papua New Guinea</string>
+	<string name="Lbl_country169">Paraguay</string>
+	<string name="Lbl_country170">Peru</string>
+	<string name="Lbl_country171">Philippines</string>
+	<string name="Lbl_country172">Pitcairn</string>
+	<string name="Lbl_country173">Poland</string>
+	<string name="Lbl_country174">Portugal</string>
+	<string name="Lbl_country175">Puerto Rico</string>
+	<string name="Lbl_country176">Qatar</string>
+	<string name="Lbl_country177">Reunion</string>
+	<string name="Lbl_country178">Romania</string>
+	<string name="Lbl_country179">Russian Federation</string>
+	<string name="Lbl_country180">Rwanda</string>
+	<string name="Lbl_country181">Saint Kitts and Nevis</string>
+	<string name="Lbl_country182">Saint Lucia</string>
+	<string name="Lbl_country183">Saint Vincent and the Grenadines</string>
+	<string name="Lbl_country184">Samoa</string>
+	<string name="Lbl_country185">San Marino</string>
+	<string name="Lbl_country186">Sao Tome and Principe</string>
+	<string name="Lbl_country187">Saudi Arabia</string>
+	<string name="Lbl_country188">Senegal</string>
+	<string name="Lbl_country189">Serbia</string>
+	<string name="Lbl_country190">Seychelles</string>
+	<string name="Lbl_country191">Sierra Leone</string>
+	<string name="Lbl_country192">Singapore</string>
+	<string name="Lbl_country193">Slovakia</string>
+	<string name="Lbl_country194">Slovenia</string>
+	<string name="Lbl_country195">Solomon Islands</string>
+	<string name="Lbl_country196">Somalia</string>
+	<string name="Lbl_country197">South Africa</string>
+	<string name="Lbl_country198">South Georgia South Sandwich Islands</string>
+	<string name="Lbl_country199">Spain</string>
+	<string name="Lbl_country200">Sri Lanka</string>
+	<string name="Lbl_country201">St. Helena</string>
+	<string name="Lbl_country202">St. Pierre and Miquelon</string>
+	<string name="Lbl_country203">Sudan</string>
+	<string name="Lbl_country204">Suriname</string>
+	<string name="Lbl_country205">Svalbarn and Jan Mayen Islands</string>
+	<string name="Lbl_country206">Swaziland</string>
+	<string name="Lbl_country207">Sweden</string>
+	<string name="Lbl_country208">Switzerland</string>
+	<string name="Lbl_country209">Syrian Arab Republic</string>
+	<string name="Lbl_country210">Taiwan</string>
+	<string name="Lbl_country211">Tajikistan</string>
+	<string name="Lbl_country212">Tanzania, United Republic of</string>
+	<string name="Lbl_country213">Thailand</string>
+	<string name="Lbl_country214">Togo</string>
+	<string name="Lbl_country215">Tokelau</string>
+	<string name="Lbl_country216">Tonga</string>
+	<string name="Lbl_country217">Trinidad and Tobago</string>
+	<string name="Lbl_country218">Tunisia</string>
+	<string name="Lbl_country219">Turkey</string>
+	<string name="Lbl_country220">Turkmenistan</string>
+	<string name="Lbl_country221">Turks and Caicos Islands</string>
+	<string name="Lbl_country222">Tuvalu</string>
+	<string name="Lbl_country223">Uganda</string>
+	<string name="Lbl_country224">Ukraine</string>
+	<string name="Lbl_country225">United Arab Emirates</string>
+	<string name="Lbl_country226">United Kingdom</string>
+	<string name="Lbl_country227">United States minor outlying islands</string>
+	<string name="Lbl_country228">Uruguay</string>
+	<string name="Lbl_country229">Uzbekistan</string>
+	<string name="Lbl_country230">Vanuatu</string>
+	<string name="Lbl_country231">Vatican City State</string>
+	<string name="Lbl_country232">Venezuela</string>
+	<string name="Lbl_country233">Vietnam</string>
+	<string name="Lbl_country238">Yemen</string>
+	<string name="Lbl_country239">Yugoslavia</string>
+	<string name="Lbl_country240">Zaire</string>
+	<string name="Lbl_country241">Zambia</string>
+	<string name="Lbl_country242">Zimbabwe</string>
+
+	<string-array name="experience_date">
+		<item>2021</item>
+		<item>2020</item>
+		<item>2019</item>
+		<item>2018</item>
+		<item>2017</item>
+		<item>2016</item>
+		<item>2015</item>
+		<item>2014</item>
+		<item>2013</item>
+		<item>2012</item>
+		<item>2011</item>
+		<item>2010</item>
+		<item>2009</item>
+		<item>2008</item>
+		<item>2007</item>
+		<item>2006</item>
+		<item>2005</item>
+		<item>2004</item>
+		<item>2003</item>
+		<item>2002</item>
+		<item>2001</item>
+		<item>2000</item>
+		<item>1999</item>
+		<item>1998</item>
+		<item>1997</item>
+		<item>1996</item>
+		<item>1995</item>
+		<item>1994</item>
+		<item>1993</item>
+		<item>1992</item>
+		<item>1991</item>
+		<item>1990</item>
+		<item>1989</item>
+		<item>1988</item>
+		<item>1987</item>
+		<item>1986</item>
+		<item>1985</item>
+		<item>1984</item>
+		<item>1983</item>
+		<item>1982</item>
+		<item>1981</item>
+		<item>1980</item>
+		<item>1979</item>
+		<item>1978</item>
+		<item>1977</item>
+		<item>1976</item>
+		<item>1975</item>
+		<item>1974</item>
+		<item>1973</item>
+		<item>1972</item>
+		<item>1971</item>
+		<item>1970</item>
+	</string-array>
+
+	<string-array name="job_categories">
+		<item>Accounting</item>
+		<item>General Business</item>
+		<item>Admin &amp; Clerical</item>
+		<item>General Labor</item>
+		<item>Pharmaceutical</item>
+		<item>Automotive</item>
+		<item>Government</item>
+		<item>Professional Services</item>
+		<item>Banking</item>
+		<item>Grocery</item>
+		<item>Purchasing</item>
+		<item>Procurement</item>
+		<item>Biotech</item>
+		<item>Health Care</item>
+		<item>QA</item>
+		<item>Quality Control</item>
+		<item>Broadcast</item>
+		<item>Journalism</item>
+		<item>Hotel</item>
+		<item>Hospitality</item>
+		<item>Real Estate</item>
+		<item>Business Development</item>
+		<item>Human Resources</item>
+		<item>Research</item>
+		<item>Construction</item>
+		<item>Information Technology</item>
+		<item>Restaurant</item>
+		<item>Food Service</item>
+		<item>Consultant</item>
+		<item>Installation</item>
+		<item>Maint</item>
+		<item>Repair</item>
+		<item>Retail</item>
+		<item>Customer Service</item>
+		<item>Insurance</item>
+		<item>Sales</item>
+		<item>Design</item>
+		<item>Inventory</item>
+		<item>Science</item>
+		<item>Distribution</item>
+		<item>Shipping</item>
+		<item>Legal</item>
+		<item>Skilled Labor</item>
+		<item>Trades</item>
+		<item>Education</item>
+		<item>Teaching</item>
+		<item>Legal Admin</item>
+		<item>Strategy</item>
+		<item>Planning</item>
+		<item>Engineering</item>
+		<item>Management</item>
+		<item>Supply Chain</item>
+		<item>Entry Level</item>
+		<item>New Grad</item>
+		<item>Manufacturing</item>
+		<item>Telecommunications</item>
+		<item>Executive</item>
+		<item>Marketing</item>
+		<item>Training</item>
+		<item>Facilities</item>
+		<item>Media</item>
+		<item>Journalism</item>
+		<item>Newspaper</item>
+		<item>Transportation</item>
+		<item>Finance</item>
+		<item>Nonprofit</item>
+		<item>Social Services</item>
+		<item>Warehouse</item>
+		<item>Franchise</item>
+		<item>Nurse</item>
+		<item>Other</item>
+	</string-array>
+
+	<string-array name="call_action_type">
+		<item>Read more</item>
+		<item>Shop now</item>
+		<item>View now</item>
+		<item>Visit now</item>
+		<item>Book now</item>
+		<item>Learn more</item>
+		<item>Play now</item>
+		<item>Bet now</item>
+		<item>Donate</item>
+		<item>Apply here</item>
+		<item>Quote here</item>
+		<item>Order now</item>
+		<item>Book tickets</item>
+		<item>Enroll now</item>
+		<item>Find a card</item>
+		<item>Get a quote</item>
+		<item>Get tickets</item>
+		<item>Locate a dealer</item>
+		<item>Order online</item>
+		<item>Preorder now</item>
+		<item>Schedule now</item>
+		<item>Sign up now</item>
+		<item>Subscribe</item>
+		<item>Register now</item>
+	</string-array>
+
+	<string-array name="RelationShipArray">
+		<item>None</item>
+		<item>@string/Lbl_Single</item>
+		<item>@string/Lbl_InRelationship</item>
+		<item>@string/Lbl_Married</item>
+		<item>@string/Lbl_Engaged</item>
+	</string-array>
+ 
+</resources>

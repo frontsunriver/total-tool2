@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.chat.ChatActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.stfalcon.chatkit.messages.MessagesList
+        android:id="@+id/messages_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/message_input"
+        app:outcomingDefaultBubbleColor="?attr/colorPrimary"
+        app:outcomingDefaultBubblePressedColor="?attr/colorPrimaryVariant"
+        android:layout_below="@id/appbar"/>
+    <com.stfalcon.chatkit.messages.MessageInput
+        android:id="@+id/message_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:inputButtonDefaultBgColor="?attr/colorPrimary"
+        app:inputButtonDefaultIconColor="@color/white"
+        app:inputButtonDefaultBgPressedColor="?attr/colorPrimaryVariant"
+        app:inputHint="@string/chat_enter_message_hint"/>
+</RelativeLayout>

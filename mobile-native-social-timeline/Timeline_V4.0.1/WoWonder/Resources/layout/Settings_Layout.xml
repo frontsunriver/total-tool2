@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/colorFill"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<com.google.android.material.appbar.AppBarLayout
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+		<androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+                app:theme="@style/ToolbarTheme"
+		    android:layout_width="match_parent"
+		    android:layout_height="48dp"
+		    android:layout_gravity="top"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+		    android:background="?attr/colorFill"
+		    android:elevation="2dp">
+		</androidx.appcompat.widget.Toolbar>
+	</com.google.android.material.appbar.AppBarLayout>
+	<FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+	<LinearLayout
+      android:id="@+id/bannerContainer"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:orientation="vertical" />
+</LinearLayout>

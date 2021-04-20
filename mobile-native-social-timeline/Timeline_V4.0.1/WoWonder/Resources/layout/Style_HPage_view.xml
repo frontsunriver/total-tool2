@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="?attr/selectableItemBackground"
+    android:layout_height="83dp">
+  
+
+  <RelativeLayout
+    android:layout_marginBottom="13dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="18dp"
+    android:id="@+id/imagecontainer"
+    android:layout_width="60dp"
+    android:layout_height="60dp">
+    <ImageView
+      android:id="@+id/Image"
+      android:scaleType="centerCrop"
+      android:layout_width="52dp"
+      android:layout_height="52dp"
+      android:layout_marginEnd="8dp"
+      android:layout_gravity="center"
+      android:src="@drawable/no_profile_image"
+      android:focusableInTouchMode="false" />
+    <View
+      android:id="@+id/image_view"
+      android:layout_width="22dp"
+      android:elevation="0dp"
+      android:layout_marginBottom="0dp"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentEnd="true"
+      android:background="@drawable/circlegradient5"
+      android:layout_height="22dp" />
+    <ImageView
+      android:id="@+id/Icon"
+      android:scaleType="centerCrop"
+      android:layout_width="12dp"
+      android:layout_height="12dp"
+      android:layout_marginEnd="4.1dp"
+      android:layout_marginBottom="4dp"
+      android:layout_gravity="center"
+      android:tint="@android:color/white"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentEnd="true"
+      android:src="@drawable/icon_social_flag_vector"
+      android:focusableInTouchMode="false" />
+  </RelativeLayout>
+    <TextView
+        android:id="@+id/card_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/imagecontainer"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/card_dist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_name"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@id/imagecontainer"
+        android:textSize="12sp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:id="@+id/cont"
+        android:textSize="13sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/follow_button_profile_friends"
+        android:tag="false"
+        android:paddingTop="1dp"
+        android:paddingStart="17dp"
+        android:paddingEnd="17dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:text="@string/Btn_Like"
+        android:textColor="@color/accent" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="?attr/colorDivider"
+        android:layout_below="@id/imagecontainer" />
+
+</RelativeLayout>

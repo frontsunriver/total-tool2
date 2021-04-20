@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/notlayout"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <Refractored.Controls.CircleImageView
+                android:id="@+id/Image"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/no_profile_image"
+                android:focusableInTouchMode="false" />
+            <RelativeLayout
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/circlegradient4"
+                android:backgroundTint="@color/gnt_white">
+                <View
+                    android:layout_width="16dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circlegradient4"
+                    android:layout_height="16dp" />
+                <ImageView
+                    android:id="@+id/ImageIcon"
+                    android:scaleType="centerCrop"
+                    android:layout_width="9dp"
+                    android:layout_height="9dp"
+                    android:layout_centerInParent="true"
+                    android:tint="@android:color/white"
+                    android:src="@drawable/ic_action_comment"
+                    android:focusableInTouchMode="false" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:id="@+id/Notificationinfo_layout" >
+	        <TextView
+		        android:id="@+id/LastActivitiesText"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="15sp"
+		        android:ellipsize="end" 
+                android:lines="2"
+		        android:maxLines="2"  />
+            <TextView
+                android:id="@+id/Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="@color/colorCommentText"/> 
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="suggestedCollectionCell" id="gTV-IL-0wX" customClass="SuggestedGroupCollectionCell" customModule="WoWonder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="248"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="195" height="248"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPi-xz-fQC">
+                        <rect key="frame" x="0.0" y="0.0" width="195" height="248"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQd-pZ-Lur" customClass="DesignView" customModule="WoWonder" customModuleProvider="target">
+                                <rect key="frame" x="8" y="8" width="179" height="232"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d-cover" translatesAutoresizingMaskIntoConstraints="NO" id="ipN-Z7-hRt" customClass="Roundimage" customModule="WoWonder" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="179" height="130"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="130" id="urQ-V0-JZS"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qy6-oV-Ibj">
+                                        <rect key="frame" x="0.0" y="127" width="179" height="3"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="3" id="SLE-Np-vu6"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3y-3B-7ph">
+                                        <rect key="frame" x="10" y="138" width="161" height="16"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 Members" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXT-K9-7xI">
+                                        <rect key="frame" x="10" y="159" width="60.5" height="13.5"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fB2-dU-9B6" customClass="RoundButton" customModule="WoWonder" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="182.5" width="163" height="30"/>
+                                        <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="15e-Bf-t3L"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                        <state key="normal" title="Join">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="Join:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ypM-LR-k5Q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qy6-oV-Ibj" secondAttribute="trailing" id="18V-78-leJ"/>
+                                    <constraint firstItem="ipN-Z7-hRt" firstAttribute="top" secondItem="yQd-pZ-Lur" secondAttribute="top" id="BPQ-Fn-OaK"/>
+                                    <constraint firstItem="b3y-3B-7ph" firstAttribute="leading" secondItem="yQd-pZ-Lur" secondAttribute="leading" constant="10" id="Fq2-8q-DrP"/>
+                                    <constraint firstItem="qy6-oV-Ibj" firstAttribute="top" secondItem="ipN-Z7-hRt" secondAttribute="bottom" constant="-3" id="M8K-tf-5jd"/>
+                                    <constraint firstItem="AXT-K9-7xI" firstAttribute="top" secondItem="b3y-3B-7ph" secondAttribute="bottom" constant="5" id="Qzi-7Y-Nb0"/>
+                                    <constraint firstAttribute="trailing" secondItem="ipN-Z7-hRt" secondAttribute="trailing" id="TQS-XC-vub"/>
+                                    <constraint firstItem="qy6-oV-Ibj" firstAttribute="leading" secondItem="yQd-pZ-Lur" secondAttribute="leading" id="YH1-6p-MzH"/>
+                                    <constraint firstItem="fB2-dU-9B6" firstAttribute="top" secondItem="AXT-K9-7xI" secondAttribute="bottom" constant="10" id="gzn-pB-AXG"/>
+                                    <constraint firstItem="b3y-3B-7ph" firstAttribute="top" secondItem="qy6-oV-Ibj" secondAttribute="bottom" constant="8" id="hPw-9Y-vQJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="b3y-3B-7ph" secondAttribute="trailing" constant="8" id="ibS-Jn-Efa"/>
+                                    <constraint firstAttribute="trailing" secondItem="fB2-dU-9B6" secondAttribute="trailing" constant="8" id="ilj-H6-CAC"/>
+                                    <constraint firstItem="fB2-dU-9B6" firstAttribute="leading" secondItem="yQd-pZ-Lur" secondAttribute="leading" constant="8" id="oEd-vE-BAk"/>
+                                    <constraint firstItem="ipN-Z7-hRt" firstAttribute="leading" secondItem="yQd-pZ-Lur" secondAttribute="leading" id="tFo-6i-dhg"/>
+                                    <constraint firstItem="AXT-K9-7xI" firstAttribute="leading" secondItem="b3y-3B-7ph" secondAttribute="leading" id="unf-En-elg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33000000000000002" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.33333333333333331" alpha="0.093241652397260275" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yQd-pZ-Lur" firstAttribute="leading" secondItem="VPi-xz-fQC" secondAttribute="leading" constant="8" id="5jR-0C-e5D"/>
+                            <constraint firstItem="yQd-pZ-Lur" firstAttribute="top" secondItem="VPi-xz-fQC" secondAttribute="top" constant="8" id="QaZ-0O-af3"/>
+                            <constraint firstAttribute="bottom" secondItem="yQd-pZ-Lur" secondAttribute="bottom" constant="8" id="dQX-hE-KDB"/>
+                            <constraint firstAttribute="trailing" secondItem="yQd-pZ-Lur" secondAttribute="trailing" constant="8" id="vc4-s2-LH1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VPi-xz-fQC" secondAttribute="bottom" id="EUn-BA-3bd"/>
+                <constraint firstItem="VPi-xz-fQC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ip7-je-KjI"/>
+                <constraint firstItem="VPi-xz-fQC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="miK-FS-cGu"/>
+                <constraint firstAttribute="trailing" secondItem="VPi-xz-fQC" secondAttribute="trailing" id="x40-u2-pb8"/>
+            </constraints>
+            <size key="customSize" width="195" height="248"/>
+            <connections>
+                <outlet property="groupImage" destination="ipN-Z7-hRt" id="qFv-Re-HLS"/>
+                <outlet property="groupName" destination="b3y-3B-7ph" id="cFA-hN-BpZ"/>
+                <outlet property="joinBtn" destination="fB2-dU-9B6" id="Pkg-SO-5lf"/>
+                <outlet property="members" destination="AXT-K9-7xI" id="qHF-zN-b7F"/>
+            </connections>
+            <point key="canvasLocation" x="165.94202898550725" y="164.73214285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="d-cover" width="918" height="300"/>
+    </resources>
+</document>

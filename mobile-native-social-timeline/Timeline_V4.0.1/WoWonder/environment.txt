@@ -1,0 +1,1 @@
+﻿MONO_GC_PARAMS=bridge-implementation=tarjan,nursery-size=128‌​m,soft-heap-limit=61‌​2m,major=marksweep-c‌​onc

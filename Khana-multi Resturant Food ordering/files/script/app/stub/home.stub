@@ -1,0 +1,88 @@
+<?php 
+
+/**
+* Define Options Feilds
+*
+* @return options feilds for theme customizers
+*/
+function customizeOptions()
+{
+	$options['hero_area'] = array(
+		'id'=>'hero_area', 
+		'title'=>'Site Identity',
+		'icon'=>'flaticon-clipboard',
+		'sections'=>array(
+			'id'=>'site-identity',
+			'name'=>'site-identity',
+			'title'=>'Site Identity',
+			'fields'=>array(
+				array(
+					'id'=>'logo',
+					'name'=>'logo',
+					'type'=>'image',
+					'title'=>'Logo',
+					'placeholder'=>'Logo',
+
+				),
+				array(
+					'id'=>'favicon',
+					'name'=>'favicon',
+					'type'=>'image',
+					'title'=>'favicon',
+					'placeholder'=>'favicon',
+
+				),
+				
+				array(
+					'id'=>'phone',
+					'name'=>'phone',
+					'type'=>'text',
+					'title'=>'Phone Number',
+					'placeholder'=>'Enter Contact Number',
+
+				),
+				array(
+					'id'=>'address',
+					'name'=>'address',
+					'type'=>'text',
+					'title'=>'Address',
+					'placeholder'=>'Enter Address',
+					
+
+				),
+			)
+		)
+	);
+
+	$options['about'] = array(
+		'id'=>'about', 
+		'title'=>'mission',
+		'icon'=>'flaticon-clipboard',
+		'sections'=>array(
+			'name'=>'mission',
+			'title'=>'mission',
+			'fields'=>array(
+				
+				array(
+					'id'=>'phone',
+					'name'=>'phone',
+					'type'=>'text',
+					'title'=>'Phone Number',
+					'placeholder'=>'Enter Contact Number',
+
+				),
+				array(
+					'id'=>'address',
+					'name'=>'address',
+					'type'=>'text',
+					'title'=>'Address',
+					'placeholder'=>'Enter Address',
+
+				),
+			)
+		)
+	);
+
+	return $options;
+
+}

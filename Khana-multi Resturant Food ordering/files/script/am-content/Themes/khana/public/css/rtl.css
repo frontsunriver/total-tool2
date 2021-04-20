@@ -1,0 +1,134 @@
+.owl-carousel .owl-stage{
+    float: left;
+}
+
+.f-right{
+    float: left;
+}
+
+img.profile_img{
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+.location-icon svg {
+    left: 0;
+    right: unset;
+}
+
+.search-input button {
+    margin-right: 22px;
+}
+
+.slider-img img {
+    height: 420px;
+}
+
+.slider-img:before {
+    height: 420px;
+}
+
+span.ratings-component {
+    margin-left: unset;
+}
+
+.slider-content {
+    left: 0;
+    right: 20px;
+}
+
+.name-rating {
+    justify-content: space-between;
+}
+
+a.ml-auto {
+    padding: 11px 0px;
+    left: 0;
+    right: unset;
+}
+
+.single-place-content h4 {
+    margin-right: 12px;
+}
+
+.contact-number {
+    margin-right: 15px;
+}
+
+.badge-area {
+    right: 25px;
+}
+
+.store-info {
+    padding-left: 0;
+    padding-right: 30px;
+}
+
+.store-main-info {
+    padding-right: 0;
+    left: 40px;
+    right: unset;
+}
+
+.total-avg-rating {
+    margin-right: 0;
+}
+
+span.badge.badge-red {
+    margin-right: 15px;
+}
+
+.store-another-content.d-block {
+    margin-right: 15px;
+}
+
+.food-price-action.d-flex {
+    justify-content: space-between !important;
+}
+
+.food-action {
+    margin-left: unset;
+}
+
+.single-information.d-flex {
+    justify-content: space-between;
+}
+
+.main-amount {
+    margin-left: unset;
+}
+
+.store-action {
+    box-shadow: 15px 0 20px #ddd;
+}
+
+.single-category-food {
+    box-shadow: 20px 0 20px #ddd;
+}
+
+.single-cart-product.d-flex {
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.cart-price-action {
+    margin-left: unset;
+}
+
+.cart-product-action a.right span {
+    margin-left: -40px;
+}
+
+.cart-product-action a.left span {
+    margin-right: -40px;
+}
+
+.qty input {
+    width: 18px;
+    border: none;
+}
+
+.resturant-pagination.f-right {
+    margin-left: 0;
+    margin-right: 15px;
+}

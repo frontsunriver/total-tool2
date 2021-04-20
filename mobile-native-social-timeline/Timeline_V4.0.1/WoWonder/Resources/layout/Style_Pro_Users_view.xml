@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:layout_width="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:layout_height="wrap_content">
+	<RelativeLayout
+		android:layout_width="55dp"
+		android:layout_height="55dp"> 
+		<ImageView
+			android:id="@+id/ImageUser"
+			android:scaleType="centerCrop"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:focusable="false"
+			android:clickable="false"
+			android:src="@drawable/no_profile_image_circle"/>
+		<RelativeLayout
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentEnd="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp">
+			<refractored.controls.CircleImageView
+				android:id="@+id/viewIcon"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				app:civ_border_width="2dp"
+				app:civ_border_color="@color/textIcon"
+				android:src="@drawable/circlegradient4" />
+			<ImageView
+				android:id="@+id/ImageIcon"
+				android:layout_width="10dp"
+				android:layout_height="10dp" 
+				android:layout_centerInParent="true"
+				android:tint="@color/textLight_color"
+				android:src="@drawable/ic_add" /> 
+		</RelativeLayout>
+	</RelativeLayout>
+  <TextView
+    android:id="@+id/name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:textSize="10sp"
+    android:lines ="1"
+    android:maxLines="1"
+    android:layout_marginTop="0dp"
+		android:visibility="gone"/>
+</LinearLayout>

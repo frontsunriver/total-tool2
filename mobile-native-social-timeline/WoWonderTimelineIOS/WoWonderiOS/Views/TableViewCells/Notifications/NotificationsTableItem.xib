@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationsTableItem" rowHeight="79" id="KGk-i7-Jjw" customClass="NotificationsTableItem" customModule="News_Feed" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nbg-iE-bMt" customClass="Roundimage" customModule="News_Feed" customModuleProvider="target">
+                        <rect key="frame" x="16" y="9.5" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="FGY-HE-sbh"/>
+                            <constraint firstAttribute="height" constant="60" id="e8K-iu-Vxx"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mcg-EI-WOL">
+                        <rect key="frame" x="92" y="18" width="212" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HpB-oL-bsO">
+                                <rect key="frame" x="0.0" y="0.0" width="212" height="16.5"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLe-NI-XgR">
+                                <rect key="frame" x="0.0" y="26.5" width="212" height="17"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ob-UU-UrR" customClass="DesignView" customModule="News_Feed" customModuleProvider="target">
+                        <rect key="frame" x="51" y="44.5" width="25" height="25"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notification" translatesAutoresizingMaskIntoConstraints="NO" id="nC4-j1-QxZ">
+                                <rect key="frame" x="6.5" y="6.5" width="12.5" height="12.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nC4-j1-QxZ" firstAttribute="centerY" secondItem="2Ob-UU-UrR" secondAttribute="centerY" id="Bwh-Ob-5x4"/>
+                            <constraint firstItem="nC4-j1-QxZ" firstAttribute="centerX" secondItem="2Ob-UU-UrR" secondAttribute="centerX" id="CEd-fF-bua"/>
+                            <constraint firstAttribute="width" constant="25" id="JtF-To-otY"/>
+                            <constraint firstItem="nC4-j1-QxZ" firstAttribute="height" secondItem="2Ob-UU-UrR" secondAttribute="height" multiplier="0.5" id="UNI-My-jsB"/>
+                            <constraint firstItem="nC4-j1-QxZ" firstAttribute="width" secondItem="2Ob-UU-UrR" secondAttribute="width" multiplier="0.5" id="eO5-4t-2tA"/>
+                            <constraint firstAttribute="height" constant="25" id="isU-df-aiS"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2Ob-UU-UrR" firstAttribute="trailing" secondItem="nbg-iE-bMt" secondAttribute="trailing" id="15D-yH-pk1"/>
+                    <constraint firstItem="mcg-EI-WOL" firstAttribute="centerY" secondItem="nbg-iE-bMt" secondAttribute="centerY" id="8GN-5H-tvD"/>
+                    <constraint firstAttribute="trailing" secondItem="mcg-EI-WOL" secondAttribute="trailing" constant="16" id="HzR-UD-49j"/>
+                    <constraint firstItem="2Ob-UU-UrR" firstAttribute="bottom" secondItem="nbg-iE-bMt" secondAttribute="bottom" id="Tym-ye-5Ua"/>
+                    <constraint firstItem="nbg-iE-bMt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ZA2-LH-Wm3"/>
+                    <constraint firstItem="nbg-iE-bMt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oWk-0q-YXE"/>
+                    <constraint firstItem="mcg-EI-WOL" firstAttribute="leading" secondItem="nbg-iE-bMt" secondAttribute="trailing" constant="16" id="tgE-fd-CkY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="changeBg" destination="2Ob-UU-UrR" id="XGB-eE-Tn3"/>
+                <outlet property="changeIcon" destination="nC4-j1-QxZ" id="JZL-1N-YWP"/>
+                <outlet property="descriptionLabel" destination="MLe-NI-XgR" id="49w-0Q-iWV"/>
+                <outlet property="profileImage" destination="nbg-iE-bMt" id="Ues-SL-xDe"/>
+                <outlet property="titleLabel" destination="HpB-oL-bsO" id="X3t-rh-qnx"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="141.62946428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="notification" width="17" height="20"/>
+    </resources>
+</document>

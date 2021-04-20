@@ -1,0 +1,70 @@
+Khana v2.0 Update Documentation
+
+Note:
+
+This update is just for who is using v1.5, if you're still using older verisons, PLEASE UPDATE the script version by version.
+
+// ------------------------------------- //
+
+1) How To Update
+
+- BACKUP, BACKUP, AND BACKUP everything, files, DATABASE.
+
+- replace Location.php from root/script/app/Location.php 
+
+- replace Terms.php from root/script/app/Terms.php
+
+- replace category.php from root/script/app/Category.php
+
+- replace media.js from root/admin/js/media.js
+
+- replace api.php from root/script/routes/api.php
+
+- replace information/index.blade.php from  root/script/plugins/shop/views/information/index.blade.php
+
+- replace seller/create.blade.php from  root/script/plugins/locations/views/featured/seller/create.blade.php
+
+- replace seller/manage.blade.php from  root/script/plugins/locations/views/featured/seller/manage.blade.php
+
+- replace information.blade.php from  root/script/themes/khana/views/rider/information.blade.php
+
+- replace checkout/index.blade.php from root/script/themes/khana/views/checkout/index.blade.php
+
+- replace RiderController.php from root/script/themes/khana/controllers/rider/Ridercontroller.php
+
+- replace UserController from root/script/am-content/Plugins/shop/http/controllers/UserController.php
+
+- replace web.php from root/script/am-content/Plugins/shop/routes/web.php
+
+- replace customer/index.blade.php from root/script/am-content/Plugins/shop/views/admin/customer/index.blade.php
+
+- replace rider/request.blade.php from root/script/am-content/Plugins/shop/views/admin/rider/request.blade.php
+
+- replace resturents.blade.php from root/script/am-content/Plugins/shop/views/admin/vendors/resturents.blade.php
+
+- replace responsive.css from root/script/am-content/Themes/khana/public/css/responsive.css
+
+- replace author/dashboard.blade.php from root/script/am-content/Themes/khana/views/author/dashboard.blade.php
+
+- replace store/index.blade.php from root/script/am-content/Themes/khana/views/store/index.blade.php
+
+- upload the Api directory at root/script/app/http/controllers/
+
+- upload "update" directory at root/script/am-content/plugins/
+
+- replace plugin.json file from root/script/am-content/plugins/
+
+- replace menuregister.php from root/script/am-content/plugins/
+
+// ------------------------------------- //
+
+you will get every resource from update directory.
+if you're facing any problems, please contact with us we will help u :) 
+
+Created: 7/08/2020
+Last Update: 18/08/2020
+By: AMCoders
+Email: amcoders360@gmail.com
+
+
+Copyright © 2020 Khana All rights reserved

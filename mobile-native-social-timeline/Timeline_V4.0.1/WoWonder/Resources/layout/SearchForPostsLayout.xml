@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:background="?attr/colorFill"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="top"
+        app:layout_collapseMode="pin"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:theme="@style/ToolbarTheme"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        android:background="?attr/colorFill"
+        android:elevation="2dp" >
+        <AutoCompleteTextView
+          android:id="@+id/searchBox"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@null" 
+          android:layout_gravity="center_vertical"
+          android:hint="@string/Lbl_Search" 
+          android:textSize="19dp"
+          android:singleLine="true"
+          android:imeOptions="actionSearch"
+          android:layout_margin="10.2dp" 
+          android:drawablePadding="13dp" /> 
+      </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentTop="false"
+        android:layout_height="match_parent">
+        <WoWonder.Activities.NativePost.Extra.WRecyclerView
+            android:id="@+id/Recyler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+  <ViewStub
+    android:id="@+id/viewStub"
+    android:inflatedId="@+id/subView"
+    android:layout="@layout/EmptyStateLayout"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:gravity="center" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" /> 
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

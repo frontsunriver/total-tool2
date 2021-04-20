@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WaitingForPaymentViewController" customModule="driver" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController modalPresentationStyle="overFullScreen" id="VEZ-d8-TDb" customClass="WaitingForPaymentViewController" customModule="driver" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="K7v-3Q-mfA">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t03-sQ-uWc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbd-f1-6eL" customClass="ColoredButton" customModule="driver" customModuleProvider="target">
+                        <rect key="frame" x="82" y="609.66666666666663" width="250" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="F1M-Ls-YQ6"/>
+                            <constraint firstAttribute="width" constant="250" id="Jrf-Gy-aEv"/>
+                        </constraints>
+                        <state key="normal" title="Cash Payment Received"/>
+                        <connections>
+                            <action selector="onCashPaidTouched:" destination="VEZ-d8-TDb" eventType="touchUpInside" id="tRg-eI-C9d"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting For Payment..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROE-d7-abD">
+                        <rect key="frame" x="116.66666666666667" y="573" width="180.66666666666663" height="20.666666666666629"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="17f-ZR-rMN">
+                        <rect key="frame" x="87" y="233" width="240" height="240"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="240" id="glv-o8-wJ2"/>
+                            <constraint firstAttribute="width" secondItem="17f-ZR-rMN" secondAttribute="height" multiplier="1:1" id="hG2-EE-wFy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="t03-sQ-uWc" firstAttribute="height" secondItem="K7v-3Q-mfA" secondAttribute="height" id="90A-Oc-tIp"/>
+                    <constraint firstItem="t03-sQ-uWc" firstAttribute="centerY" secondItem="K7v-3Q-mfA" secondAttribute="centerY" id="AJl-2G-Wf9"/>
+                    <constraint firstItem="17f-ZR-rMN" firstAttribute="centerY" secondItem="gkO-C1-Sfw" secondAttribute="centerY" constant="-100" id="IRV-Jm-qjb"/>
+                    <constraint firstItem="t03-sQ-uWc" firstAttribute="centerX" secondItem="K7v-3Q-mfA" secondAttribute="centerX" id="LeE-uu-573"/>
+                    <constraint firstItem="ROE-d7-abD" firstAttribute="top" secondItem="17f-ZR-rMN" secondAttribute="bottom" constant="100" id="NrQ-ZF-ewA"/>
+                    <constraint firstItem="ROE-d7-abD" firstAttribute="centerX" secondItem="gkO-C1-Sfw" secondAttribute="centerX" id="TxQ-71-Nop"/>
+                    <constraint firstItem="t03-sQ-uWc" firstAttribute="width" secondItem="K7v-3Q-mfA" secondAttribute="width" id="cfj-vy-m8n"/>
+                    <constraint firstItem="gbd-f1-6eL" firstAttribute="centerX" secondItem="gkO-C1-Sfw" secondAttribute="centerX" id="eUx-Mi-xcG"/>
+                    <constraint firstItem="17f-ZR-rMN" firstAttribute="centerX" secondItem="gkO-C1-Sfw" secondAttribute="centerX" id="ezo-rx-AQN"/>
+                    <constraint firstItem="gbd-f1-6eL" firstAttribute="top" secondItem="ROE-d7-abD" secondAttribute="bottom" constant="16" id="z5E-zI-y8u"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="gkO-C1-Sfw"/>
+            </view>
+            <connections>
+                <outlet property="backgroundView" destination="t03-sQ-uWc" id="dxO-US-SLv"/>
+                <outlet property="buttonCash" destination="gbd-f1-6eL" id="a1q-Wi-g4n"/>
+                <outlet property="viewLoading" destination="17f-ZR-rMN" id="jNG-Nb-o5F"/>
+            </connections>
+            <point key="canvasLocation" x="70" y="-98"/>
+        </viewController>
+    </objects>
+</document>

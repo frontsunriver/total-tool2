@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/center_content_profile_scroll_over"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="48dp"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:id="@+id/linklinearLayout"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginEnd="15dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/voteText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textSize="14sp"
+            android:textColor="@color/colorCommentText"/>
+        <TextView
+            android:id="@+id/progressTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorCommentText"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/checkIcon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="13dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="4dp"
+        android:src="@drawable/icon_checkmark_filled_vector"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="5dp"
+        android:visibility="gone"
+        
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+    <ProgressBar
+        style="@style/CustomProgressBarHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/secondary_progress"
+        android:id="@+id/progress"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="100"
+        android:alpha="0.2"/>
+</RelativeLayout>

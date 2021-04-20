@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/m_search"
+        android:icon="@drawable/ic_search"
+        app:actionLayout="@layout/activity_main_search_location"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:title="Search Location" />
+</menu>

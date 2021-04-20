@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:gravity="center"
+    android:layoutDirection="ltr">
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="10sp"
+		android:textColor="@color/gnt_white"
+        android:layout_centerHorizontal="true"
+        android:foregroundGravity="center_vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:includeFontPadding="false" />
+	<ImageView
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:id="@+id/Icon"
+		android:src="@android:drawable/star_on"
+		android:gravity="center"
+		android:layout_gravity="center"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:layout_marginTop="15dp" 
+		android:clickable="false"
+		android:focusable="false" /> 
+	<TextView
+		android:id="@+id/time"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent" 
+		android:textSize="16sp"
+		android:textStyle="bold"
+		android:textColor="@color/gnt_white"
+		android:layout_centerHorizontal="true"
+		android:foregroundGravity="center_vertical"
+		android:gravity="center"
+		android:layout_gravity="center"
+		android:layout_marginTop="20dp"
+		android:includeFontPadding="false" />
+</LinearLayout>

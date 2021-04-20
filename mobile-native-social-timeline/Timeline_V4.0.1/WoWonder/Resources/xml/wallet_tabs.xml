@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+
+  <tab 
+    drawable="@drawable/ic_send"
+    text="@string/Lbl_SendMoney" />
+
+  <tab 
+    drawable="@drawable/ic_credit_card"
+    text="@string/Lbl_AddFunds" />
+ 
+</tabs>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+  <item
+    android:drawable="@drawable/icon_more_dots_vector"
+    android:width="14dp"
+    android:height="14dp"
+  />
+
+ </layer-list >

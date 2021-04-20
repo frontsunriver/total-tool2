@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical">
+    <TextView
+        android:id="@+id/Icon"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:text="IC"
+        android:textSize="25sp" 
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/section_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:textSize="17sp"
+        android:foregroundGravity="center_vertical"
+        android:gravity="start|center"
+        android:layout_gravity="start|center"
+        android:layout_marginBottom="0dp"
+        android:includeFontPadding="false" />
+    <RelativeLayout
+        android:id="@+id/imagecontainer"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:gravity="center_vertical">
+      <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/badge"
+        android:gravity="end|center"
+        android:layout_gravity="end|center"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:clickable="false"
+        android:focusable="false"/>
+    </RelativeLayout>
+</LinearLayout>

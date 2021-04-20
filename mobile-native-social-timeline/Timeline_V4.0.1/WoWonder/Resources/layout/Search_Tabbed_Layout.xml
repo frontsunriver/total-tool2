@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+   android:orientation="vertical"
+    tools:ignore="RtlHardcoded"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/mainAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:fitsSystemWindows="true"
+        android:background="@color/primaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:scrimAnimationDuration="100"
+            app:contentScrim="@color/primaryDark"
+            android:background="@xml/framealfacolor"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:collapsedTitleTextAppearance="@style/TextAppearance.MyApp.Title.Collapsed"
+            app:expandedTitleTextAppearance="@style/TextAppearance.MyApp.Title.Expanded">
+            <LinearLayout
+                android:id="@+id/info_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="10dp"
+                android:background="@xml/gradientblack"
+                android:fitsSystemWindows="true"
+                android:layoutDirection="ltr">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/HashRecyler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentTop="true" />
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/Searchtabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabMode="fixed"
+                    app:tabGravity="fill" />
+            </LinearLayout>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar" 
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="pin" >
+               <AutoCompleteTextView
+                      android:id="@+id/searchBox"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@null"
+                      android:drawableTint="@color/textLight_color"
+                      android:layout_gravity="center_vertical"
+                      android:hint="@string/Lbl_Search"
+                      
+                      android:textSize="19dp"
+                      android:singleLine="true"
+                      android:imeOptions="actionSearch"
+                      android:layout_margin="10.2dp"
+
+                      android:drawablePadding="13dp" />
+			 <!--<androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:theme="@style/SearchViewTheme"
+                    android:queryHint="@string/Lbl_Search"
+                    android:layout_weight="1"
+                    android:translationX="-4dp"
+                    app:iconifiedByDefault="false"  
+                    android:textSize="16sp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginStart="0dp" />-->
+			 </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/Searchviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:clickable="true"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="@android:color/transparent"
+        android:src="@drawable/ic_action_filter"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        app:backgroundTint="@color/accent"
+        android:layout_marginBottom="50dp" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

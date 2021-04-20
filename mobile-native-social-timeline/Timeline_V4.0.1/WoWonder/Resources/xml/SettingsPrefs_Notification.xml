@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" >
+  
+  <!--Notification SECTION-->
+  <PreferenceCategory android:layout="@xml/divider" />
+  <PreferenceCategory android:title="@string/Lbl_Message_Notifications"  >
+
+    <SwitchPreferenceCompat
+      android:title="@string/Lbl_Notification_Popup"
+      android:summary="@string/Lbl_Summary_notifications"
+      android:key="notifications_key"
+      app:iconSpaceReserved="false"
+      style="@style/SwitchCompatTheme"
+      android:defaultValue="true" />
+
+    <CheckBoxPreference
+      android:key="checkBox_PlaySound_key"
+      android:title="@string/Lbl_Conversation_tones"
+      android:summary="@string/Lbl_Summary_Play_sounds"
+      app:iconSpaceReserved="false"
+      android:defaultValue="true" />
+
+  </PreferenceCategory>
+ 
+</PreferenceScreen>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/main"
+    android:clickable="false"
+    android:orientation="horizontal"
+    android:paddingEnd="5dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="10dp"
+    android:background="?attr/selectableItemBackground"
+    android:focusable="false"
+    android:layout_alignParentStart="true"
+    android:foregroundGravity="center_horizontal"
+    android:gravity="start">
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ImageUser"
+            android:scaleType="centerCrop"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:src="@drawable/no_profile_image" />
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:id="@+id/image_view"
+            android:foregroundGravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/Grey_Offline"
+            android:layout_above="@id/ImageUser"
+            android:layout_alignBottom="@id/ImageUser" />
+        <TextView
+            android:id="@+id/IconNotifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ImageUser"
+            android:layout_marginBottom="6dp"
+            android:layout_centerVertical="true"
+            android:text="T"
+            android:lines="1"
+            android:maxLines="1"
+            android:textSize="13sp"
+            android:textColor="@color/textLight_color"
+            android:layout_marginStart="46dp"
+            android:layout_above="@id/ImageUser" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/message_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:orientation="vertical"
+        android:focusable="false"
+        android:layout_marginStart="8dp"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/NotificationsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_alignParentStart="true"
+            android:gravity="start"
+            android:textSize="14sp"
+            android:maxLines="2" 
+            android:layout_marginTop="4dp"
+            android:textAlignment="textStart" />
+        <TextView
+            android:id="@+id/NotificationsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/text_color_in_between"
+            android:layout_marginTop="7dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_alignParentStart="true"
+            android:gravity="start"
+            android:textSize="12dp"
+            android:textAlignment="textStart" />
+    </LinearLayout>
+</LinearLayout>

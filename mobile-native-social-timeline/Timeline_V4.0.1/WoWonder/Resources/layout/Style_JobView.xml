@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_marginEnd="9dp"
+    android:layout_marginStart="9dp"
+    android:layout_marginTop="6dp"
+    android:paddingBottom="3dp"
+    android:layout_marginBottom="9dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="?attr/colorFill"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="6dp"
+    card_view:cardCornerRadius="10dp">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="?attr/colorFill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/JobCoverImage"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/Cover_image" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:layout_gravity="end"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/textLight_color"
+                android:shadowColor="#444"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="15"
+                android:padding="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/iconMore" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="start"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:textSize="19dp" />
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text_color_in_between"
+            android:textSize="12dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="11dp"
+            android:layout_gravity="start" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#efefef" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_gravity="start|center_vertical"
+                android:textSize="12dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:id="@+id/applyButton"
+                android:textSize="13sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/follow_button_profile_friends_pressed"
+                android:tag="false"
+                android:paddingStart="17dp"
+                android:paddingEnd="17dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:text="@string/Lbl_apply_now"
+                android:textColor="@color/textLight_color" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

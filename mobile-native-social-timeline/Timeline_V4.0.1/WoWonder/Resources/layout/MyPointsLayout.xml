@@ -1,0 +1,287 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorFill"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+                app:theme="@style/ToolbarTheme"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="top"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            android:background="?attr/colorFill" /> 
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+            <ImageView
+                android:id="@+id/imageUser"
+                android:scaleType="centerCrop"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/no_profile_image_circle" />
+            <TextView
+                android:id="@+id/nameUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+            <TextView
+                android:id="@+id/subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="#757575" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/view"
+                android:layout_marginTop="15dp"
+                android:background="?attr/colorDivider" />
+            <!-- Comments Point -->
+            <RelativeLayout
+                android:id="@+id/CommentsPointLayouts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="start"
+                android:padding="5dp">
+                <RelativeLayout
+                    android:id="@+id/CommentsPointimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/circleCommentsPoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#444"
+                        android:text="T"
+                        android:layout_centerInParent="true"
+                        android:textSize="60sp" />
+                    <TextView
+                        android:id="@+id/IconCommentsPoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_above="@id/circleCommentsPoint"
+                        android:layout_alignBottom="@id/circleCommentsPoint"
+                        android:text="0"
+                        android:textSize="20sp"
+                        android:textColor="#ffff"
+                        android:gravity="center|center_horizontal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"   />
+                </RelativeLayout>
+                <TextView
+                    android:layout_toEndOf="@+id/CommentsPointimage"
+                    android:id="@+id/TextCommentsPoint"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp" 
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <!-- Create Post Point -->
+            <RelativeLayout
+                android:id="@+id/CreatePostPointLayouts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="start"
+                android:padding="5dp">
+                <RelativeLayout
+                    android:id="@+id/CreatePostPointimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/circleCreatePostPoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="T"
+                        android:layout_centerInParent="true"
+                        android:textSize="60sp" />
+                    <TextView
+                        android:id="@+id/IconCreatePostPoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_above="@id/circleCreatePostPoint"
+                        android:layout_alignBottom="@id/circleCreatePostPoint"
+                        android:text="0"
+                        android:textSize="20sp"
+                        android:textColor="#ffff"
+                        android:gravity="center|center_horizontal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"  />
+                </RelativeLayout>
+                <TextView
+                    android:layout_toEndOf="@+id/CreatePostPointimage"
+                    android:id="@+id/TextCreatePostPoint"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp" 
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <!-- reacting Point -->
+            <RelativeLayout
+                android:id="@+id/ReactingPointLayouts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="start"
+                android:padding="5dp">
+                <RelativeLayout
+                    android:id="@+id/ReactingPointimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/circleReactingPoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="T"
+                        android:layout_centerInParent="true"
+                        android:textSize="60sp" />
+                    <TextView
+                        android:id="@+id/IconReactingPoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_above="@id/circleReactingPoint"
+                        android:layout_alignBottom="@id/circleReactingPoint"
+                        android:text="0"
+                        android:textSize="20sp"
+                        android:textColor="#ffff"
+                        android:gravity="center|center_horizontal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_toEndOf="@+id/ReactingPointimage"
+                    android:id="@+id/TextReactingPoint"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp" 
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <!-- create blog Point -->
+            <RelativeLayout
+                android:id="@+id/CreateBlogPointLayouts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="start"
+                android:padding="5dp">
+                <RelativeLayout
+                    android:id="@+id/CreateBlogPointimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/circleCreateBlogPoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="T"
+                        android:layout_centerInParent="true"
+                        android:textSize="60sp" />
+                    <TextView
+                        android:id="@+id/IconCreateBlogPoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_above="@id/circleCreateBlogPoint"
+                        android:layout_alignBottom="@id/circleCreateBlogPoint"
+                        android:text="0"
+                        android:textSize="20sp"
+                        android:textColor="#ffff"
+                        android:gravity="center|center_horizontal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_toEndOf="@+id/CreateBlogPointimage"
+                    android:id="@+id/TextCreateBlogPoint"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp" 
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="14sp" />
+            </RelativeLayout> 
+              <!-- add Wallet Point -->
+            <RelativeLayout
+                android:id="@+id/AddWalletLayouts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/center_content_profile_scroll_over"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="start"
+                android:padding="5dp"> 
+                <TextView
+                    android:layout_toEndOf="@+id/AddWalletimage"
+                    android:id="@+id/TextAddWallet"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Lbl_YourEarnedPoints"
+                    android:textSize="14sp" /> 
+            </RelativeLayout> 
+            <View
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adView"
+                    app:adSize="SMART_BANNER"
+                    app:adUnitId="@string/banner_ad_unit_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorFill"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+                app:theme="@style/ToolbarTheme"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            android:background="?attr/colorFill" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageAvatar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/no_profile_image_circle"
+					android:scaleType="centerCrop" 	/>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="0dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+						android:id="@+id/username"
+						android:textSize="15sp"
+                        android:maxLength="18"
+                        android:lines="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+							android:id="@+id/time"
+						    android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                            android:textColor="#888888" />
+						 
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorFill"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+                <TextView
+					android:id="@+id/title"
+					android:textSize="19sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    
+                    android:textStyle="bold" />
+				 
+            </LinearLayout>
+
+            <ImageView
+				android:id="@+id/imageBlog"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cover_image"
+                android:visibility="visible" />
+			 
+			<WebView
+				android:id="@+id/LocalWebView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+			 
+            <!--likes layout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp">
+
+                <TextView
+                    android:id="@+id/views"
+					android:textSize="15sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" 
+                    />
+
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:tint="?attr/colorReact"
+                    app:srcCompat="@xml/ic_more_vert" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="?attr/colorDivider" /> 
+
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/recycler_view"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"  /> 
+
+            <View
+              android:layout_width="match_parent"
+              android:layout_height="0.2dp"
+              android:id="@+id/divider2"
+              android:background="?attr/colorDivider" />
+
+            <View
+              android:layout_width="match_parent"
+              android:layout_height="50dp" />
+             
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView> 
+ 
+     <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp" 
+    android:clickable="false"
+    android:focusable="false" 
+    android:background="?attr/colorFill"
+    android:layout_gravity="bottom"
+    android:orientation="horizontal">
+
+    <EditText
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:layout_marginTop="5dp"
+      android:id="@+id/commenttext"
+      android:background="@null"
+      android:textSize="16sp"
+      android:maxLines="4"
+      android:paddingStart="20dp"
+      android:paddingEnd="70dp"
+      android:inputType="textCapWords|textMultiLine"
+      android:hint="@string/Lbl_AddCommentHere"
+      android:textColorHint="?attr/colorReact"/>
+
+    <ImageView
+      android:layout_width="35dp"
+      android:layout_height="35dp"
+      android:layout_marginTop="5dp"
+      android:layout_marginBottom="3dp"
+      android:layout_marginEnd="10dp"
+      android:id="@+id/send"
+      android:src="@drawable/ic_send"
+      android:layout_weight="0" />
+
+  </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout> 

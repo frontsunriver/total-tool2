@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="80dp"
+              android:layout_marginTop="10dp"
+              android:background="#F3EAEA"
+              android:gravity="center_vertical"
+              android:weightSum="10">
+        <RelativeLayout
+            android:layout_marginStart="12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4">
+            <at.markushi.ui.CircleButton
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                app:cb_color="#ECD7D7"
+                app:cb_pressedRingWidth="5dip"
+                android:src="@drawable/icon_player_play"
+                android:tint="@color/accent"
+                android:id="@+id/playButton"
+                android:tag="Play"
+                android:padding="3dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_vertical" />
+            <ProgressBar
+                android:id="@+id/loadingProgressview"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:max="100"
+                android:progress="0"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="1dp"
+                android:layout_marginStart="1dp"
+                android:indeterminateTint="@color/accent"
+                android:indeterminate="true" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Duration"
+            android:layout_weight="0.3"
+            android:textSize="11dp"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:layout_weight="0.5"
+            android:textSize="11dp"
+            android:layout_gravity="center_vertical" />
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_marginStart="-11dp"
+            android:layout_marginEnd="-11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8.1"
+            android:max="100" />
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:id="@+id/moreicon2"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:visibility="gone"
+            android:src="@drawable/icon_post_more_vector"
+            android:layout_centerVertical="true"
+            android:tag="false"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="2dp"
+            android:tint="#b0b0b0"
+            android:layout_alignParentEnd="true" />
+</LinearLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorFill"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+  <com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+                app:theme="@style/ToolbarTheme"
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:layout_gravity="top"
+      app:titleTextAppearance="@style/Toolbar.TitleText"
+      android:background="?attr/colorFill" /> 
+  </com.google.android.material.appbar.AppBarLayout>
+  <androidx.coordinatorlayout.widget.CoordinatorLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorFill"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+      <LinearLayout
+          android:id="@+id/lyt_form"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="0dp">
+        <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:weightSum="3"
+                    android:gravity="center"
+          android:layout_gravity="center"
+          android:layout_marginTop="19dp"
+          android:layout_height="wrap_content">
+          <TextView
+            android:id="@+id/availableLinks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:gravity="center"
+            android:textAlignment="center" 
+            android:layout_weight="1"
+                        android:textStyle="bold"
+                          android:layout_gravity="center_horizontal"
+            android:text="@string/Lbl_AvailableLinks"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="14sp"  />
+          <TextView
+            android:id="@+id/generatedLinks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:gravity="center"
+            android:textAlignment="center" 
+            android:layout_weight="1"
+                        android:textStyle="bold"
+            android:text="@string/Lbl_GeneratedLinks"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+                          android:layout_gravity="center_horizontal"
+            android:textSize="14sp"  />
+          <TextView
+            android:id="@+id/usedLinks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:gravity="center"
+            android:textAlignment="center" 
+            android:layout_weight="1"
+                        android:textStyle="bold"
+                          android:layout_gravity="center_horizontal"
+            android:text="@string/Lbl_UsedLinks"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="14sp"  />
+        </LinearLayout>
+        <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:weightSum="3"
+          android:layout_marginTop="8dp"
+          android:layout_height="wrap_content">
+          <TextView
+            android:id="@+id/availableTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:gravity="center"
+            android:textAlignment="center" 
+            android:layout_weight="1"
+            android:text="@string/Lbl_Unlimited"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="14sp"  />
+          <TextView
+            android:id="@+id/generatedCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:gravity="center"
+            android:textAlignment="center" 
+            android:layout_weight="1"
+            android:text="0" 
+                          android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="15sp"  />
+          <TextView
+            android:id="@+id/usedCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:gravity="center"
+            android:textAlignment="center" 
+            android:layout_weight="1"
+            android:text="0"   android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="15sp"  />
+        </LinearLayout> 
+        <Button
+          android:id="@+id/GenerateButton"
+          android:background="@drawable/buttonFlat"
+          android:layout_height="36dp"
+          android:layout_width="wrap_content"
+         
+          style="@style/Base.TextAppearance.AppCompat.Body1"
+          android:text="@string/Lbl_GenerateLinks"
+          android:textColor="@color/textLight_color"
+          android:textSize="12sp"
+          android:clickable="true" android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginStart="50dp"
+          android:layout_marginTop="19dp"
+          android:gravity="center"
+                    android:layout_gravity="end"
+          android:layout_marginBottom="10dp" />
+       
+        <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:weightSum="4"
+          android:layout_marginTop="15dp"
+          android:layout_height="wrap_content">
+          <TextView
+            android:id="@+id/url"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:gravity="start|center"
+            android:textAlignment="textStart" 
+            android:layout_weight="0.5"
+            android:textStyle="bold"
+            android:text="@string/Lbl_Url"
+            android:layout_marginStart="19dp"
+            android:layout_marginEnd="2dp"
+            android:textSize="14sp"  />
+          <TextView
+            android:id="@+id/invitedUser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:gravity="start|center"
+            android:textAlignment="textStart" 
+            android:layout_weight="1.9" 
+                        android:textStyle="bold"
+            android:text="@string/Lbl_InvitedUser"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="14sp"  />
+          <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:gravity="start|center"
+            android:textAlignment="textStart" 
+            android:layout_weight="1.6" 
+                        android:textStyle="bold"
+            android:text="@string/Lbl_Date"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="14sp"  />
+        </LinearLayout>  
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="5dp"
+          android:background="?attr/colorDivider" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:scrollbars="vertical"
+            android:layout_marginStart="5dp" />
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="10dp" />
+      </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+  </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

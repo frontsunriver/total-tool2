@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:background="@drawable/rounded_dialog"
+    android:layout_height="wrap_content">
+    <!--Head Page -->
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:id="@+id/IconBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="&gt;"
+            android:textSize="20sp" 
+            android:paddingEnd="25dp" 
+            android:paddingStart="25dp"/>
+        <TextView
+            android:id="@+id/titlepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_centerVertical="true"
+            android:text="@string/Lbl_Filter"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            
+            android:layout_marginStart="61dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/colorDivider" />
+    </RelativeLayout>
+	 <!--Distance Section -->
+    <RelativeLayout
+        android:paddingTop="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="85dp">
+        <TextView
+            android:id="@+id/IconDistance"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="#"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20sp"  
+            android:layout_marginStart="5dp" />
+        <TextView
+            android:id="@+id/DistanceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/Lbl_Distance"
+            android:textSize="14sp" 
+            android:layout_toEndOf="@+id/IconDistance" />
+        <TextView
+            android:id="@+id/Distancenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_alignParentEnd="true"
+            android:textSize="12sp"
+            
+            android:layout_marginEnd="30dp" />
+        <SeekBar
+            android:id="@+id/distanceSeeker"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="31dp"
+			android:theme="@style/MySeekBar"
+			android:progress="0"
+            android:layout_below="@+id/DistanceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+           android:background="?attr/colorDivider" />
+    </RelativeLayout> 
+    <!--Buttons Section -->
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/ApplyButton"
+            android:layout_below="@+id/Resetbutton"
+            android:background="@drawable/follow_button_profile_friends_pressed"
+            android:layout_height="36dp"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:text="@string/Lbl_ApplyFilter"
+            android:textColor="@color/textLight_color"
+            android:textSize="12sp"
+            android:clickable="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="19dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorFill"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+                app:theme="@style/ToolbarTheme"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            android:background="?attr/colorFill">
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+	<RelativeLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"  
+		android:id="@+id/storyDisplay"
+		android:layout_marginBottom="0dp">
+		<ImageView
+			android:id="@+id/imagstoryDisplay"
+            android:src="@drawable/ImagePlacholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+			android:gravity="center_vertical"
+			android:adjustViewBounds="true"
+	        android:layout_gravity="center_vertical"
+	        android:layout_centerInParent="true"/>
+		<VideoView
+            android:id="@+id/VideoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+	        android:layout_gravity="center"
+	        android:layout_centerInParent="true"
+            android:visibility="gone" /> 
+		<at.markushi.ui.CircleButton
+            android:id="@+id/Videoicon_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:cb_pressedRingWidth="0dip" 
+            android:src="@drawable/ic_play_arrow"
+            android:layout_weight="0"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            app:cb_color="#00ffffff" /> 
+	
+		<WoWonder.Library.Anjo.StoriesProgressView.StoriesProgressView
+			android:id="@+id/stories"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="8dp" />
+
+		<LinearLayout
+			android:id="@+id/firstLiner"
+	     	android:layout_width="match_parent"
+	     	android:layout_alignParentStart="true"
+	     	android:layout_alignParentBottom="true"
+	     	android:orientation="horizontal"
+	     	android:background="?attr/colorFill"
+	     	android:layout_height="wrap_content">
+	     	<ImageView
+	     		android:id="@+id/emojiicon"
+	     		android:layout_width="25dp"
+	     		android:layout_height="wrap_content"
+	     		android:src="@drawable/ic_action_sentiment_satisfied_alt"
+	     		android:scaleType="fitCenter"
+				android:layout_gravity="center"
+				android:gravity="center" 
+	     		android:layout_marginStart="8dp" />
+	     	<developer.semojis.Helper.EmojiconEditText
+	     		android:id="@+id/EmojiconEditText5"
+	     		android:layout_width="match_parent"
+	     		android:layout_height="60dp"
+	     		android:layout_alignParentStart="true"
+	     		android:layout_marginStart="6dp"
+	     		android:textSize="17dp"
+	     		android:hint="@string/Lbl_Add_caption"
+	     		app:emojiconSize="23sp"
+	     		android:backgroundTint="@android:color/transparent"
+	     		android:background="@android:color/transparent"
+	     		android:layout_gravity="center"
+	     		android:maxLines="6"
+	     		android:layout_marginBottom="0dp"
+	     		android:paddingStart="20dp"
+	     		android:paddingEnd="70dp" />	
+		</LinearLayout> 
+		<at.markushi.ui.CircleButton
+			android:layout_width="60dp"
+	        android:layout_height="60dp"
+	        app:cb_color="?attr/colorPrimary"
+	        app:cb_pressedRingWidth="13dip"
+	        android:src="@drawable/ic_send"
+	        android:id="@+id/sendButton"
+	        android:translationY="3dp"
+	        android:layout_alignParentEnd="true"
+	        android:layout_alignParentBottom="true"
+	        android:layoutDirection="ltr" />
+	</RelativeLayout> 
+</LinearLayout>

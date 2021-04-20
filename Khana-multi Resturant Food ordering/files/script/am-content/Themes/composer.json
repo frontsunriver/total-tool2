@@ -1,0 +1,19 @@
+{
+    "name": "amcoders/themes",
+    "description": "themes system for amcoders system",
+    "type": "library",
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "Amcoders",
+            "email": "amcoders360@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Amcoders\\Theme\\": "/"
+        }
+    }
+}

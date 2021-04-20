@@ -1,0 +1,150 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 01/06/2020 10:20
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-home:before { content: "\f100"; }
+.flaticon-footer:before { content: "\f101"; }
+.flaticon-information:before { content: "\f102"; }
+.flaticon-mail:before { content: "\f103"; }
+.flaticon-review:before { content: "\f104"; }
+.flaticon-account:before { content: "\f105"; }
+.flaticon-customer-service-agent:before { content: "\f106"; }
+.flaticon-support:before { content: "\f107"; }
+.flaticon-blogging:before { content: "\f108"; }
+.flaticon-writing:before { content: "\f109"; }
+.flaticon-pricing:before { content: "\f10a"; }
+.flaticon-tag:before { content: "\f10b"; }
+.flaticon-postcard:before { content: "\f10c"; }
+.flaticon-youtube:before { content: "\f10d"; }
+.flaticon-instagram:before { content: "\f10e"; }
+.flaticon-whatsapp:before { content: "\f10f"; }
+.flaticon-facebook:before { content: "\f110"; }
+.flaticon-twitter:before { content: "\f111"; }
+.flaticon-file:before { content: "\f112"; }
+.flaticon-photo:before { content: "\f113"; }
+.flaticon-shopping-bag:before { content: "\f114"; }
+.flaticon-shop:before { content: "\f115"; }
+.flaticon-shopping-cart:before { content: "\f116"; }
+.flaticon-resume:before { content: "\f117"; }
+.flaticon-portfolio:before { content: "\f118"; }
+.flaticon-work:before { content: "\f119"; }
+.flaticon-cv:before { content: "\f11a"; }
+.flaticon-plugin:before { content: "\f11b"; }
+.flaticon-review-1:before { content: "\f11c"; }
+.flaticon-feedback:before { content: "\f11d"; }
+.flaticon-star:before { content: "\f11e"; }
+.flaticon-rating:before { content: "\f11f"; }
+.flaticon-checkout:before { content: "\f120"; }
+.flaticon-checklist:before { content: "\f121"; }
+.flaticon-team:before { content: "\f122"; }
+.flaticon-menu:before { content: "\f123"; }
+.flaticon-clipboard:before { content: "\f124"; }
+.flaticon-squares:before { content: "\f125"; }
+.flaticon-menu-1:before { content: "\f126"; }
+.flaticon-internet:before { content: "\f127"; }
+.flaticon-board:before { content: "\f128"; }
+.flaticon-help:before { content: "\f129"; }
+.flaticon-conversation:before { content: "\f12a"; }
+.flaticon-chip:before { content: "\f12b"; }
+.flaticon-web-programming:before { content: "\f12c"; }
+.flaticon-coding:before { content: "\f12d"; }
+.flaticon-bug:before { content: "\f12e"; }
+.flaticon-search:before { content: "\f12f"; }
+.flaticon-megaphone:before { content: "\f130"; }
+.flaticon-header:before { content: "\f131"; }
+.flaticon-view:before { content: "\f132"; }
+.flaticon-private:before { content: "\f133"; }
+.flaticon-visibility:before { content: "\f134"; }
+.flaticon-logout:before { content: "\f135"; }
+.flaticon-settings:before { content: "\f136"; }
+    
+    $font-Flaticon-home: "\f100";
+    $font-Flaticon-footer: "\f101";
+    $font-Flaticon-information: "\f102";
+    $font-Flaticon-mail: "\f103";
+    $font-Flaticon-review: "\f104";
+    $font-Flaticon-account: "\f105";
+    $font-Flaticon-customer-service-agent: "\f106";
+    $font-Flaticon-support: "\f107";
+    $font-Flaticon-blogging: "\f108";
+    $font-Flaticon-writing: "\f109";
+    $font-Flaticon-pricing: "\f10a";
+    $font-Flaticon-tag: "\f10b";
+    $font-Flaticon-postcard: "\f10c";
+    $font-Flaticon-youtube: "\f10d";
+    $font-Flaticon-instagram: "\f10e";
+    $font-Flaticon-whatsapp: "\f10f";
+    $font-Flaticon-facebook: "\f110";
+    $font-Flaticon-twitter: "\f111";
+    $font-Flaticon-file: "\f112";
+    $font-Flaticon-photo: "\f113";
+    $font-Flaticon-shopping-bag: "\f114";
+    $font-Flaticon-shop: "\f115";
+    $font-Flaticon-shopping-cart: "\f116";
+    $font-Flaticon-resume: "\f117";
+    $font-Flaticon-portfolio: "\f118";
+    $font-Flaticon-work: "\f119";
+    $font-Flaticon-cv: "\f11a";
+    $font-Flaticon-plugin: "\f11b";
+    $font-Flaticon-review-1: "\f11c";
+    $font-Flaticon-feedback: "\f11d";
+    $font-Flaticon-star: "\f11e";
+    $font-Flaticon-rating: "\f11f";
+    $font-Flaticon-checkout: "\f120";
+    $font-Flaticon-checklist: "\f121";
+    $font-Flaticon-team: "\f122";
+    $font-Flaticon-menu: "\f123";
+    $font-Flaticon-clipboard: "\f124";
+    $font-Flaticon-squares: "\f125";
+    $font-Flaticon-menu-1: "\f126";
+    $font-Flaticon-internet: "\f127";
+    $font-Flaticon-board: "\f128";
+    $font-Flaticon-help: "\f129";
+    $font-Flaticon-conversation: "\f12a";
+    $font-Flaticon-chip: "\f12b";
+    $font-Flaticon-web-programming: "\f12c";
+    $font-Flaticon-coding: "\f12d";
+    $font-Flaticon-bug: "\f12e";
+    $font-Flaticon-search: "\f12f";
+    $font-Flaticon-megaphone: "\f130";
+    $font-Flaticon-header: "\f131";
+    $font-Flaticon-view: "\f132";
+    $font-Flaticon-private: "\f133";
+    $font-Flaticon-visibility: "\f134";
+    $font-Flaticon-logout: "\f135";
+    $font-Flaticon-settings: "\f136";

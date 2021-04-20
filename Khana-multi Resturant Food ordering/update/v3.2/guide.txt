@@ -1,0 +1,37 @@
+Khana v3.0.2 Update Documentation
+
+Note:
+
+This update is just for who is using v3.0, if you're still using older verisons, PLEASE UPDATE the script version by version.
+
+// ------------------------------------- //
+
+1) How To Update
+
+- BACKUP, BACKUP, AND BACKUP everything, files, DATABASE.
+
+- replace menuregister.php from this root: root_file/script/am-content/Plugins
+
+- replace OrderController.php from this root: root_file/script/am-content/Themes/khana/http/controllers
+
+- replace header.blade.php from this root: root_file/script/am-content/Themes/khana/views/layouts/partials
+
+- replace index.blade.php from this root: root_file/script/am-content/Themes/khana/views/checkout
+
+- replace create.blade.php from this root: root_file/script/am-content/Plugins/shop/views/products
+
+- replace edit.blade.php from this root: root_file/script/am-content/Plugins/shop/views/products
+
+- replace MenuController.php from this root: root_file/script/app/Http/Controllers/Admin
+
+
+// ------------------------------------- //
+
+
+Created: 7/08/2020
+Last Update: 08/12/2020
+By: AMCoders
+Email: amcoders360@gmail.com
+
+
+Copyright © 2020 Khana All rights reserved

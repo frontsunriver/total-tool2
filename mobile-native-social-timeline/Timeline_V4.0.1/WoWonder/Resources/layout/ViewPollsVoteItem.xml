@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/center_content_profile_scroll_over"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="40dp"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:id="@+id/linklinearLayout"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp">
+    <TextView
+        android:id="@+id/voteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingStart="13dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="8dp"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:lines="1"
+        android:layout_marginEnd="25dp"
+        
+        android:layout_alignParentTop="true"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/checkIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="3dp"
+        android:paddingStart="13dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:textColor="#999"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/progressTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="3dp"
+        android:paddingStart="13dp"
+        android:paddingEnd="9dp"
+        android:paddingTop="0dp"
+        android:layout_below="@+id/checkIcon"
+        
+        android:layout_alignParentEnd="true"
+        android:textSize="12sp" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:progressBackgroundTint="#666"
+        android:progressBackgroundTintMode="multiply"
+        android:layout_below="@+id/voteText"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/progressTextview"
+        android:layout_height="10dp"
+        android:paddingStart="13dp"
+        android:paddingEnd="8dp"
+        android:layout_marginTop="3dp"
+        android:id="@+id/progress"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="100" />
+</RelativeLayout>

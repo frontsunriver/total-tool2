@@ -1,0 +1,1 @@
+In order to download and install server side files on your server refer to documentation.

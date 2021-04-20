@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:id="@+id/main"
+     android:layout_width="130dp"
+     android:layout_height="172dp"
+     android:layout_margin="5dp"
+     android:clickable="false"
+     android:orientation="vertical"
+     android:focusable="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_round_story"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:src="@drawable/no_profile_image"
+            app:riv_corner_radius="10dp"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:id="@+id/ll_video_story"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/round_gradient"
+            	android:paddingStart="7dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:src="@drawable/icon_video_camera"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:text="@string/Lbl_PostLive"
+                android:textColor="@color/gnt_white"
+                android:textSize="7sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="12dp">
+
+            <RelativeLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/rl_story_avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circle_stroke_transparent"
+                    android:gravity="center">
+
+                    <Refractored.Controls.CircleImageView
+                        android:id="@+id/civ_story_avatar"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:src="@drawable/no_profile_image_circle"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout  
+                    android:id="@+id/rl_story_self"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/story_round_color"
+                    android:backgroundTint="@color/colorAddStory"
+                    android:gravity="center">
+
+                    <refractored.controls.CircleImageView
+                            android:id="@+id/profile_indicator"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            app:civ_border_width="10dp"
+                            android:padding="10dp"
+                            android:background="@drawable/social_bg_circle_dotted"
+                            android:src="@drawable/Grey_Offline"
+                            android:layout_gravity="center|center"
+                            android:gravity="center|center"
+                        android:visibility="gone"/> 
+
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/plus"
+                        android:layout_gravity="center|center"
+                        android:gravity="center|center" /> 
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/Txt_Username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:gravity="center_vertical"
+                android:textSize="10dp"
+		        android:lines="1"
+                android:clickable="false"
+                android:focusable="false"
+                android:textColor="@color/gnt_white"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

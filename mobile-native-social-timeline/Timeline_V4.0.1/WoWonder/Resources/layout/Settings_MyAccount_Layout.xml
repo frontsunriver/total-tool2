@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+	android:background="?attr/colorBubble"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	 <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+                app:theme="@style/ToolbarTheme"
+            app:title="@string/Lbl_Update_DataProfile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            android:background="?attr/colorFill">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Lbl_Save"
+                android:layout_gravity="end"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/toolbar_title" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+   <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorBubble"
+            android:clipToPadding="false"
+            android:scrollbars="none"
+            android:scrollingCache="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout
+                android:id="@+id/lyt_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="0dp">
+                <!--Name Section -->
+                <LinearLayout
+                  android:id="@+id/LayoutName"
+                  android:paddingTop="5dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginEnd="5dp"
+                  android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_height="wrap_content">
+                  <TextView
+                    android:id="@+id/IconName"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="#"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:layout_marginStart="5dp" />
+                  <EditText
+                    android:id="@+id/NameEditText"
+                    style="@style/EditTextNormalStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="@string/Lbl_Username"
+                    android:textSize="15sp"
+                    android:gravity="start"
+                    android:background="@drawable/EditTextStyleOne"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="3dp" />
+                </LinearLayout>     
+                <!--Email Section -->
+                <LinearLayout
+                    android:id="@+id/LayoutEmail"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/IconEmail"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="#"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5dp" />
+                    <EditText
+                        android:id="@+id/EmailEditText"
+                        style="@style/EditTextNormalStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:hint="@string/Lbl_Email"
+                        android:inputType="textEmailSubject"
+                        android:textSize="15sp"
+						 android:gravity="start"
+                        android:background="@drawable/EditTextStyleOne"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="3dp" />
+                </LinearLayout>
+                <!--Birthday Section -->
+                <LinearLayout
+                    android:id="@+id/LayoutBirthday" 
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/IconBirthday"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="#"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5dp" />
+                    <EditText
+                        android:id="@+id/BirthdayEditText"
+                        style="@style/EditTextNormalStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:hint="@string/Lbl_Birthday"
+                        android:textSize="15sp"
+						 android:gravity="start"
+                        android:background="@drawable/EditTextStyleOne"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="3dp" />
+                </LinearLayout>
+                <!--Gender Section -->
+                <LinearLayout
+                    android:id="@+id/LayoutGender"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/IconGender"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="#"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5dp" />
+                    <EditText
+                        android:id="@+id/GenderEditText"
+                        style="@style/EditTextNormalStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:hint="@string/Lbl_Gender"
+                        android:textSize="15sp"
+						 android:gravity="start"
+                        android:background="@drawable/EditTextStyleOne"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="3dp" />
+                </LinearLayout>
+                <!--Country Section -->
+                <LinearLayout
+	                android:id="@+id/LayoutCountry"
+	                android:paddingTop="5dp"
+	                android:layout_marginTop="5dp"
+	                android:layout_marginEnd="5dp"
+	                android:layout_width="match_parent"
+	                android:orientation="horizontal"
+	                android:layout_height="wrap_content">
+	                <TextView
+		                android:id="@+id/IconCountry"
+		                android:layout_width="40dp"
+		                android:layout_height="wrap_content"
+		                android:layout_centerVertical="true"
+		                android:text="#"
+		                android:gravity="center"
+		                android:layout_gravity="center"
+		                android:textSize="20sp"
+		                android:layout_marginStart="5dp" />
+	                <EditText
+		                android:id="@+id/CountryEditText"
+		                style="@style/EditTextNormalStyle"
+		                android:layout_width="match_parent"
+		                android:layout_height="45dp"
+		                android:hint="@string/Lbl_Country"
+		                android:textSize="15sp"
+		                android:gravity="start"
+		                android:background="@drawable/EditTextStyleOne"
+		                android:layout_alignParentEnd="true"
+		                android:layout_marginStart="3dp" />
+                </LinearLayout>  
+                <View 
+                  android:layout_height="20dp"
+                  android:layout_width="match_parent" />
+                <WoWonder.Helpers.Ads.TemplateView
+                  android:id="@+id/my_template"
+                  android:padding="8dp"
+                  android:visibility="gone"
+                  app:gnt_template_type="@layout/gnt_medium_template_view"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="bottom"
+                  android:layout_alignParentBottom="true"
+                  android:layout_centerHorizontal="true" />
+                <View 
+					android:layout_height="?android:attr/actionBarSize"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView> 
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

@@ -1,0 +1,28 @@
+Khana v3.0.1 Update Documentation
+
+Note:
+
+This update is just for who is using v3.0, if you're still using older verisons, PLEASE UPDATE the script version by version.
+
+// ------------------------------------- //
+
+1) How To Update
+
+- BACKUP, BACKUP, AND BACKUP everything, files, DATABASE.
+
+- replace menuregister.php from this root
+
+- root/script/am-content/Plugins
+
+
+
+// ------------------------------------- //
+
+
+Created: 7/08/2020
+Last Update: 1/12/2020
+By: AMCoders
+Email: amcoders360@gmail.com
+
+
+Copyright © 2020 Khana All rights reserved

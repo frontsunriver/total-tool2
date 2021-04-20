@@ -1,0 +1,18 @@
+{
+    "name": "vendor/larafy",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "larafy",
+            "email": "larafy@laravel.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Laravel\\Larafy\\": "src/"
+        }
+    }
+}

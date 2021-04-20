@@ -1,0 +1,155 @@
+[
+	{
+		"name": "Header Area",
+		"id": "header",
+		"icon": "flaticon-header",
+		"settings": [
+			{
+				"type": "text",
+				"id": "rider_team_title",
+				"label": "Title",
+				"value": null
+			},
+			{
+				"type": "text",
+				"id": "rider_button_title",
+				"label": "Rider Button",
+				"value": null
+			},
+			{
+				"type": "image",
+				"id": "logo",
+				"label": "Header Logo",
+				"value": null
+			},
+			{
+				"type": "text",
+				"id": "header_pn",
+				"label": "Phone Number",
+				"value": null
+			}
+		],
+		"content": null
+	},
+	{
+		"name": "Hero Area",
+		"id": "hero",
+		"icon": "flaticon-clipboard",
+		"settings": [
+			{
+				"type": "text",
+				"id": "hero_title",
+				"label": "Hero Title",
+				"value": null
+			},
+			{
+				"type": "text",
+				"id": "hero_des",
+				"label": "Hero Description",
+				"value": null
+			},
+			{
+				"type": "text",
+				"id": "button_title",
+				"label": "Button Title",
+				"value": null
+			},
+			{
+				"type": "text",
+				"id": "offer_title",
+				"label": "Offer Title",
+				"value": null
+			},
+			{
+				"type": "image",
+				"id": "hero_right_image",
+				"label": "Hero Right Area Image",
+				"value": null
+			},
+			{
+				"type": "text",
+				"id": "hero_right_title",
+				"label": "Hero Right Area Title",
+				"value": null
+			},
+			{
+				"type": "text",
+				"id": "hero_right_content",
+				"label": "Hero Right Area Content",
+				"value": null
+			}
+
+		],
+		"content": null
+	},
+	{
+		"name": "Category Area",
+		"id": "category",
+		"icon": "flaticon-tag",
+		"settings": [
+			{
+				"type": "text",
+				"id": "category_title",
+				"label": "Category Title",
+				"value": null
+			}
+		],
+		"content": null
+	},
+	{
+		"name": "Best Restaurant",
+		"id": "best_restaurant",
+		"icon": "flaticon-review-1",
+		"settings": [
+			{
+				"type": "text",
+				"id": "best_restaurant_title",
+				"label": "Title",
+				"value": null
+			}
+		],
+		"content": null
+	},
+	{
+		"name": "Find City Area",
+		"id": "city_area",
+		"icon": "flaticon-search",
+		"settings": [
+			{
+				"type": "text",
+				"id": "find_city_title",
+				"label": "Title",
+				"value": null
+			}
+		],
+		"content": null
+	},
+	{
+		"name": "Featured Area",
+		"id": "featured_resturent",
+		"icon": "flaticon-portfolio",
+		"settings": [
+			{
+				"type": "text",
+				"id": "featured_resturent_title",
+				"label": "Title",
+				"value": null
+			}
+		],
+		"content": null
+	},
+	{
+		"name": "Footer Area",
+		"id": "footer",
+		"icon": "flaticon-footer",
+		"settings": [
+			{
+				"type": "textarea",
+				"id": "copyright_area",
+				"label": "Copyright Area",
+				"value": null
+			}
+		],
+		"content": null
+	}
+]

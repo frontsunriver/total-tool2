@@ -1,0 +1,11 @@
+{
+    "Plugin Name": "{{PluginName}}",
+    "Description": "{{PluginDes}}",
+    "Author": "{{PluginAuthor}}",
+    "Author URI": "{{PluginAuthorUrl}}",
+    "Version": {{PluginVersion}},
+    "License": "GNU General Public License v2 or later",
+    "License URI": "http:\/\/www.gnu.org\/licenses\/gpl-2.0.html",
+    "Text Domain": "{{PluginDomain}}",
+    "status": "deactive"
+}

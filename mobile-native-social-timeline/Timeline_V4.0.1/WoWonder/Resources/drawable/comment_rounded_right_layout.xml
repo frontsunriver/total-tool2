@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+  
+  <gradient android:angle="270" android:endColor="?attr/colorBubble" android:startColor="?attr/colorBubble" />
+  <stroke android:width="0dp" android:color="?attr/colorBubble" />
+
+  <padding android:left="1dp"
+           android:top="1dp"
+           android:right="1dp"
+           android:bottom="1dp"/>
+
+  <corners android:bottomRightRadius="17dp"
+           android:bottomLeftRadius="17dp"
+           android:topLeftRadius="17dp"
+           android:topRightRadius="0dp"/>
+</shape>

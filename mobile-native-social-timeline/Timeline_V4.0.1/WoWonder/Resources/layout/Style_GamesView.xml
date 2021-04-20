@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="?attr/colorFill"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp">
+
+  <LinearLayout
+    android:id="@+id/lyt_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorFill"
+    android:orientation="vertical">
+
+    <ImageView
+      android:id="@+id/image"
+      android:layout_width="match_parent"
+      android:layout_height="160dp"
+      android:scaleType="fitCenter"
+      android:src="@drawable/imageplacholder" />
+
+    <TextView
+      android:id="@+id/title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="7dp"
+      android:padding="5dp"
+      android:textSize="17sp"
+      android:textAppearance="@style/TextAppearance.AppCompat.Subhead"   />
+
+    <TextView
+      android:id="@+id/play"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/Lbl_Play"
+      android:gravity="end"
+      android:padding="5dp"
+      android:textSize="16sp"
+      android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+      android:textColor="@color/accent"
+      android:textStyle="bold" />
+			 
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="5dp" />
+
+  </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="invitationCell" rowHeight="47" id="KGk-i7-Jjw" customClass="InvitationLinkCell" customModule="WoWonder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYk-Mn-sNM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzS-hh-gYk">
+                                <rect key="frame" x="18" y="11" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="oUT-ie-Anm"/>
+                                    <constraint firstAttribute="width" constant="25" id="tnf-1N-3WW"/>
+                                </constraints>
+                                <state key="normal" image="copyes"/>
+                                <connections>
+                                    <action selector="CopyLink:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2W4-pV-5V6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ubaid Javaid" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QqC-xB-Kcb">
+                                <rect key="frame" x="68" y="16" width="169" height="15"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday,December 6,2020" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qx-gk-Ikh">
+                                <rect key="frame" x="245" y="15.5" width="130" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="nLX-qZ-e6T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QqC-xB-Kcb" firstAttribute="leading" secondItem="jzS-hh-gYk" secondAttribute="trailing" constant="25" id="Dw0-Jg-gIx"/>
+                            <constraint firstItem="jzS-hh-gYk" firstAttribute="centerY" secondItem="YYk-Mn-sNM" secondAttribute="centerY" id="Kcc-4Q-HmV"/>
+                            <constraint firstItem="jzS-hh-gYk" firstAttribute="leading" secondItem="YYk-Mn-sNM" secondAttribute="leading" constant="18" id="aQe-N3-GhG"/>
+                            <constraint firstAttribute="trailing" secondItem="9Qx-gk-Ikh" secondAttribute="trailing" id="aXX-XI-RXC"/>
+                            <constraint firstItem="9Qx-gk-Ikh" firstAttribute="leading" secondItem="QqC-xB-Kcb" secondAttribute="trailing" constant="8" id="peH-sf-uPP"/>
+                            <constraint firstItem="QqC-xB-Kcb" firstAttribute="centerY" secondItem="YYk-Mn-sNM" secondAttribute="centerY" id="qF5-8g-ol8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YYk-Mn-sNM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CY9-yI-t8A"/>
+                    <constraint firstAttribute="trailing" secondItem="YYk-Mn-sNM" secondAttribute="trailing" id="IkU-Ga-ygh"/>
+                    <constraint firstItem="9Qx-gk-Ikh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="XdZ-EM-FmV"/>
+                    <constraint firstAttribute="bottom" secondItem="YYk-Mn-sNM" secondAttribute="bottom" id="mdc-wb-rDb"/>
+                    <constraint firstItem="YYk-Mn-sNM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tou-Zi-TnY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLbl" destination="9Qx-gk-Ikh" id="Kzq-il-hh9"/>
+                <outlet property="linkBtn" destination="jzS-hh-gYk" id="msc-Fl-tff"/>
+                <outlet property="userName" destination="QqC-xB-Kcb" id="guJ-tv-TA3"/>
+            </connections>
+            <point key="canvasLocation" x="177.536231884058" y="105.46875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="copyes" width="25" height="31"/>
+    </resources>
+</document>

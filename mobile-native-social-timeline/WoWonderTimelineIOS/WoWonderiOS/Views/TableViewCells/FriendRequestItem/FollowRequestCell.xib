@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RequestCell" rowHeight="92" id="KGk-i7-Jjw" customClass="FollowRequestCell" customModule="WoWonder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2u-NQ-W0M">
+                        <rect key="frame" x="0.0" y="-3" width="320" height="98"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cover_image" translatesAutoresizingMaskIntoConstraints="NO" id="1p2-jh-ZyS" customClass="Roundimage" customModule="WoWonder" customModuleProvider="target">
+                                <rect key="frame" x="10" y="24" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="4Iw-13-1Xa"/>
+                                    <constraint firstAttribute="height" constant="50" id="gri-67-BQR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vp5-uB-vFw">
+                                <rect key="frame" x="70" y="26" width="78" height="17.5"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last seen 7/05/2020" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKM-jl-KlI">
+                                <rect key="frame" x="70" y="45.5" width="118" height="15"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                                <color key="textColor" red="0.53333333329999999" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="D3t-k5-nmT">
+                                <rect key="frame" x="235" y="29" width="75" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G9y-Fq-sFp">
+                                        <rect key="frame" x="0.0" y="0.0" width="32.5" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eh1-OC-Roy" customClass="RoundButton" customModule="WoWonder" customModuleProvider="target">
+                                                <rect key="frame" x="1.5" y="5" width="30" height="30"/>
+                                                <color key="backgroundColor" red="0.59607843140000005" green="0.25882352939999997" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="Etp-ip-vng"/>
+                                                    <constraint firstAttribute="height" constant="30" id="jzz-14-F9T"/>
+                                                </constraints>
+                                                <state key="normal" image="tick"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="Accept:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cXD-B1-5tB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Eh1-OC-Roy" firstAttribute="centerX" secondItem="G9y-Fq-sFp" secondAttribute="centerX" id="3PI-aK-bou"/>
+                                            <constraint firstItem="Eh1-OC-Roy" firstAttribute="centerY" secondItem="G9y-Fq-sFp" secondAttribute="centerY" id="EsV-B0-O1c"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2u-jB-o0d">
+                                        <rect key="frame" x="42.5" y="0.0" width="32.5" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uct-LA-Okd" customClass="RoundButton" customModule="WoWonder" customModuleProvider="target">
+                                                <rect key="frame" x="1.5" y="5" width="30" height="30"/>
+                                                <color key="backgroundColor" red="0.53333333329999999" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="Nr3-Iv-YeO"/>
+                                                    <constraint firstAttribute="height" constant="30" id="QZP-gx-043"/>
+                                                </constraints>
+                                                <state key="normal" image="close"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="Reject:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Cp3-ZD-9vf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="uct-LA-Okd" firstAttribute="centerY" secondItem="Y2u-jB-o0d" secondAttribute="centerY" id="A6p-Ug-mVl"/>
+                                            <constraint firstItem="uct-LA-Okd" firstAttribute="centerX" secondItem="Y2u-jB-o0d" secondAttribute="centerX" id="pLL-HF-Goh"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="X8A-xU-Myg"/>
+                                    <constraint firstAttribute="width" constant="75" id="cU7-bN-dJ3"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vp5-uB-vFw" firstAttribute="leading" secondItem="1p2-jh-ZyS" secondAttribute="trailing" constant="10" id="0Y7-EW-NZ2"/>
+                            <constraint firstItem="1p2-jh-ZyS" firstAttribute="leading" secondItem="a2u-NQ-W0M" secondAttribute="leading" constant="10" id="DIs-cB-IdU"/>
+                            <constraint firstItem="1p2-jh-ZyS" firstAttribute="centerY" secondItem="a2u-NQ-W0M" secondAttribute="centerY" id="Hh2-1n-Zl6"/>
+                            <constraint firstItem="D3t-k5-nmT" firstAttribute="centerY" secondItem="1p2-jh-ZyS" secondAttribute="centerY" id="KVB-Fq-0JU"/>
+                            <constraint firstItem="vp5-uB-vFw" firstAttribute="top" secondItem="1p2-jh-ZyS" secondAttribute="top" constant="2" id="eLa-yE-XR4"/>
+                            <constraint firstItem="PKM-jl-KlI" firstAttribute="top" secondItem="vp5-uB-vFw" secondAttribute="bottom" constant="2" id="rOL-af-uWS"/>
+                            <constraint firstItem="PKM-jl-KlI" firstAttribute="leading" secondItem="vp5-uB-vFw" secondAttribute="leading" id="vNz-hb-cKw"/>
+                            <constraint firstAttribute="trailing" secondItem="D3t-k5-nmT" secondAttribute="trailing" constant="10" id="wI1-7h-WcT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="a2u-NQ-W0M" secondAttribute="trailing" id="eB9-iD-L52"/>
+                    <constraint firstAttribute="bottom" secondItem="a2u-NQ-W0M" secondAttribute="bottom" constant="-3" id="kW6-fX-PRh"/>
+                    <constraint firstItem="a2u-NQ-W0M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="-3" id="oxe-bi-yex"/>
+                    <constraint firstItem="a2u-NQ-W0M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wbn-fE-QKk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="acceptBtn" destination="Eh1-OC-Roy" id="Hbx-LO-hCi"/>
+                <outlet property="declineBtn" destination="uct-LA-Okd" id="Nld-uA-5eJ"/>
+                <outlet property="lastSeen" destination="PKM-jl-KlI" id="RQ6-Je-I7U"/>
+                <outlet property="profileImage" destination="1p2-jh-ZyS" id="Ogw-Wz-UtH"/>
+                <outlet property="userName" destination="vp5-uB-vFw" id="DAr-DX-Svi"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="121.875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Cover_image" width="418" height="137"/>
+        <image name="close" width="15" height="15"/>
+        <image name="tick" width="20" height="15"/>
+    </resources>
+</document>

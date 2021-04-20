@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:paddingEnd="5dp"
+    android:focusable="true"
+    android:clickable="true"
+android:paddingBottom="4dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_centerHorizontal="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/lineview"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_width="4dp"
+        android:layout_height="wrap_content"
+        android:background="@color/AnnouncementColor" />
+    <TextView
+        android:id="@+id/HeadText"
+        android:layout_toEndOf="@+id/lineview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="8dp"
+        android:focusable="false"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:text="1. WoWonder comes with follow OR friends, wonder OR dislike system as well, you can select which system you would like to use from the Admin Panel."
+        android:clickable="false"
+        android:textAlignment="textStart" />
+    <TextView
+        android:id="@+id/subText"
+        android:layout_toEndOf="@+id/lineview"
+        android:layout_below="@+id/HeadText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/AnnouncementColor"
+        android:textSize="12dp"
+android:layout_marginBottom="6dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="3dp"
+        android:focusable="false"
+        android:text="1. WoWonder comes with follow OR friends, wonder OR dislike system as well, you can select which system you would like to use from the Admin Panel."
+        android:clickable="false"
+        android:textAlignment="textStart" />
+</RelativeLayout>

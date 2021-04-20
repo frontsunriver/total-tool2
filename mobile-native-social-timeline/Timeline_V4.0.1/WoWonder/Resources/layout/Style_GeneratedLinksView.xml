@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="4"
+        android:layout_marginEnd="3dp"
+          android:layout_marginStart="3dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/copyLink"
+            android:layout_width="0dp"
+            android:layout_height="20dp" 
+            android:gravity="center"
+            android:textAlignment="center" 
+            android:layout_weight="0.5"
+            android:textSize="12sp"
+            android:tint="@color/accent"
+            android:src="@drawable/icon_copy_vector"
+            android:clickable="true"
+            android:textAllCaps="false"
+            android:text="@string/Lbl_Copy"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="7dp"   />
+        <TextView
+            android:id="@+id/invitedUser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:textAlignment="textStart" 
+            android:layout_weight="1.9" 
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="13sp"  />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:textAlignment="textStart" 
+            android:layout_weight="1.6"  
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="9dp"
+            android:textSize="11sp"  />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="?attr/colorDivider" />
+</LinearLayout>

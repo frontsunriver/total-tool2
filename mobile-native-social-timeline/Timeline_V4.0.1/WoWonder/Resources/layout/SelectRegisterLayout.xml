@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app="http://schemas.android.com/apk/res-auto" 
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <ImageView
+        android:id="@+id/Logoplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" 
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_below="@id/Logoplace">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="23dp"
+            android:orientation="vertical">
+
+            <eightbitlab.com.blurview.BlurView
+                android:id="@+id/bv_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    	android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:background="@drawable/login_round">
+            
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Lbl_Register"
+                        android:textSize="24sp"
+                        android:textColor="@color/gnt_white"
+                        android:gravity="center"/>
+            
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/login_description"
+                        android:textSize="14sp"
+                        android:textColor="@color/gnt_white"
+                        android:gravity="center"/>
+
+                    <Button
+                        android:id="@+id/btn_google"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/button_background"
+                        android:text="@string/register_using_google"
+                        android:textSize="13sp"
+                        android:textColor="@color/gnt_white"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textAlignment="center"
+                        android:drawableStart="@drawable/ic_google"
+                        	android:paddingStart="20dp"/>
+
+                    <Button
+                        android:id="@+id/btn_facebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/button_background"
+                        android:text="@string/register_using_facebook"
+                        android:textSize="13sp"
+                        android:textColor="@color/gnt_white"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textAlignment="center"
+                        android:drawableStart="@drawable/ic_facebook"
+                        	android:paddingStart="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"
+                            android:background="@color/gnt_white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:text="@string/Lbl_Or"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorLoginText"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"
+                            android:background="@color/gnt_white"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_register_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:background="@drawable/button_background"
+                        android:text="@string/register_using_email"
+                        android:textSize="13sp"
+                        android:textColor="@color/gnt_white"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textAlignment="center"
+                        android:drawableStart="@drawable/ic_email2"
+                        	android:paddingStart="20dp"/>
+
+                </LinearLayout>
+
+            </eightbitlab.com.blurview.BlurView>
+
+            <LinearLayout
+                android:id="@+id/layout_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/already_account"
+                    android:textSize="12sp"
+                    android:textColor="@color/gnt_white"/>
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Lbl_Login"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorLoginHighlightText"/>
+
+            </LinearLayout>
+
+          <View 
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_width="match_parent" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="ContentDescription">
+
+    <data>
+        <variable
+            name="address"
+            type="com.innomalist.taxi.common.models.Address" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/location"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="8dp"/>
+        <ImageView
+            android:id="@+id/image_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/map"
+            app:layout_constraintStart_toStartOf="@id/image_title"
+            app:layout_constraintTop_toBottomOf="@id/image_title"
+            android:layout_marginTop="8dp"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/image_title"
+            app:layout_constraintTop_toTopOf="@id/image_title"
+            app:layout_constraintBottom_toBottomOf="@id/image_title"
+            android:layout_margin="8dp"
+            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:text="@{address.title}"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/image_address"
+            app:layout_constraintBottom_toBottomOf="@id/image_address"
+            app:layout_constraintStart_toEndOf="@id/image_address"
+            android:layout_margin="8dp"
+            style="@style/TextAppearance.MaterialComponents.Subtitle2"
+            android:text="@{address.address}"/>
+        <ImageView
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="#e0e0e0"
+            app:layout_constraintTop_toBottomOf="@id/text_address" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_edit"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/edit_address"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_address" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_delete"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_address"
+            app:layout_constraintEnd_toStartOf="@id/button_edit"
+            app:layout_constraintTop_toTopOf="@id/button_edit" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

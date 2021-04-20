@@ -1,0 +1,11 @@
+framework module WoWonderTimelineSDK {
+  umbrella header "WoWonderTimelineSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module WoWonderTimelineSDK.Swift {
+    header "WoWonderTimelineSDK-Swift.h"
+    requires objc
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_marginBottom="0dp"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="?attr/colorFill" >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+                app:theme="@style/ToolbarTheme"
+            app:title="@string/Lbl_EditPost"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            android:background="?attr/colorFill">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Lbl_Edit"
+                android:layout_gravity="end"
+                android:textSize="15sp"
+                android:textStyle="bold" 
+                android:padding="15dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/toolbar_title" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:id="@+id/mainsection"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="top"
+        android:layout_gravity="top"
+        android:foregroundGravity="top">
+        <ImageView
+            android:id="@+id/postsectionimage"
+            android:scaleType="centerCrop"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/no_profile_image" />
+        <TextView
+            android:id="@+id/card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="14dp"
+            android:layout_toEndOf="@id/postsectionimage"
+            
+            android:textSize="15sp" />
+        <Button
+            android:layout_toEndOf="@id/postsectionimage"
+            android:layout_below="@id/card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:id="@+id/cont"
+            android:textSize="13sp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/follow_button_profile_friends"
+            android:tag="false"
+            android:paddingTop="1dp"
+            android:paddingStart="17dp"
+            android:paddingEnd="17dp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:text="@string/Lbl_Everyone"
+            android:textColor="@color/accent" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="?attr/colorDivider"
+            android:layout_below="@id/postsectionimage" />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/editTxtEmail"
+        android:singleLine="false"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:paddingBottom="5dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:paddingTop="2dp"
+        android:maxLength="5000"
+        android:inputType="textMultiLine"
+        android:hint="@string/Lbl_Whats_Going_On"
+        android:scrollbars="vertical"
+        android:textSize="19sp"
+        android:scrollHorizontally="false"
+        android:maxLines="20"
+        android:textAllCaps="false"
+        android:gravity="top" />
+</LinearLayout>

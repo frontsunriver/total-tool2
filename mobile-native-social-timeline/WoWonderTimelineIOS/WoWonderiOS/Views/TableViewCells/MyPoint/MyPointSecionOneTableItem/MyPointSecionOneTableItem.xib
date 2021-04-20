@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyPointSecionOneTableItem" rowHeight="196" id="KGk-i7-Jjw" customClass="MyPointSecionOneTableItem" customModule="News_Feed" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="196"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="196"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ubipro" translatesAutoresizingMaskIntoConstraints="NO" id="PXA-Fk-odc" customClass="Roundimage" customModule="News_Feed" customModuleProvider="target">
+                        <rect key="frame" x="110" y="17" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="EOj-bx-6Kr"/>
+                            <constraint firstAttribute="width" constant="100" id="ajw-wm-JCc"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="50"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EMK-EK-9e8">
+                        <rect key="frame" x="117" y="133" width="86.5" height="36"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeC-5e-Zzk">
+                                <rect key="frame" x="8" y="0.0" width="70.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points : 1515" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ju1-SJ-Hxn">
+                                <rect key="frame" x="0.0" y="18" width="86.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PXA-Fk-odc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="4Kw-HF-g8U"/>
+                    <constraint firstItem="EMK-EK-9e8" firstAttribute="top" secondItem="PXA-Fk-odc" secondAttribute="bottom" constant="16" id="Uzm-4D-j3n"/>
+                    <constraint firstItem="EMK-EK-9e8" firstAttribute="centerX" secondItem="PXA-Fk-odc" secondAttribute="centerX" id="Vsh-6o-tme"/>
+                    <constraint firstItem="PXA-Fk-odc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="ktx-0q-Pag"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="pointLabel" destination="Ju1-SJ-Hxn" id="D6f-aU-F3D"/>
+                <outlet property="profileImage" destination="PXA-Fk-odc" id="wNn-pF-gis"/>
+                <outlet property="usernameLabel" destination="BeC-5e-Zzk" id="uwV-PT-rSz"/>
+            </connections>
+            <point key="canvasLocation" x="88.405797101449281" y="174.77678571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ubipro" width="719" height="719"/>
+    </resources>
+</document>

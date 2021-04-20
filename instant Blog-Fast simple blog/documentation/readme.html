@@ -1,0 +1,697 @@
+<!DOCTYPE html> 
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Instant Blog - Readme</title>
+      <link rel="icon" type="image/png" href="readmefiles/favicon.png">
+      <!-- Bootstrap core CSS --> 
+      <link rel="stylesheet" href="readmefiles/bootstrap.min.css" />
+      <link rel="stylesheet" href="readmefiles/readmestyle.css" />
+   </head>
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-9">
+               <h1 id="instantblog">Instant Blog</h1>
+               <hr>
+               <br> 
+               <p>Instant Blog is a multi-purpose blog & magazine script. 
+               You can create easily Facebook Instant Articles & Google AMP pages.
+               Instant Blog has clean, responsive and user-friendly design.
+               You are able to manage your posts,categories, users and settings with its powerful Admin panel.
+               Dynamic form for creating posts. Ad management ready you can easly add ads to your posts. 
+               It is secured, seo optimized, fast and simple to use.
+               </p>
+               <h2 id="features">Features</h2>
+               <ul>
+                  <li>Create Responsive Blog posts.</li>
+                  <li>Create Facebook Instant Articles</li>
+                  <li>Create Google AMP pages</li>
+                  <li>Auto embed content with URL from Youtube, Twitter, Facebook &amp; Instagram</li>
+                  <li>Ads Ready</li>
+                  <li>Admin Panel</li>
+                  <li>Search engine accessible</li>
+                  <li>Responsive and mobile optimized</li>
+                  <li>Built with Laravel and Bootstrap 4.5</li>
+               </ul>
+               <h2 id="requirements">Requirements</h2>
+               <ul>
+				  <li>PHP &gt;= 7.3</li>
+					<li>BCMath PHP Extension</li>
+					<li>Ctype PHP Extension</li>
+					<li>Fileinfo PHP extension</li>
+					<li>JSON PHP Extension</li>
+					<li>Mbstring PHP Extension</li>
+					<li>OpenSSL PHP Extension</li>
+					<li>PDO PHP Extension</li>
+					<li>Tokenizer PHP Extension</li>
+					<li>XML PHP Extension</li>
+				</ul>
+               <h2 id="installationh" >Installation on Shared Hosting</h2>
+                <div class="alert alert-warning" role="alert"> <strong>Important!</strong> If you want to use api features, before installation please create <a href="#facepage"> Facebook Page </a>, <a href="#faceapp">Facebook Api</a>  and <a href="#googleapi">Google Api</a> ! </div>
+               <ol>
+                  <li><strong class="text-primary">Create a Database : </strong> Create a MySQL database for Instant Blog to use.</li>
+                  <br> 
+                  <li>
+                     <p><strong class="text-primary">Create a new directory : </strong> Connect to your web host using your usual FTP/SFTP client. <br> Navigate to the root directory and <strong>create a new directory </strong>with same level of your ( <strong> public_html</strong> or <strong> www</strong> ) , and rename it as "<strong> instantblog </strong>". </p>
+                     <img src="readmefiles/1.png" class="img-fluid pd"> 
+                     <p><em>Note : We create a new "instantblog" directory because Laravel has different folder structure and safest way to store laravel files out of the public folder...</em></p>
+                  </li>
+                  <br> 
+                  <li>
+                     <p><strong class="text-primary">Upload Files : </strong> Extract the downloaded zip file from CodeCanyon and you will see those folders and files : </p>
+                     <img src="readmefiles/2.png" class="img-fluid pd"> 
+                     <p>3a. Upload <strong>instantblog.zip</strong> to inside of newly created <strong>instantblog</strong> folder and <strong>extract</strong> it.</p>
+                     <p>3b. Upload <strong>public.zip</strong> to your <strong>public_html</strong> or <strong>www</strong> or <strong>yoursite.com</strong> and <strong>extract</strong> it.. (Where you usually upload your files in your hosting.)</p>
+                     <h6>Note: On your hosting, your folder structure need to be like image below :</h6>
+                  	 <img src="readmefiles/instantfolder.png" class="img-fluid pd"> 
+                  </li>
+                  <br> 
+                  <li><strong class="text-primary">Launch the Installer :</strong> You are ready to begin the installation process. Enter the following URL by changing with your domain name. Example : http://www.yourdomain.com/install</li>
+                  <br> 
+                  <li>
+                     <p><strong id="instwiz" class="text-primary">Installation Wizard Steps : </strong> Please follow installation wizard steps below. </p>
+                     <ol>
+                        <li>
+                           <p> Click the button "Next Step" to start the installation as shown below</p>
+                        </li>
+                        <img src="readmefiles/3.png" class="img-fluid pd"> 
+                        <li>
+                           <p>Here is the screen which checks whether the requirements are met. If you see a green checkmark as shown in the figure it does mean that you are free to move on to <strong>next step</strong> otherwise please make sure to have the mentioned requirements</p>
+                           <img src="readmefiles/4.png" class="img-fluid pd"> 
+                        </li>
+                        <li>
+                           <p>This is the permissions screen which checks whether the required folders have the mentioned permissions. If you see a green checkmark as shown in the figure it does mean that you are free to move on to next step otherwise please make your folder permissions correctly. (These folders are inside of your "instantblog" directory). Now you can press <strong>Install</strong> button.</p>
+                           <img src="readmefiles/5.png" class="img-fluid pd"> 
+                        </li>
+                        <li>
+                           <p>Enter your <strong>website url</strong> and <strong>your database informations</strong>  as shown below, you dont need to change others.</p>
+                           <img src="readmefiles/6.png" class="img-fluid pd"> 
+                           <p class="text-info"><em> Enter the host name for DB_HOST, generally the host name would be localhost <br> Enter the newly created database name for DB_DATABASE <br> Enter the MySQL username name for DB_USERNAME <br> Enter the MySQL PASSWORD name for DB_PASSWORD </em> </p>
+                        </li>
+                        <li>
+                           <p>Click scroll down near text box and and enter your <strong>Facebook & Google Api </strong>informations</p>
+                           <img src="readmefiles/7.png" class="img-fluid pd"> 
+                           <p class="text-info"><em> For Facebook & Google redirects only change “http//www.yoursite.com/” and do not change “auth/facebook/callback” & “auth/google/callback”. </em> </p>
+                        </li>
+                        <br>
+                        <li>
+                           <p>Click scroll down near text box and and enter your <strong> Hosting mail </strong>informations.</p>
+                           <p>Than Click <strong>save.env</strong>, you will receive <strong>“Your .env file settings have been saved” </strong>message, move on to last step by clicking the button <strong>Install Now”</strong>.</p>
+                           <img src="readmefiles/8.png" class="img-fluid pd"> 
+                           <p class="text-danger"><em> Do not use space between words! </em> </p>
+                           <p><strong>If you want to use Gmail as a server u can make these settings :</strong><br>
+                              <em> 
+                           MAIL_DRIVER=smtp<br>
+                           MAIL_HOST=smtp.gmail.com<br>
+                           MAIL_PORT=587<br>
+                           MAIL_USERNAME=yourmail@gmail.com<br>
+                           MAIL_PASSWORD=xxxxxx<br>
+                           MAIL_ENCRYPTION=tls<br>
+                           MAIL_FROM_ADDRESS=from@yourmail.com<br>
+                           MAIL_FROM_NAME=ExampleName<br>
+                           </em> 
+                           * Than go to https://myaccount.google.com/lesssecureapps and turn on Less secure app access.
+                           </p>
+                        </li>
+                        <br> 
+                        <li>
+                           <p> <strong>It's All ! :</strong> If you didnt receive any error message, your installation is completed..You will see the below image in the final!</p>
+                           <img src="readmefiles/9.png" class="img-fluid pd"> 
+                        </li>
+                     </ol>
+                  </li>
+               </ol>
+               <div class="bd-callout">
+                  <p> <strong>Now You can go to activation page : </strong> <br>Example :  http://www.yourdomain.com/login<br> <a href="#activate">How to Activate?</a></p>
+               </div>
+
+               <div class="bd-callout">
+                  <p> <strong>Did you receive error : </strong> <br>If you wrote your database details wrong, you can start installation from begining. Follow these steps :<br></p>
+                   <ol>
+                     <li><p> Delete "installed" file on your hosting <code>instantblog\storage\installed</code></p></li>
+                     <li><p> Type on your browser <code>yoursite.com/install</code></p></li>
+                     <li><p> When you made changes, dont forget to press "save.env" button.</p></li>   
+                  </ol>
+               </div>
+
+               <h2 id="installationc" >Installation on Cloud Server</h2>
+               <div class="alert alert-warning" role="alert"> <strong>Important!</strong> If you want to use api features, before installation please create <a href="#facepage"> Facebook Page </a>, <a href="#faceapp">Facebook Api</a>  and <a href="#googleapi">Google Api</a> ! </div>
+               <p><strong>IMPORTANT : Follow These instruction if you want to Install "Instant Blog" on Cloud Server with default Laravel structure, otherwise please dont pay attentiton!</strong> <br> <br> Because "Instant Blog" folder structure is ready for shared hostings and you can easily change few lines codes and folder structure and you can install on Cloud Server. </p>
+               <br> 
+               <ol>
+                  <li>Extract the downloaded zip file from CodeCanyon and you will see those folders and files :</li>
+                  <img src="readmefiles/2.png" class="img-fluid pd"> 
+                     <br> 
+                  <li>Upload <strong>instantblog.zip</strong> to your server and  <strong>extract it</strong>. Create a new folder inside and name it "public", Upload <strong>public.zip</strong> to inside of "public" folder and <strong>extract it</strong>. You will have default Laravel folder structure as below. </li>
+                  <img src="readmefiles/10.png" class="img-fluid pd"> 
+                  <li>Download and Open <strong>public/index.php</strong> and edit below codes with your html editor and re-upload.</li>
+                  <br> 
+                  <li>
+                     Find : <br> 
+                     <pre><code>require __DIR__.'/../instantblog/bootstrap/autoload.php';</code> </pre>
+                     <br>and replace with : <br> 
+                     <pre><code>require __DIR__.'/../bootstrap/autoload.php';</code></pre>
+                  </li>
+                  <br> 
+                  <li>
+                     Find : <br> 
+                     <pre><code>$app = require_once __DIR__.'/../instantblog/bootstrap/app.php';</code></pre>
+                     <br> and replace with : <br> 
+                     <pre><code>$app = require_once __DIR__.'/../bootstrap/app.php';</code></pre>
+                  </li>
+                  <br> 
+                  <li>
+                     Find and remove below code : <br> 
+                     <pre>
+<code>
+   $app-&gt;bind('path.public', function () {
+      return __DIR__;
+   });
+</code>
+                     </pre>
+                     </li>
+                     <li> Go to <strong>http://www.yourdomain.com/install</strong>  and Installation Wizard will start. You can follow <a href="#instwiz">installation wizard steps</a> from above.</li>
+               </ol>
+               <h2 id="howtouse" >Quick Start Guide</h2>
+               <ol>
+                  <li> After successful installation go to <strong>yourdomain.com/login </strong> and  <strong><a href="#activate">Activate</a> the Instant Blog. </strong> After successful activation you will get your admin password and redirect to login page.</li>
+                  <br> 
+                  <li> After you logged in it will redirect you to member home page. Press  <strong> Add new post  </strong> button. </li>
+                  <img src="readmefiles/11.png" class="img-fluid pd"> <br> 
+                  <li> You will see a form as below, You can create new post with this dynamic form. All inputs are explained below the image. </li>
+                  <img src="readmefiles/12.png" class="img-fluid pd"> <br> 
+                  <ul class="list-group">
+                     <li class="list-group-item">
+                        <p><strong class="text-primary">Title :</strong> Write title for your post.</p>
+                     </li>
+                     <li class="list-group-item">
+                        <p><strong class="text-primary">Description :</strong> Write short description for your post.  It will be shown under your title in the post.</p>
+                     </li>
+                     <li class="list-group-item">
+                        <p><strong class="text-primary">Post Type :</strong> You can select wich kind of post you like to create. Below input box will change up to your choise.</p>
+                        <ul>
+                           <li><strong>Image post :</strong> You can upload a photo and it will be thumbnail and poster of your post. You can upload jpg, png &amp; gif formats. <em>Recommended image with is minimum 860 px.</em></li>
+                           <li><strong>Video post :</strong> You can use YouTube video for your  thumbnail and poster of your post. You need to enter URL of the YouTube video and it will automaticly create thumbnail. <em>Example : <code>https://www.youtube.com/watch?v=eXaMplE</code></em></li>
+                           <li><strong>Text post :</strong> If you dont want to use a image or video for your post, you can click this button. It will create text only post. But you can select background color of your post.</li>
+                        </ul>
+                     </li>
+                     <li class="list-group-item">
+                        <p><strong class="text-primary">Category :</strong>  Select a category for your post. You can create a new category from your admin panel. Go to categories section and create new category from there.</p>
+                     </li>
+                     <li class="list-group-item">
+                        <p><strong class="text-primary">Add More :</strong>  With this dynamic form you can add new content parts for your post. You can add unlimited new form inputs. Details are below :</p>
+                        <ul>
+                           <li><strong>Header :</strong> You can add new header input.</li>
+                           <li><strong>Text :</strong> You can add new text input for your content.</li>
+                           <li><strong>Text + :</strong> It will add text editor, you can use it for styled text or for link adding.</li>
+                           <li><strong>Image :</strong> You can upload images for your content.</li>
+                           <li><strong>Youtube Video :</strong> You can insert YouTube video for your post, You just need to add URL of the video.</li>
+                           <li><strong>Tweet :</strong> If you want to embed a Tweet inside of your post you can use this option. Just enter URL of the Tweet and press Embed button. <em>Example : <code>https://twitter.com/Interior/status/463440424141459456</code></em></li>
+                           <li><strong>Facebook Post :</strong> If you want to embed a Facebook Post inside of your post you can use this option. Just enter URL of the Facebook Post and press Embed button. <em>Example : <code>https://www.facebook.com/20531316728/posts/10154009990506729/</code></em></li>
+                           <li><strong>Instagram Post :</strong> If you want to embed a Instagram Post inside of your post you can use this option. Just enter URL of the Instagram Post and press Embed button. <em>Example :      <code>https://www.instagram.com/p/tsxp1hhQTG/</code></em></li>
+                           <li><strong>Pinterest Post :</strong> If you want to embed a Pinterest Post inside of your post you can use this option. Just enter URL of the Pinterest Post and press Embed button. <em>Example :      <code>https://www.pinterest.com/pin/99360735500167749/</code></em></li>
+                        </ul>
+                     </li>
+                  </ul>
+                  <br> 
+                  <li> When you are ready to publish your post, you can press <strong>“Submit Post” </strong>button and it will create post for you . </li>
+                  <br> 
+               </ol>
+
+               <h2 id="sethelp" >Settings Help</h2>
+               <p>More information about Settings in admin panel.</p>
+               <img src="readmefiles/13.png" class="img-fluid"> <br> <br> 
+               <ul class="list-group">
+                  <li class="list-group-item active">Main</li>
+                  <li class="list-group-item"><strong class="text-primary">Site Name :</strong> Enter name of your site.</li>
+                  <li class="list-group-item"><strong class="text-primary">Site Description :</strong> Enter description of the website for seo.</li>
+                  <li class="list-group-item"><strong class="text-primary">Site Title :</strong> This is the title of your website and it will appear on your meta tags and browser.</li>
+                  <li class="list-group-item"><strong class="text-primary">Site Logo :</strong> Upload logo for your website. Recommended <code>png</code> file and size : <code>200x35</code></li>
+                  <li class="list-group-item"><strong class="text-primary">Allow users to add posts?</strong> If you want to disable users to add post, select “No” . It will hide “Add post button” for users.</li>
+                  <li class="list-group-item"><strong class="text-primary">Allow comments on posts? :</strong> If you want to hide Facebook comment box on posts you can select “No”.</li>
+                  <li class="list-group-item"><strong class="text-primary">Allow comments on posts? :</strong> If you want to hide Facebook comment box on posts you can select “No”.</li>
+               </ul>
+               <br> 
+               <ul class="list-group">
+                  <li class="list-group-item active">Optional</li>
+                  <li class="list-group-item">On the tab you can see “Optional” settings. You can change text of menus from this tab. If you want to add Google Analytics code or Other script to head  you can add it on this section.</li>
+               </ul>
+               <br> 
+               <ul class="list-group">
+                  <li class="list-group-item active">Adsense</li>
+                  <li class="list-group-item"><strong class="text-primary">Post Adsense code :</strong> Inside of your post content it will appear.</li>
+                  <li class="list-group-item"><strong class="text-primary">Post Sidebar Adsense code :</strong> It will display ads on sidebar of single post. Recommended style is square ad type.</li>
+                  <li class="list-group-item"><strong class="text-primary">Between Posts Adsense :</strong> For adding ads to between posts on index page , use “Between Posts Adsense code” section.</li>
+                  <li class="list-group-item"><em>NOTE : If you use google adsense, for better result use “New In-feed Ad” option and make visual preferences there. Recommended “Image above” style.</em></li>
+               </ul>
+               <br> 
+               <ul class="list-group">
+                  <li class="list-group-item active">Facebook Instant Articles</li>
+                  <li class="list-group-item"> <em>NOTE : If you just created your website and first time using Facebook Instant Articles, You need to create minimum 10 posts and submit them for review. Read more on <a href="#faceinstant">Facebook Instant Articles Configration</a> section.</em> </li>
+                  <li class="list-group-item"><strong class="text-primary">Theme :</strong> Write your theme name here. Example : <code>yourstyle</code><br><br> You can create new theme for your Facebook Instant Articles. To find the Style Editor <a target="_blank" href="https://developers.facebook.com/docs/instant-articles/design/creating-styles">Go to this url</a>. </li>
+                  
+                  <li class="list-group-item">
+                     <strong id="sethelpadscode" class="text-primary">Ads Code :</strong> Here you can use your ad code for Instant articles. Facebook automatic placement your ads.<br><br> 
+                     <ol>
+                        <li>
+                           <strong>If you want to use Audience Network ads use example code on below :</strong><br><br> 
+<pre>
+<code>
+&lt;figure class="op-ad"&gt; 
+   &lt;iframe width="300" height="250" style="border:0; margin:0;" src="https://www.facebook.com/adnw_request?placement=PLACEMENT_ID&amp;adtype=banner300x250"&gt;&lt;/iframe&gt; 
+&lt;/figure&gt;
+</code>
+</pre>
+                           <br> Change “PLACEMENT_ID” with your Audience Network ID. To get placement ID <a href="#faceaudience">read here</a>.<br><br> For more information visit : <a href="https://developers.facebook.com/docs/instant-articles/monetization/audience-network">https://developers.facebook.com/docs/instant-articles/monetization/audience-network</a> 
+                        </li>
+                        <br><br> 
+                        <li>
+                           <strong>If you want to use Google Adsense use code like below :</strong><br><br> 
+<pre>
+<code>
+&lt;figure class="op-ad"&gt; 
+   &lt;iframe height="300" width="250"&gt; 
+      &lt;!-- Include full ad code here --&gt; 
+   &lt;/iframe&gt; 
+&lt;/figure&gt; </code></pre>
+                           <br><br> Your ads iframe code need to be inside of <code>&lt;figure class="op-ad"&gt; .... &lt;/figure&gt;</code> . 
+                        </li>
+                     </ol>
+                  </li>
+               </ul>
+               <br> 
+               <ul class="list-group">
+                  <li class="list-group-item active">Google Amp</li>
+                  <li class="list-group-item"><strong class="text-primary">Ads on Amp : </strong>If you want to use Ads on your Google Amp page click " yes" otherwise select “no”.</li>
+                  <li class="list-group-item">
+                     <strong class="text-primary">Ads Code :</strong> You can use your Ad code here, Google AMP support ads, but you need a special code for using it. You can find your App server code on this link : <a href="https://www.ampproject.org/docs/reference/components/amp-ad#supported-ad-networks">https://www.ampproject.org/docs/reference/components/amp-ad#supported-ad-networks</a><br><br> <em>If you want to use Google Adsense <strong>example code</strong> will look like below, Change your <code>data-ad-client</code> &amp; <code>data-ad-slot</code> with your own information.</em><br><br> 
+                     <pre>
+<code>&lt;amp-ad
+layout="responsive"
+width=300
+height=250
+type="adsense"
+data-ad-client="ca-pub-XXXXXXXXXXXXXXXXX"
+data-ad-slot="XXXXXXX"&gt;
+&lt;/amp-ad&gt;
+</code>
+                     </pre>
+                  </li>
+               </ul>
+                              <h2 id="faq" >FAQ</h2>
+               <ul>
+                  <li>
+                     <p><strong>How to change images ?</strong><br> If you like to change favicon and social share images. You can replace png files inside of public directory.<br> <em>Favicon :</em> <code>favicon.png</code> size: <code>16x16</code><br> <em>Social share image :</em> <code>images/social.png</code> size: <code>470x246</code></p>
+                  </li>
+                  <li>
+                     <p><strong>How to change style?</strong><br> You can change style of the blog, by editing css file. It is located inside of  “public/css” directory. Open <code>instant.css</code> by your text editor and you can make changes.</p>
+                  </li>
+                  <li>
+                     <p><strong>How to delete posts?</strong><br> When you logged in visit the post you have created and you can see edit & delete buttons on the top of your post.</p>
+                  </li>
+                  <li>
+                     <p><strong>How to unpublish posts?</strong><br> While editing your post, if you uncheck “Live” checkbox your content will not be appear on website, but you can see them on “Posts” section under Unpublished tab.</p>
+                  </li>
+                  <li>
+                     <p><strong>How to create a post category ?</strong><br> You can create a post category from Admin panel > Categories section. Only active categories will be appear on website. It mean you need to link at least a single content with that.</p>
+                  </li>
+                  <li>
+                     <p><strong>How to use Instant Blog on https (HTTP Secure) website ?</strong><br>If you are using <strong>https</strong> domain and if you have image upload problem it will fix it. <br> Open <strong>instantblog\app\Providers\AppServiceProvider.php</strong> file with your text editor and make these changes like image below:<br><br>
+                        <img src="readmefiles/https.png" class="img-fluid pd">
+                     </p>
+                     <ol>
+                        <li>Add this code as above image : <code> use Illuminate\Support\Facades\URL; </code></li>
+                        <li>Add this code as above image : <code> URL::forceScheme('https'); </code></li> 
+                        <li> Save and Upload file to your hosting again.</li>                
+                     </ol>
+                  </li>
+               </ul>
+               <h2 id="userroles" >User Roles</h2>
+                <p>You can change user roles from " admin panel > users " section. Click edit on user and choose role.</p>
+               <ul>
+                  <li>
+                     <p><strong>Super Admin : </strong> First user when you install the script your admin user. Has all the rights.</p>
+                  </li>
+                  <li>
+                     <p><strong>Admin : </strong> Can see admin panel & change site settings, can edit & delete posts & users, change user roles etc.</p>
+                  </li>
+                  <li>
+                     <p><strong>Editor : </strong> Can edit & delete & publish posts , if your site setting is dont allow posts for users , editor can add post.</p>
+                  </li>
+                  <li>
+                     <p><strong>Verified User : </strong> if your site setting is check posts before publish for users , Verified User can add post.</p>
+                  </li>
+                  
+               </ul>
+
+               <h2 id="facepage" >How to create Facebook Page</h2>
+               <ol>
+                  <li>Go to <a href="http://facebook.com/pages/create">facebook.com/pages/create</a></li>
+                  <li>Click to choose a Page category</li>
+                  <li>Select a more specific category from the dropdown menu and fill out the required information</li>
+                  <li>Click Get Started and follow the on-screen instructions</li>
+               </ol>
+               <h5>How to get Facebook Page ID ?</h5>
+               <p>After your page created, You can get your Page id :</p>
+               <img src="readmefiles/18.png" class="img-fluid pd"> 
+               <ol>
+                  <li>Open your Facebook page.</li>
+                  <li>Click the <strong>About</strong> tab.</li>
+                  <li>Scroll down to the bottom of the <strong>Page Info</strong> section.</li>
+                  <li>You can find your page ID there.</li>
+                  <li><strong>Copy</strong> your ID and you will use it during the installation of “Instant Blog”.</li>
+               </ol>
+               <h2 id="faceapp" >How to create Facebook Api</h2>
+               <p>You need Facebook api for social login. Follow these steps :</p>
+               <ol>
+                  <li>Go to  <a href="https://developers.facebook.com/apps/">https://developers.facebook.com/apps/</a></li>
+                  <li>Click <strong>Add a new app</strong> on the left top of the page.</li>
+                  <li>Click <strong>For Everything Else</strong> from pop-up.</li>
+                  <li>Write <strong>App Display Name, App Contact Email</strong> and click create app button.</li>
+                  <li>Now you can see your <strong>App ID</strong> and click show button to see your <strong>App Secret</strong>. Copy them you will use during the installation of “Instant Blog”. As you can see on empty green circle, App is not “Live” yet, we need to make some settings, follow below steps.<br> <img src="readmefiles/21.png" class="img-fluid pd"> </li>
+                  <br> 
+                  <li>
+                     Click <strong>Settings</strong> on the left menu, under Basic options make following changes.<br> <img src="readmefiles/22.png" class="img-fluid pd"> 
+                     <ul>
+                        <li><strong>App Domains :</strong> Write your domain name.</li>
+                        <li><strong>Privacy Policy URL</strong> : If you have Privacy Policy URL write it or write only your domain.</li>
+                        <li><strong>Terms of Service URL</strong> : If you have Terms of Service URL write it or write only your domain.</li>
+                        <li><strong>Click “+Add Platform”</strong> button and select <strong>Website</strong>, then write your domain on that section too, and press <strong>Save Settings</strong> button.</li>
+                     </ul>
+                  </li>
+                  <br> 
+                  <li>Now we need to make App is live. Click <strong>In development</strong> on the top menu. And opening page under “switch to live mode” , click <strong>Switch Mode</strong>.<br> <img src="readmefiles/23.png"  class="img-fluid pd"><br>  </li>
+                  <li>For Facebook social login to Instant Blog we need to add product. Click <strong>Facebook Login </strong> on the left menu. Select <strong>Settings</strong>. </li>
+                  <li> <strong>NOTE: YOUR WEBSITE NEED TO SUPPORT HTTPS (SSL) </strong></li>
+                  <li>Click <strong>Facebook Login &gt; Settings</strong>.  And select make following changes :
+                  <ul>
+					<li>Client OAuth Login :  select <strong>Yes</strong>.</li>
+					<li>Web OAuth Login :  select <strong>Yes</strong>.</li>
+					<li>Use Strict Mode for Redirect URIs :  select <strong>Yes</strong>.</li>
+					<li>Valid OAuth redirect URIs : Write your Url like this <code>https://www.yourdomain.com/auth/facebook/callback</code> change “yourdomain” with your domain name.<br>
+					<img src="readmefiles/26.png" class="img-fluid pd"></li>
+					</ul>
+					</li>
+                  <li><strong>Its All :</strong> Save Changes.</li>
+                  <li><strong>You must also add oEmbed product to your app for using embed feature on https://developers.facebook.com/apps/.</strong></li>
+               </ol>
+               <h2 id="faceinstant" >Instant Articles Configration</h2>
+               <p>After successful installation of “Instant Blog” Script you can follow these steps to setup Facebook Instant Articles.<br><strong>Check if your Facebook page is eligible for Instant Articles : <a href="https://www.facebook.com/instant_articles/signup">https://www.facebook.com/instant_articles/signup</a>
+               </strong></p>
+               <ol>
+
+                  <li>Login to your Facebook Page.</li>
+                  <li>Click <strong>Publishing Tools</strong> &gt; <strong>Configration</strong>  under the Tools click <strong>Connect Your Site</strong>.</li>
+                  <li>Write your domain name to <strong>URL</strong>  input and press <strong>Claim URL</strong> button.<br> <img src="readmefiles/28.png" class="img-fluid pd"> </li>
+                  <li>Click <strong>Production RSS Feed</strong>  and write your domain by adding "facebook/facebook-rss" to the end of your URL. Press<strong> Save</strong> button. Once you’ve connected your RSS feed to your Facebook Page, Facebook automaticly will pull stories from your RSS feed into the Instant Articles system.<br> <img src="readmefiles/new1.png" class="img-fluid pd"> </li>
+                  <li><strong>Configration complated</strong>. Follow Publishing Posts to Instant Articles steps below .</li>
+               </ol>
+               <br> 
+               <h3>First time Publishing Posts to Instant Articles :</h3>
+               <div class="alert alert-warning" role="alert"> <strong>Note :</strong> Every new publisher must be approved by Facebook before publication can begin. For more information : https://developers.facebook.com/docs/instant-articles .
+              </div>
+               <ol>
+                  <li><strong>Prepare minimum 10 posts on your Instant Blog Script for review.</strong><br> <em>Be sure on Instant Blog Script’s  Facebook Instant Articles  setting page “Production” check box is selected.</em> </li>
+                  <br> 
+                  <li>
+                     <p>Go to your Facebook Page and click <strong>Publishing Tools</strong> &gt; <strong>Configration</strong>. Click <strong>Submit for Review</strong>.<br> <img src="readmefiles/30.png" class="img-fluid pd"> <em><strong>* Review may take 3-5 business days.</strong></em> </p>
+                  </li>
+                  <br> 
+                  <li>
+                     <p>Once your Instant Articles feed has been approved, you’ll be ready to go.</p>
+                  </li>
+                  <li>
+                     <p><strong>Share on your Facebook Page :</strong> Distribute your Instant Articles as you would with any link: Just compose a new post on facebook, include the article link, and share! <em><strong>Instant Articles are never posted to your page automatically.</strong></em><br> <img src="readmefiles/32.png" alt=""> </p>
+                  </li>
+               </ol>
+
+               <h5>NOTES : </h5>
+               <ul>
+                  <li>
+                     <p>For <strong>testing</strong> your instant articles, visit your Facebook Page with your mobile phone. You will see Instant Articles icon like below :<br> <img src="readmefiles/33.png" alt=""> </p>
+                  </li>
+               </ul>
+               <h2 id="faceaudience" > Audience Network Configration (optional)</h2>
+               <p><em>Note: This configration is optional you may use different Ad servers too.</em></p>
+               <p>If you want to use Facebook Audience Network Ads on your Facebook  Instant Articles you can follow these steps.</p>
+               <ol>
+                  <li>Go to <a href="https://developers.facebook.com/apps/">https://developers.facebook.com/apps/</a> and select your app.</li>
+                  <li>Choose <strong>Audience Network</strong> from the Products list on the left and then click <strong>Payout</strong>. Fill out the form. For more information visit : <a href="https://www.facebook.com/help/audiencenetwork/103628146695524">https://www.facebook.com/help/audiencenetwork/103628146695524</a></li>
+                  <li>When you finished payout informations, Click <strong>Placement</strong> on your App.<br> <img src="readmefiles/27.png" class="img-fluid pd"></li>
+                  <li>Copy your <strong>Placement ID</strong> . You can use this placement ID while you add your Ad code on <strong>Settings</strong> page in Instant Blog. Change it with example code. For more information see <a href="#sethelpadscode">Ads Code section.</a></li>
+               </ol>
+
+               <h2 id="googleapi" >How to create Google Api</h2>
+               <p>You will need google api for social logins. To create a Google Api just follow the steps below.</p>
+               <ol>
+                  <li>
+                     <p>Go to <a href="https://developers.google.com/">https://developers.google.com/</a> and log in or create an account, if necessary.</p>
+                  </li>
+                  <li>
+                     <p>After logging in go to this link <a href="https://console.developers.google.com/project">https://console.developers.google.com/project</a> and click on the blue <strong>CREATE PROJECT</strong> button as depicted in the photo below. Wait a moment as google prepares your project.<br> <img src="readmefiles/34.png" class="img-fluid pd"></p>
+                  </li>
+                  <li>
+                     <p>Fill in whatever Project Name you want and press <strong>create</strong> button.<br> <img src="readmefiles/35.png" class="img-fluid pd"></p>
+                  </li>
+                  <li>
+                     <p>You will be redirected to below page , here click on the logo <strong>Google Api</strong> logo.<br> <img src="readmefiles/36.png" class="img-fluid pd"></p>
+                  </li>
+                  <li>
+                     <p><strong>Select your Api from dropdown menu</strong> and click browse the <strong>Library</strong> link.<br> <img src="readmefiles/37.png" class="img-fluid pd"></p>
+                  </li>
+                  <li>
+                     <p>On the search form write “Google+” and click on the <strong>Google+API</strong> box below.<br> <img src="readmefiles/38.png" class="img-fluid pd"></p>
+                  </li>
+                  <li>
+                     <p>Now click on the “ENABLE” button.<br> <img src="readmefiles/39.png" class="img-fluid pd"></p>
+                  </li>
+                  <li>
+                     <p>Next click on the blue ‘Create Credentials’ button to the right.<br> <img src="readmefiles/40.png" class="img-fluid pd"></p>
+                  </li>
+                  <li>
+                     <p>Choose the select option Google+ API for the first select option and Web browser (javascript) for the second selection. Then choose User data. Now click the blue button, “What credentials do I need?.”<br> <img src="readmefiles/41.png" class="img-fluid pd"></p>
+                  </li>
+                  <li>
+                     <p>Enter your site URL to Authorised JavaScript origins and enter “<a href="http://www.yoursite.com/auth/google/callback">http://www.yoursite.com/auth/google/callback</a>” for Authorised redirect URIs. Then Click "Create client ID "button.<br> <img src="readmefiles/42.png" class="img-fluid pd"></p>
+                  </li>
+                  <li>
+                     <p>Select your e-mail adress and Write a Product name then click “Continue” button.<br> <img src="readmefiles/43.png" class="img-fluid pd"></p>
+                  </li>
+                  <li>
+                     <p>Almost done, wait for google to create your new project and you should see the screen below where you can copy Google Client Id.<br> <img src="readmefiles/44.png" class="img-fluid pd"></p>
+                  </li>
+                  <li>
+                     <p>For taking your Google Client Secret . Click “<strong>Credentials</strong>” on the left menu. <strong>Select</strong> your newly created Credential and click edit icon. You can see your <strong>Google Client Id &amp; Google Client Secret</strong> there.<br> <img src="readmefiles/45.png" class="img-fluid pd"></p>
+                  </li>
+               </ol>
+               <h2 id="googleamp" >Google AMP Configration</h2>
+               <p>You dont need any setup for Google AMP pages.<br> When you create a normal post on your blog, it will create AMP page too. By adding “/amp” slug to your post Url you can see your amp page. Example : <code> www.yoursite.com/posts/your-post-name/amp </code></p>
+               <p>If you want to index your AMP Page on Google immediately you can use this link to submit your post :<br> <a href="https://search.google.com/test/amp">https://search.google.com/test/amp</a></p>
+
+               <h2 id="activate" >Activate & Deactivate</h2>
+               <h5>How to Activate?</h5>
+               <p>When you installed Instant Blog script for the first time, you need to activate it. </p>
+               	<ol>
+               		<li>
+               		<p>Go to login page (<strong>yourdomain.com/login</strong>) and it will ask you to enter your Code Canyon Purchase Code. If you do not know about your Purchase Code please follow this tutorial: <a href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-" target="_blank">Where Is My Purchase Code? </a></p>
+               		</li>
+                  <li>
+                     <p>Enter your Code Canyon Purchase Code</p>
+                  </li>
+                  <li>
+                     <p>Press Activate button</p>
+                     <img src="readmefiles/ac1.png" class="img-fluid pd"></p>
+                  </li>
+                  <li>
+                     <p>After successful activation you will be redirected below page, and you can copy your admin password. Click "Go to login page" and use your password.<br>
+                     <em>* Please do not forget to change your password from admin panel / profile section.</em>
+                     <br>
+                     <em>* Password on the below image is example. You will have an unique generated password.</em>  </p>
+                     <img src="readmefiles/ac2.png" class="img-fluid pd">
+                  </li>
+               </ol>
+
+               <h6>Notes:</h6>
+               <ul>
+                  <li><strong>Your purchase from CodeCanyon entitles you to a single use of your purchase. If you wish to use the product on multiple sites, you need to purchase multiple licenses – one license per site.</strong> This is made clear when you are purchasing on <a href="http://codecanyon.net/licenses/regular" target="_blank">License Terms.</a>
+ 				  </li><br>
+
+                  <li>If you want to move your website to another domain, you need to <a href="#de-activate">deactivate</a> current website first and need to re-activate for your new domain.</li><br>
+                  <li>If you have any trouble about activation, you can contact us from <a href="https://codecanyon.net/item/instant-blog-facebook-instant-articles-google-amp-supported-php-script/21312459/support" target="_blank"> Code Canyon Support Page.</a></li>
+				</ul><br><br>
+
+				<h5 id="de-activate">How to Deactivate?</h5>
+				<p>If you have previously activated your license on a website, you no longer are able to activate the same license on another domain. So If you plan to use your license for another website, you can deactivate current website, and then you are able to activate it on the new website.</p>
+				<ol>
+				  <li>
+                     <p>Login Instant Blog with your <strong>Admin profile</strong>. </p>
+                  </li>
+                  <li>
+                     <p>Go to <strong>yourdomain.com/deactivate</strong> </p>
+                  </li>
+                  <li>
+                     <p>Press Deactivate button</p>
+                     <img src="readmefiles/ac3.png" class="img-fluid pd"></p>
+                  </li>
+                  <li>
+                    <p>After successful deactivation please delete "instantblog" folder from your deactivated website hosting.<br>
+                     <em>* Do not forget : You will not be able to use deactivated website and you will lose your datas when you delete your website.</em></p>
+                  </li>
+               </ol>
+
+
+               <h2 id="translation" >Translation</h2>
+
+                    <p>For translating user-side text on Instant Blog follow these steps:</p>
+                    <ol>
+                      <li>Open "<strong>instantblog\resources\lang\en\messages.php</strong>" with your text editor and replace sentences with your own language</li>
+                      <img src="readmefiles/tr1.png" class="img-fluid pd">
+
+                      <li>Open "<strong>instantblog\resources\lang\en.json</strong>" if you want to translate user roles, change second line.</li>
+
+                      <li>When your editing finished, save and upload files to same locations.</li>
+                    </ol>
+
+               <h5>Optional Translations :</h5><br>
+                  <ul>
+                  <li>
+                     <p><strong>Translating validation messages : </strong>Validation messages are created by Laravel if you want to change them. Open "instantblog\resources\lang\en\validation.php"  with your text editor and replace sentences with your own language. But while editing you will see <code>:attribute</code> sentences, do not edit them. just replace english text. You dont need to translate all , just translate necessary sentences.</p>
+                  </li>
+
+                  <li>
+                     <p><strong>Translating time-ago text : </strong>If you like to translate time-ago text to your language follow these steps:
+                        <img src="readmefiles/tr2.png" class="img-fluid pd">
+                        <ol>
+                        <li>Open : "instantblog\app\Providers\AppServiceProvider.php" with your text editor.</li>
+                        <li>Add <code>use Carbon\Carbon;</code> code as on below image. </li>
+                        <li>Add <code>Carbon::setLocale('xx');</code> code as on below image. Change "xx" with your language code.</li>
+                        <li>Save and upload to same location on your hosting.</li>
+                        <img src="readmefiles/tr3.png" class="img-fluid pd">
+                        </ol>
+                     </p>
+                  </li>
+                  </ul>
+
+               <h2 id="faq" >FAQ</h2>
+               <ul>
+                  <li>
+                     <p><strong>How to change images ?</strong><br> If you like to change favicon and social share images. You can replace png files inside of public directory.<br> <em>Favicon :</em> <code>favicon.png</code> size: <code>16x16</code><br> <em>Social share image :</em> <code>images/social.png</code> size: <code>470x246</code></p>
+                  </li>
+                  <li>
+                     <p><strong>How to change style?</strong><br> You can change style of the blog, by editing css file. It is located inside of  “public/css” directory. Open <code>instant.css</code> by your text editor and you can make changes.</p>
+                  </li>
+                  <li>
+                     <p><strong>How to delete posts?</strong><br> When you logged in visit the post you have created and you can see edit & delete buttons on the top of your post.</p>
+                  </li>
+                  <li>
+                     <p><strong>How to unpublish posts?</strong><br> While editing your post, if you uncheck “Live” checkbox your content will not be appear on website, but you can see them on “Posts” section under Unpublished tab.</p>
+                  </li>
+                  <li>
+                     <p><strong>How to create a post category ?</strong><br> You can create a post category from Admin panel > Categories section. Only active categories will be appear on website. It mean you need to link at least a single content with that.</p>
+                  </li>
+                  <li>
+                     <p><strong>How to use Instant Blog on https (HTTP Secure) website ?</strong><br>If you are using <strong>https</strong> domain and if you have image upload problem it will fix it. <br> Open <strong>instantblog\app\Providers\AppServiceProvider.php</strong> file with your text editor and make these changes like image below:<br><br>
+                     	<img src="readmefiles/https.png" class="img-fluid pd">
+                     </p>
+                     <ol>
+                     	<li>Add this code as above image : <code> use Illuminate\Support\Facades\URL; </code></li>
+                     	<li>Add this code as above image : <code> URL::forceScheme('https'); </code></li> 
+                        <li> Save and Upload file to your hosting again.</li>               	
+                     </ol>
+                  </li>
+               </ul>
+               <h2 id="changelog" >Changelog</h2>
+               <p><strong>Instant Blog v2.3</strong>
+                  <br> - Fix some files.
+               </p>
+
+               <p><strong>Instant Blog v2.2</strong>
+                  <br> - Laravel framework updated.
+                  <br> - Added user roles.
+                  <br> - Fix api changes.
+                  <br> - Fix some files.
+               </p>
+
+
+               <p><strong>Instant Blog v2.1</strong>
+                  <br> - Fix api changes.
+               </p>
+
+
+               <p><strong>Instant Blog v2.0</strong>
+               	<br> - New design.
+               	<br> - Laravel framework updated.
+               	<br> - Facebook Instant Article updated.
+               	<br> - Fix some files.
+               </p>
+
+
+               <p><strong>Instant Blog v1.5</strong>
+               	<br> - Blank link windows fix.
+               	<br> - Added forget password feature.
+               </p>
+
+               <p><strong>Instant Blog v1.4</strong>
+               	<br> - Facebook api update fix.
+               	<br> - Responsive share buttons style fix.
+               </p>
+
+               <p><strong>Instant Blog v1.3</strong>
+               	<br> - Added Pinterest Features
+               	<br> - Added RSS feed ( yoursite.com/feed )
+               	<br> - Added Translation for user-side
+               	<br> - Facebook responsive embed fix
+               	<br> - Fix for admin nav page
+               </p>
+
+               <p><strong>Instant Blog v1.2</strong>
+               	<br> - fix some files
+               </p>
+
+               <p><strong>Instant Blog v1.1</strong>
+               	<br> - Added Page Feature.
+               	<br> - Added Footer Feature.
+               	<br> - Added Google Analytics code box.
+               	<br> - Auto generate slug for unsupported charachters.
+               	<br> - Firefox image upload fixed.
+               	<br> - Social user image fixed.
+               	<br> - Google amp image size fixed.
+               	<br> - Script Activator & Deactivator.
+               	<br> - Readme document updated.
+               </p>
+               <p><strong>Instant Blog v1.0</strong>
+               	<br> - Initial public release 
+               </p>
+               <br> <br> 
+            </div>
+            <!-- /.sidebar --> 
+            <div class="col-sm-3 sidebar">
+               <ul>
+                  <li><a href="#instantblog">Instant Blog</a></li>
+                  <li><a href="#features">Features</a></li>
+                  <li><a href="#requirements">Requirements</a></li>
+                  <li><a href="#installationh">Installation on Shared Hosting</a></li>
+                  <li><a href="#installationc">Installation on Cloud Server</a></li>
+                  <li><a href="#howtouse">Quick Start Guide</a></li>
+                  <li><a href="#sethelp">Settings help</a></li>
+                  <li><a href="#userroles">User Roles</a></li>
+                  <li><a href="#facepage">How to create Facebook Page</a></li>
+                  <li><a href="#faceapp">How to create Facebook Api</a></li>
+                  <li><a href="#faceinstant">Instant Articles Configration</a></li>
+                  <li><a href="#faceaudience">Audience Network Configration</a></li>
+                  <li><a href="#googleapi">How to create Google Api</a></li>
+                  <li><a href="#googleamp">Google AMP Configration</a></li>
+                  <li><a href="#activate">Activate & Deactivate</a></li>
+                  <li><a href="#translation">Translation</a></li>
+                  <li><a href="#faq">FAQ</a></li>
+                  <li><a href="#changelog">Changelog</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      </div> 
+   </body>
+</html>

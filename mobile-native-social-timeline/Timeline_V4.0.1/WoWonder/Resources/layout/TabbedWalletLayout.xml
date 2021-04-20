@@ -1,0 +1,39 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorFill"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+                app:theme="@style/ToolbarTheme"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="top"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            android:background="?attr/colorFill" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/mainFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="65dp"
+        android:orientation="vertical"
+        android:focusable="false"
+        android:fitsSystemWindows="true" />
+    <com.iammert.library.readablebottombar.ReadableBottomBar 
+        android:id="@+id/readableBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="bottom"
+        android:background="?attr/colorFill"
+        app:rbb_textColor="?attr/colorReact"
+        app:rbb_indicatorColor="?attr/colorReact"
+        app:rbb_backgroundColor="?attr/colorFill"
+        app:rbb_tabs="@xml/wallet_tabs" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

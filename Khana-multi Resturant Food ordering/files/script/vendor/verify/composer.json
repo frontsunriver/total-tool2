@@ -1,0 +1,18 @@
+{
+    "name": "lpress/verify",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mdmaruf782",
+            "email": "mdmaruf782@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+     "autoload": {
+        "psr-4": {
+            "Lpress\\Verify\\": "src/"
+        }
+    },
+}

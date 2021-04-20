@@ -1,0 +1,12 @@
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "8VR-N2-JW4"; */
+"8VR-N2-JW4.title" = "Item";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "N4b-jJ-SeH"; */
+"N4b-jJ-SeH.text" = "Loading...";
+
+/* Class = "UINavigationItem"; title = "Taxi"; ObjectID = "kva-XK-mou"; */
+"kva-XK-mou.title" = "Taxi";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "rK5-vU-Fgw"; */
+"rK5-vU-Fgw.title" = "Item";

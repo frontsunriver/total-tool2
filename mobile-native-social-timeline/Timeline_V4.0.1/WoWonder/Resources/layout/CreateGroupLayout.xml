@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+	android:background="?attr/colorBubble"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+                app:theme="@style/ToolbarTheme"
+            app:title="@string/Lbl_Update_Data_Group"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            android:background="?attr/colorFill">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Lbl_Save"
+                android:layout_gravity="end"
+                android:textSize="15sp"
+                android:textStyle="bold" 
+                android:padding="15dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/toolbar_title" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:layout_marginBottom="1dp"> 
+      <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="fill_vertical"
+            android:layout_below="@+id/title_pic_s03">
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/describe" 
+          android:layout_marginEnd="5dp"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="10dp"
+          android:text="@string/Lbl_Describe_Group"
+          android:textStyle="bold" />
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/description"
+          android:layout_below="@+id/describe" 
+          android:layout_marginEnd="5dp"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="5dp"
+          android:text="@string/Lbl_Describe_Description_Group"
+          android:textSize="12dp" /> 
+        <!--Title Section -->
+          <LinearLayout
+            android:id="@+id/LayoutTitle"
+            android:paddingTop="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+              android:id="@+id/IconTitle"
+              android:layout_width="40dp"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:text="#"
+              android:gravity="center"
+              android:layout_gravity="center"
+              android:textSize="20sp"
+              android:layout_marginStart="5dp" />
+            <EditText
+              android:id="@+id/TitleEditText"
+              style="@style/EditTextNormalStyle"
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:hint="@string/Lbl_Group_title" 
+              android:textSize="15sp"
+              android:gravity="start"
+              android:background="@drawable/EditTextStyleOne"
+              android:layout_alignParentEnd="true"
+              android:layout_marginStart="3dp" />
+          </LinearLayout>   
+          <!--Url Section -->
+          <LinearLayout
+            android:id="@+id/LayoutUrl" 
+            android:paddingTop="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+              android:id="@+id/IconUrl"
+              android:layout_width="40dp"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:text="#"
+              android:gravity="center"
+              android:layout_gravity="center"
+              android:textSize="20sp"
+              android:layout_marginStart="5dp" />
+            <EditText
+              android:id="@+id/UrlEditText"
+              style="@style/EditTextNormalStyle"
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:hint="@string/Lbl_GroupUsername" 
+              android:textSize="15sp"
+              android:gravity="start"
+              android:background="@drawable/EditTextStyleOne"
+              android:layout_alignParentEnd="true"
+              android:layout_marginStart="3dp" />
+          </LinearLayout>  
+          <!--About Section -->
+          <LinearLayout
+            android:id="@+id/LayoutAbout"
+            android:paddingTop="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginEnd="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+              android:id="@+id/IconAbout"
+              android:layout_width="40dp"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:text="#"
+              android:gravity="top|center"
+              android:layout_gravity="start"
+              android:textSize="20sp"
+              android:layout_marginStart="5dp" />
+            <EditText
+              android:id="@+id/AboutEditText"
+              style="@style/EditTextNormalStyle"
+              android:layout_width="match_parent"
+              android:layout_height="80dp"
+              android:background="@drawable/EditTextStyleOne"
+              android:hint="@string/Lbl_Group_About"
+              android:textSize="15sp"
+              android:gravity="start"
+              android:layout_alignParentEnd="true"
+              android:layout_marginStart="3dp" />
+          </LinearLayout> 
+          <!--Categories Section -->
+          <LinearLayout
+            android:id="@+id/LayoutCategories"
+            android:paddingTop="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+              android:id="@+id/IconCategories"
+              android:layout_width="40dp"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:text="#"
+              android:gravity="center"
+              android:layout_gravity="center"
+              android:textSize="20sp"
+              android:layout_marginStart="5dp" />
+            <EditText
+              android:id="@+id/CategoriesEditText"
+              style="@style/EditTextNormalStyle"
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:hint="@string/Lbl_SelectCategories" 
+              android:textSize="15sp"
+              android:gravity="start"
+              android:background="@drawable/EditTextStyleOne"
+              android:layout_alignParentEnd="true"
+              android:layout_marginStart="3dp" />
+          </LinearLayout> 
+        <!--Privacy --> 
+          <LinearLayout
+            android:id="@+id/LayoutPrivacy"
+            android:paddingTop="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+              android:id="@+id/TxtPrivacy"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:text="@string/Lbl_Privacy"
+              android:gravity="start|center"
+              android:layout_gravity="start|center"
+              android:textSize="16sp"
+              android:layout_marginStart="15dp" /> 
+          </LinearLayout> 
+          <!--Type Section -->
+          <LinearLayout
+            android:id="@+id/LayoutType"
+            android:paddingTop="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+              android:id="@+id/IconType"
+              android:layout_width="40dp"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:text="#"
+              android:gravity="center"
+              android:layout_gravity="center"
+              android:textSize="20sp"
+              android:layout_marginStart="5dp" />
+            <RadioGroup
+              android:id="@+id/radioGroup"
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+              <RadioButton
+                android:id="@+id/radioPublic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Radio_Public"
+                android:buttonTint="@color/accent"
+                android:textSize="15sp"
+                android:textColor="?attr/colorReact"
+                android:layout_marginEnd="20dp" />
+              <RadioButton
+                android:id="@+id/radioPrivate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Radio_Private"
+                android:textSize="15sp"
+                android:textColor="?attr/colorReact"		
+                android:buttonTint="@color/accent" />
+            </RadioGroup>
+          </LinearLayout>  
+          <View
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:layout_width="match_parent" />
+                <com.google.android.gms.ads.doubleclick.PublisherAdView
+                    android:id="@+id/multiple_ad_sizes_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    app:adSize="MEDIUM_RECTANGLE,120x20,250x250,320x100,SMART_BANNER"
+                    app:adUnitId="@string/banner_multiple_ad_sizes_id" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

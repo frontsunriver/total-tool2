@@ -1,0 +1,369 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:background="@drawable/rounded_dialog"
+    android:layout_height="wrap_content">
+    <!--Head Page -->
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:id="@+id/IconBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="&gt;"
+            android:textColor="#888"
+            android:textSize="18sp" 
+            android:paddingEnd="25dp" 
+            android:paddingStart="25dp" />
+        <TextView
+            android:id="@+id/titlepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_centerVertical="true"
+            android:text="@string/Lbl_Filter"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp" 
+            android:layout_marginStart="61dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/colorDivider" />
+    </RelativeLayout>
+    <!--Gender Section -->
+    <RelativeLayout
+        android:paddingTop="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="80dp">
+       
+        <TextView
+              android:drawableStart="@drawable/icon_search_profile_vector"
+            style="@style/CustomTextdrawableStyle"
+             android:layout_marginStart="4dp"
+            android:id="@+id/GenderTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/Lbl_Gender"
+            android:textSize="14sp"/>
+        <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/GenderRecyler"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:layout_below="@+id/GenderTextView"
+          android:orientation="horizontal"
+          
+          tools:listitem="@layout/Style_Categories_View"
+          android:layout_marginTop="10dp"
+          android:layout_marginEnd="20dp"
+          android:layout_marginStart="40dp"
+          /> 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="?attr/colorDivider" />
+    </RelativeLayout>
+	<!--Age Section -->
+    <RelativeLayout
+        android:id="@+id/LayoutAge"
+        android:paddingTop="5dp"
+        android:layout_marginTop="5dp"
+		android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="105dp">
+       
+        <TextView
+              android:layout_marginStart="5dp"
+             android:drawableStart="@drawable/icon_search_age_vector"
+            style="@style/CustomTextdrawableStyle"
+            android:id="@+id/AgeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="@string/Lbl_Age"
+            android:textSize="14sp" 
+            android:layout_toEndOf="@+id/IconAge" />
+       <Switch
+            android:id="@+id/togglebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp" /> 
+		 <View
+			android:id="@+id/view"
+            android:layout_width="match_parent"
+			android:layout_below="@+id/AgeTextView"
+            android:layout_height="5dp"
+            android:layout_centerVertical="true" />
+           
+        <LinearLayout
+            android:id="@+id/seekbarLayout"
+            android:layout_below="@+id/view"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+          <WoWonder.Library.RangeSlider.RangeSliderControl
+            android:id="@+id/seekbar" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="2dp"
+            app:absoluteMinValue="10"
+            app:absoluteMaxValue="70"
+            app:valuesAboveThumbs="true"
+            app:materialUI="true" 
+            app:textAboveThumbsColor="@color/accent"
+            app:thumbShadowColor="@color/accent"
+            app:activeColor="@color/accent"
+            app:minThumbHidden="false"
+            app:maxThumbHidden="false"
+            app:showRangeLabels="true"
+            app:barHeight="2dp"  /> 
+
+        </LinearLayout>
+		 
+		 <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="?attr/colorDivider" />
+    </RelativeLayout>	 
+	 <!--Location Section -->
+    <RelativeLayout
+        android:id="@+id/LayoutLocation"
+        android:paddingTop="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+      
+        <TextView
+            android:layout_marginStart="5dp"
+            android:id="@+id/LocationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/icon_search_location_vector"
+            style="@style/CustomTextdrawableStyle"
+            android:layout_marginBottom="0dp"
+            android:layout_centerVertical="true"
+            android:text="@string/Lbl_Location"
+            android:textSize="14sp"
+            android:layout_toEndOf="@+id/IconLocation" />
+        <TextView
+            android:id="@+id/LocationPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="12sp"
+			android:text="@string/Lbl_All"
+            android:layout_marginEnd="40dp" />
+        <TextView
+            android:id="@+id/LocationMoreIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="&gt;"
+            android:layout_alignParentEnd="true"
+            android:textSize="13sp"
+            android:textColor="#888"
+            android:layout_marginEnd="20dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="50dp"
+            android:background="?attr/colorDivider" />
+    </RelativeLayout>
+	<!--Verified Section -->
+    <RelativeLayout
+        android:id="@+id/LayoutVerified"
+        android:paddingTop="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+       
+        <TextView
+             android:drawableStart="@drawable/icon_search_check_mark_vector"
+            style="@style/CustomTextdrawableStyle"
+             android:layout_marginStart="5dp"
+            android:id="@+id/VerifiedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_centerVertical="true"
+            android:text="@string/Lbl_Verified"
+            android:textSize="14sp"
+            android:layout_toEndOf="@+id/IconVerified" />
+        <TextView
+            android:id="@+id/textVerified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/Lbl_All"
+            android:layout_alignParentEnd="true"
+            android:textSize="12sp"
+            
+            android:layout_marginEnd="40dp" />
+        <TextView
+            android:id="@+id/VerifiedMoreIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="&gt;"
+            android:layout_alignParentEnd="true"
+            android:textSize="13sp"
+            android:textColor="#888"
+            android:layout_marginEnd="20dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="50dp"
+            android:background="?attr/colorDivider" />
+    </RelativeLayout>
+	<!--Status Section -->
+    <RelativeLayout
+        android:id="@+id/LayoutStatus"
+        android:paddingTop="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+       
+        <TextView
+              android:drawableStart="@drawable/icon_search_global_vector"
+            style="@style/CustomTextdrawableStyle"
+             android:layout_marginStart="5dp"
+            android:id="@+id/StatusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_centerVertical="true"
+            android:text="@string/Lbl_Status"
+            android:textSize="14sp"
+            android:layout_toEndOf="@+id/IconStatus" />
+        <TextView
+            android:id="@+id/textStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/Lbl_All"
+            android:layout_alignParentEnd="true"
+            android:textSize="12sp"
+            
+            android:layout_marginEnd="40dp" />
+        <TextView
+            android:id="@+id/StatusMoreIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="&gt;"
+            android:layout_alignParentEnd="true"
+            android:textSize="13sp"
+            android:textColor="#888"
+            android:layout_marginEnd="20dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="50dp"
+            android:background="?attr/colorDivider" />
+    </RelativeLayout>
+	<!--Profile Picture Section -->
+   <RelativeLayout
+        android:id="@+id/LayoutProfilePicture"
+        android:paddingTop="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+       
+        <TextView
+              android:drawableStart="@drawable/icon_search_picture_camera_vector"
+            style="@style/CustomTextdrawableStyle"
+             android:layout_marginStart="5dp"
+            android:id="@+id/ProfilePictureTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_centerVertical="true"
+            android:text="@string/Lbl_Profile_Picture"
+            android:textSize="14sp" 
+            android:layout_toEndOf="@+id/IconProfilePicture" />
+        <TextView
+            android:id="@+id/txtProfilePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/Lbl_All"
+            android:layout_alignParentEnd="true"
+            android:textSize="12sp"
+            
+            android:layout_marginEnd="40dp" />
+        <TextView
+            android:id="@+id/ProfilePictureMoreIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="&gt;"
+            android:layout_alignParentEnd="true"
+            android:textSize="13sp"
+            android:textColor="#888"
+            android:layout_marginEnd="20dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="50dp"
+            android:background="?attr/colorDivider" />
+    </RelativeLayout>
+	<!--Buttons Section -->
+    <RelativeLayout
+        android:paddingTop="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/ApplyButton"
+            android:layout_below="@+id/Resetbutton"
+            android:background="@drawable/follow_button_profile_friends_pressed"
+            android:layout_height="36dp"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:text="@string/Lbl_ApplyFilter"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:clickable="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="19dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp" />
+    </RelativeLayout>
+</LinearLayout>

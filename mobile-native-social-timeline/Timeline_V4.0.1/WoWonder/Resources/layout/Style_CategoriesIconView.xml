@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="90dp"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:gravity="center"
+    android:background="?attr/selectableItemBackground">
+    <RelativeLayout
+        android:id="@+id/imagecontainer"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <View 
+            android:id="@+id/backIcon"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/Shape_Radius_Btn"
+            android:backgroundTint="@color/primary_transparent"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:gravity="center" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Icon"
+            android:text="Ic"
+            android:gravity="center" 
+            android:textSize="18sp"
+            android:textColor="@color/accent"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="0dp"
+            android:clickable="false"
+            android:focusable="false" /> 
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="7dp"
+        android:textSize="11sp"
+        android:layout_centerHorizontal="true"
+        android:foregroundGravity="center_vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:includeFontPadding="false" />
+</LinearLayout>

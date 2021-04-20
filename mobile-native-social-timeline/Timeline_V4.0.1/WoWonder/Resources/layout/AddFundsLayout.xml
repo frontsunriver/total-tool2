@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="?attr/colorBubble"
+    android:layout_height="match_parent">
+  <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:layout_marginBottom="1dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="fill_vertical"
+            android:layout_below="@+id/title_pic_s03">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/describe"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/Lbl_ReplenishMyBalance"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <androidx.cardview.widget.CardView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:cardBackgroundColor="@color/accent"
+              android:layout_gravity="center"
+              android:layout_marginStart="20dp"
+              android:layout_marginEnd="20dp"
+              android:layout_marginTop="0dp"
+              app:cardCornerRadius="6dp"
+              app:cardElevation="2dp"
+              app:cardUseCompatPadding="true">
+              <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <View
+                  android:layout_width="0dp"
+                  android:layout_height="10dp" />
+                <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/Lbl_CurrentBalance"
+                  android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                  android:textColor="@color/textLight_color" />
+                <TextView
+                  android:id="@+id/myBalance"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:text="0.00"
+                  android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+                  android:textColor="@color/textLight_color" />
+                <View
+                  android:layout_width="0dp"
+                  android:layout_height="25dp" />
+              </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <View
+              android:layout_width="match_parent"
+              android:layout_height="20dp"/>
+
+            <!--Amount Section -->
+            <LinearLayout
+                android:id="@+id/LayoutAmount"
+                android:paddingTop="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/IconAmount"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="#"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:layout_marginStart="5dp" />
+                <EditText
+                    android:id="@+id/AmountEditText"
+                    style="@style/EditTextNormalStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="0.00"
+                    android:textSize="15sp"
+                    android:gravity="start"
+                    android:inputType="number"
+                    android:background="@drawable/EditTextStyleOne"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="3dp" />
+            </LinearLayout>  
+            <!--Buttons Section -->
+            <LinearLayout
+              android:paddingTop="5dp"
+              android:layout_marginTop="6dp"
+              android:layout_marginBottom="10dp"
+              android:layout_width="match_parent"
+              android:gravity="center_horizontal"
+              android:layout_height="wrap_content">
+              <Button
+                android:id="@+id/ContinueButton"
+                android:layout_below="@+id/Resetbutton"
+                android:background="@drawable/follow_button_profile_friends_pressed"
+                android:layout_height="36dp"
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:text="@string/Lbl_Continue"
+                android:textColor="@color/textLight_color"
+                android:textSize="12sp"
+                android:clickable="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="19dp"
+                android:gravity="center"
+                android:layout_marginBottom="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout> 

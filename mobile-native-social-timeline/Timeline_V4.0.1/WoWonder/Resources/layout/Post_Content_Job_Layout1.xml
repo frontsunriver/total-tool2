@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="345dp"
+    	android:paddingStart="15dp"
+    android:paddingEnd="15dp">
+    <ImageView
+        android:id="@+id/JobCoverImage"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/Cover_image" />
+    <refractored.controls.CircleImageView
+        android:id="@+id/JobAvatar"
+        android:scaleType="centerCrop"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:translationY="-25dp"
+        android:layout_below="@+id/JobCoverImage"
+        android:layout_centerHorizontal="true"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/textLight_color"
+        android:src="@drawable/imageplacholder_circle" />
+    <TextView
+        android:layout_below="@+id/JobAvatar"
+        android:id="@+id/Jobtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:paddingBottom="3dp"
+        android:paddingStart="13dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="0dp"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_below="@+id/Jobtitle"
+        android:id="@+id/pageName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="3dp"
+        android:paddingStart="13dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="13sp" />
+    <TextView
+        android:layout_below="@+id/pageName"
+        android:id="@+id/JobInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:paddingTop="0dp"
+        android:textSize="13sp" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+[
+    {
+        "Theme Name": "Khana - Food Delivery Laravel Script",
+        "Thumbnail": "thumbnail.png",
+        "Author": "Amcoders",
+        "Version": "1.1",
+        "License": "GNU General Public License v2 or later",
+        "Text Domain": "khana",
+        "status": "active"
+    }
+]

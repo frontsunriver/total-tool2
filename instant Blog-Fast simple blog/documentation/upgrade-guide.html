@@ -1,0 +1,192 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Instant Blog - Upgrade</title>
+	<link rel="icon" type="image/png" href="readmefiles/favicon.png">
+	<!-- Bootstrap core CSS --> 
+	<link rel="stylesheet" href="readmefiles/bootstrap.min.css" />
+	<link rel="stylesheet" href="readmefiles/readmestyle.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 mb-3">
+				<p class="text-danger"><strong><em>* Please only follow these steps if you want to upgrade Instant Blog script!<br> If you downloaded latest version and installing for the first time, you dont need to follow these steps!
+				</em></strong></p><br>
+				<p class="text-success"><strong><em>* Before you get started, it's a good idea to back up your current website  and your database.<br> This means if there are any issues you can restore your website. </em></strong></p><br>
+				<p class="text-success"><strong><em>* If you made customization on script or style you need to re-implement those changes on new script.</em></strong></p><br>
+
+				<h3>Upgrading Instant Blog v2.2 to v2.3</h3><br>
+
+				<strong>REPLACE BELOW FOLDER & FILES WITH NEWLY DOWNLOADED FILES ON YOUR HOSTING</strong>
+				<ul>
+					<li>instantblog\app\Http\Controllers\InstantController.php</li>
+					<li>instantblog\app\Providers\AuthServiceProvider.php</li>
+					<li>instantblog\database\migrations\</li>
+				</ul>
+
+				
+				<br><br><br>
+
+				<h3>Upgrading Instant Blog v2.1 to v2.2</h3><br>
+
+				<ol>
+					<li>Go to your hosting file manager</li>
+					<li>Take copy of these files and folders to your computer :<br>
+					- " instantblog/.env" .env file <br>
+					- " instantblog/storage/installed" installed file <br>
+					- " public/uploads" uploads folder<br>
+					- " public/images" images folder<br><br>
+					</li>
+					<li>Delete all instantblog script files and folders on your hosting.</li>
+					<li>Upload newly downloaded files to your hosting as before (on same folder structure ) and extract it.</li>
+					<li>Change "<strong>storage/framework</strong>" folder permission to 775.</li>
+					<li>Change "<strong>storage/logs</strong>" folder permission to 775.</li>
+					<li>Change "<strong>bootstrap/cache</strong>" folder permission to 775.</li>
+					<li>Upload and replace all copied files (on step 2) to same place on your hosting</li>
+					<li>Go to <strong>yourdomain.com/update</strong> click next on update wizard.</li>
+					<li>When update complated, clear your browser caches.</li>
+				</ol>
+				<br><br><br>
+
+
+				<h3>Upgrading Instant Blog v2.0 to v2.1</h3><br>
+
+				<strong>REPLACE BELOW FILES WITH NEWLY DOWNLOADED FILES ON YOUR HOSTING</strong>
+				<ul>
+					<li>instantblog\app\Http\Controllers\EmbedController.php</li>
+				</ul>
+				<p>If you dont have it , you must add FACEBOOK_API_ID & FACEBOOK_APP_SECRET to instantblog/.env file.</p>
+				<p>You must add oEmbed product to your app on https://developers.facebook.com/apps/.</p>
+				
+				<br><br><br>
+
+				<h3>Upgrading Instant Blog v1.5 to v2.0</h3><br>
+
+				<ol>
+					<li>Go to your hosting file manager</li>
+					<li>Take copy of these files and folders to your computer :<br>
+					- " instantblog/.env" .env file <br>
+					- " instantblog/storage/installed" installed file <br>
+					- " public/uploads" uploads folder<br><br>
+					</li>
+					<li>Delete all files on your hosting.</li>
+					<li>Upload newly downloaded files to your hosting as before and extract it.</li>
+					<li>Open "instant\database\seeds\DatabaseSeeder.php" with text editor and delete these lines and re-upload to hosting ;<br>
+					$this->call(UsersTableSeeder::class);<br>
+        			$this->call(SettingsTableSeeder::class);<br>
+        			$this->call(PostsTableSeeder::class)<br>
+        			</li>
+					<li>Change "<strong>storage/framework</strong>" folder permission to 775.</li>
+					<li>Change "<strong>storage/logs</strong>" folder permission to 775.</li>
+					<li>Change "<strong>bootstrap/cache</strong>" folder permission to 775.</li>
+					<li>Upload and replace all copied files (on step 2) to same place on your hosting</li>
+					<li>Go to <strong>yourdomain.com/update</strong> click next on update wizard.</li>
+					<li>When update complated, clear your browser caches.</li>
+				</ol>
+				<br><br><br>
+
+				<h3>Upgrading Instant Blog v1.4 to v1.5</h3><br>
+
+				<strong>UPLOAD OR REPLACE BELOW FILES WITH NEWLY DOWNLOADED FILES ON YOUR HOSTING</strong>
+				<ul>
+					<li>instantblog\config\purifier.php</li>
+					<li>instantblog\resources\lang\en\messages.php</li>
+					<li>instantblog\resources\views\auth\login.blade.php</li>
+					<li>instantblog\resources\views\auth\passwords\email.blade.php</li>
+					<li>instantblog\resources\views\auth\passwords\reset.blade.php</li>
+					<li>instantblog\config\app.php</li>				
+					<li>Edit "<strong>instantblog\.env</strong>" file with your text editor and replace these lines: <br>
+						<em>MAIL_DRIVER=smtp<br>
+					MAIL_HOST=mailtrap.io<br>
+					MAIL_PORT=2525<br>
+					MAIL_USERNAME=null<br>
+					MAIL_PASSWORD=null<br>
+					MAIL_ENCRYPTION=null<br></em><br>
+
+					with:<br><br>
+
+					<em>APP_NAME=YourSiteName<br>
+					MAIL_DRIVER=smtp<br>
+					MAIL_HOST=mailtrap.io<br>
+					MAIL_PORT=2525<br>
+					MAIL_USERNAME=null<br>
+					MAIL_PASSWORD=null<br>
+					MAIL_ENCRYPTION=null<br>
+					MAIL_FROM_ADDRESS=from@yoursite.com<br>
+					MAIL_FROM_NAME=ExampleName<br></em>
+
+
+					and fill informations, save and re-upload to hosting. You can check readme for details.</li>
+					</ul>
+				<br><br><br>
+
+
+				<h3>Upgrading Instant Blog v1.3 to v1.4</h3><br>
+
+				<strong>REPLACE BELOW FILES WITH NEWLY DOWNLOADED FILES ON YOUR HOSTING</strong>
+				<ul>
+					<li>instantblog\resources\views\public\show.blade.php</li>
+					<li>instantblog\app\Http\Controllers\SettingController.php</li>
+					<li>instantblog\resources\views\posts\setting.blade.php</li>
+				</ul>
+				<br><br><br>
+				
+				<h3>Upgrading Instant Blog v1.2 to v1.3</h3><br>
+
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/Ho2PflXJUz8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<p><em>* On this video tutorial we used localhost but progress will be same for hosting too.<br>Just pay attention on folder/file names and actions. </em></p><br>
+				<ol>
+					<li>Go to your hosting file manager</li>
+					<li>Download the "<strong>.env</strong>" file inside of "<strong>instantblog</strong>" folder to your desktop.</li>
+					<li>Download the "<strong>installed</strong>" file inside of "<strong>instantblog/storage</strong>" folder to your desktop.</li>
+					<li>Delete all files inside of "<strong>instantblog</strong>" folder on your hosting.</li>
+					<li>Upload newly downloaded "<strong>instantblog.zip</strong>" to inside of "<strong>instantblog</strong>" folder and extract it.</li>
+					<li>Change "<strong>storage/framework</strong>" folder permission to 775.</li>
+					<li>Change "<strong>storage/logs</strong>" folder permission to 775.</li>
+					<li>Change "<strong>bootstrap/cache</strong>" folder permission to 775.</li>
+					<li>Edit "<strong>.env</strong>" file with your text editor add "PINTEREST_ACCESS_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXX".
+					and save it. You can check readme for creating pinterest api.</li>
+					<li>Upload and replace "<strong>.env</strong>" file from your desktop (downloaded on step 2) to inside of "<strong>instantblog</strong>" folder.</li>
+					<li>Upload "<strong>installed</strong>" file from your desktop (downloaded on step 3) to  inside of "<strong>instantblog/storage</strong>" folder.</li>
+					<li>Upload and replace newly downloaded "form.js" file to "public\js" folder on our hosting.</li>
+					<li>Clear your browser caches.</li>
+				</ol>
+				<br><br><br>
+				<h3>Upgrading Instant Blog v1.1 to v1.2</h3><br>
+				<strong>REPLACE BELOW FILES WITH NEWLY DOWNLOADED FILES ON YOUR HOSTING</strong>
+				<ul>
+					<li>instantblog\app\Http\Controllers\PublicTagsController.php</li>
+					<li>instantblog\app\Http\Controllers\PublicPostsController.php</li>
+				</ul>	
+				<br><br><br>
+
+				<h3>Upgrading Instant Blog v1.0 to v1.1</h3><br>
+
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/I1p5X4N0cuI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<p><em>* On this video tutorial we used localhost but progress will be same for hosting too.<br>Just pay attention on folder/file names and actions. </em></p><br>
+				<ol>
+					<li>Go to your hosting file manager</li>
+					<li>Download the "<strong>.env</strong>" file inside of "<strong>instantblog</strong>" folder to your desktop.</li>
+					<li>Download the "<strong>installed</strong>" file inside of "<strong>instantblog/storage</strong>" folder to your desktop.</li>
+					<li>Delete all files inside of "<strong>instantblog</strong>" folder on your hosting.</li>
+					<li>Upload newly downloaded "<strong>instantblog.zip</strong>" to inside of "<strong>instantblog</strong>" folder and extract it.</li>
+					<li>Change "<strong>storage/framework</strong>" folder permission to 775.</li>
+					<li>Change "<strong>storage/logs</strong>" folder permission to 775.</li>
+					<li>Change "<strong>bootstrap/cache</strong>" folder permission to 775.</li>
+					<li>Upload and replace "<strong>.env</strong>" file from your desktop (downloaded on step 2) to inside of "<strong>instantblog</strong>" folder.</li>
+					<li>Upload "<strong>installed</strong>" file from your desktop (downloaded on step 3) to  inside of "<strong>instantblog/storage</strong>" folder.</li>
+					<li>Upload and replace newly downloaded "instant.css" file to "public\css" folder on our hosting.</li>
+					<li>Upload and replace newly downloaded "form.js" file to "public\js" folder on our hosting.</li>
+					<li>Go to <strong>yourdomain.com/update</strong> click next on update wizard.</li>
+					<li>When update complated, clear your browser caches.</li>
+					<li>Go to <strong>yourdomain.com/login</strong> you need to activate your script. Activation details can be found on <strong>readme</strong> file.</li>
+				</ol>
+			</div>
+		</div>
+	</div> 
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+    "Theme Name": "{{ThemeName}}",
+    "Thumbnail": "thumbnail.png",
+    "Author": "{{ThemeAuthor}}",
+    "Author URI": null,
+    "Version": {{ThemeVersion}},
+    "License": "GNU General Public License v2 or later",
+    "License URI": "http:\/\/www.gnu.org\/licenses\/gpl-2.0.html",
+    "Text Domain": "{{ThemeDomain}}",
+    "status": "deactive"
+}

@@ -1,0 +1,24 @@
+use_frameworks!
+platform :ios, '11.0'
+workspace 'taxi'
+def common_pods
+  pod 'FirebaseUI/Phone'
+  pod 'Firebase/Crashlytics'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Analytics'
+  pod 'Eureka'
+  pod 'ImageRow'
+  pod 'BraintreeDropIn'
+end
+
+target 'rider' do
+  project 'rider/rider.xcodeproj'
+  common_pods
+end
+
+target 'driver' do
+  project 'driver/driver.xcodeproj'
+  common_pods
+  pod 'iCarousel'
+  pod 'Charts'
+end

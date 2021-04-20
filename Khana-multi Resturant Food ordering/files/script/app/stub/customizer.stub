@@ -1,0 +1,8 @@
+[
+	{
+        "page_name": "Home Page",
+        "page_url": "/",
+        "file_location": "welcome/home.json",
+        "status": "active"
+    }
+]

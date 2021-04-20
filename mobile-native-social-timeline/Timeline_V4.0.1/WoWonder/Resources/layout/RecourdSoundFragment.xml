@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:gravity="center_horizontal"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:showDividers="end"
+    android:id="@+id/recordLayout" 
+    android:background="?attr/colorFill" >
+    <at.markushi.ui.CircleButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:cb_color="@color/textIcon"
+        app:cb_pressedRingWidth="13dip"
+        android:src="@drawable/ic_play_dark_arrow"
+        android:id="@+id/playButton" 
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_vertical" />
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/voiceseekbar"
+        android:layout_weight="2"
+        android:layout_gravity="center_vertical"
+        android:progressTint="#ff000000"
+        android:secondaryProgressTint="#00000000"
+        android:indeterminateTint="#ffffa500"
+        android:progressBackgroundTint="#ff000000"
+        android:thumbTint="@color/accent" />
+    <at.markushi.ui.CircleButton
+        android:id="@+id/closeRecordButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:cb_color="#E65100"
+        app:cb_pressedRingWidth="13dip"
+        app:layout_columnWeight="1"
+        android:padding="10dp"
+        app:layout_rowWeight="3"
+        android:tint="@color/gnt_white"
+        android:src="@drawable/icon_close_vector" 
+        android:layout_gravity="center_vertical" />
+    <at.markushi.ui.CircleButton
+        android:id="@+id/sendRecordButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:cb_color="@color/gnt_red"
+        app:cb_pressedRingWidth="13dip"
+        app:layout_columnWeight="1"
+        android:padding="10dp"
+        android:visibility="gone"
+        app:layout_rowWeight="3"
+        android:src="@drawable/ic_tick"
+        android:layout_gravity="center_vertical" />
+</LinearLayout>

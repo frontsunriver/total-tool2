@@ -1,0 +1,101 @@
+[
+    {
+        "Plugin Name": "Contactform",
+        "Version": 1.5,
+        "Description": "Contactform plugin for Lpress cms",
+        "Author": "Amcoders",
+        "Author URI": "https:\/\/codecanyon.net\/user\/amcoders",
+        "Text Domain": "contactform",
+        "status": "active"
+    },
+    {
+        "Plugin Name": "plan",
+        "Description": "Plan plugin for Lpress cms",
+        "Author": "amcoders",
+        "Author URI": "https:\/\/codecanyon.net\/user\/amcoders",
+        "Version": "v1.0",
+        "License": "GNU General Public License v2 or later",
+        "Text Domain": "plan",
+        "status": "active"
+    },
+    {
+        "Plugin Name": "locations",
+        "Description": "Location plugin for Lpress CMS",
+        "Author": "Amcoders",
+        "Author URI": "https:\/\/codecanyon.net\/user\/amcoders",
+        "Version": 1,
+        "License": "GNU General Public License v2 or later",
+        "Text Domain": "locations",
+        "status": "active"
+    },
+    {
+        "Plugin Name": "shop",
+        "Description": "Shop plugin for Lpress CMS",
+        "Author": "amcoders",
+        "Author URI": "https:\/\/codecanyon.net\/user\/amcoders",
+        "Version": "v1.0",
+        "License": "GNU General Public License v2 or later",
+        "Text Domain": "shop",
+        "status": "active"
+    },
+    {
+        "Plugin Name": "product",
+        "Description": "Product plugin for Lpress CMS",
+        "Author": "Amcoders",
+        "Author URI": "https:\/\/codecanyon.net\/user\/amcoders",
+        "Version": 1,
+        "License": "GNU General Public License v2 or later",
+        "Text Domain": "product",
+        "status": "active"
+    },
+    {
+        "Plugin Name": "Khana table plugin",
+        "Description": "Khana Table plugin for Khana Script",
+        "Author": "Amcoders",
+        "Author URI": "https:\/\/codecanyon.net\/user\/amcoders",
+        "Version": 1,
+        "License": "GNU General Public License v2 or later",
+        "Text Domain": "table",
+        "status": "active"
+    },
+    {
+        "Plugin Name": "WebNotification",
+        "Description": "WebNotification Plugin for Lpress cms",
+        "Author": "amcoders",
+        "Author URI": "https:\/\/codecanyon.net\/user\/amcoders",
+        "Version": 1,
+        "License": "GNU General Public License v2 or later",
+        "Text Domain": "WebNotification",
+        "status": "active"
+    },
+    {
+        "Plugin Name": "update",
+        "Description": "amcoders",
+        "Author": "amcoders",
+        "Author URI": "amcoders",
+        "Version": "v1.0",
+        "License": "GNU General Public License v2 or later",
+        "Text Domain": "update",
+        "status": "active"
+    },
+    {
+        "Plugin Name": "QrMenu",
+        "Description": "QrMenu Plugin for Khana Script",
+        "Author": "Amcoders",
+        "Author URI": "https:\/\/codecanyon.net\/user\/amcoders",
+        "Version": "1",
+        "License": "GNU General Public License v2 or later",
+        "Text Domain": "qrmenu",
+        "status": "active"
+    },
+    {
+        "Plugin Name": "paymentgetways",
+        "Description": "paymentgetways for order payment",
+        "Author": "Amcoders",
+        "Author URI": "https:\/\/codecanyon.net\/user\/amcoders",
+        "Version": "1",
+        "License": "GNU General Public License v2 or later",
+        "Text Domain": "Paymentgetway",
+        "status": "active"
+    }
+]

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoriteAddressDialogViewController" customModule="rider" customModuleProvider="target">
+            <connections>
+                <outlet property="map" destination="Lu3-bp-kg3" id="GWh-kF-ETg"/>
+                <outlet property="textAddress" destination="Cwh-c8-xLB" id="e0b-NH-0bS"/>
+                <outlet property="textTitle" destination="FEG-am-1br" id="uuG-ZA-9lP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="333"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="71M-DC-fhX">
+                    <rect key="frame" x="52.5" y="0.0" width="270" height="333"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FEG-am-1br">
+                            <rect key="frame" x="8" y="8" width="254" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cwh-c8-xLB">
+                            <rect key="frame" x="8" y="60" width="254" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Lu3-bp-kg3">
+                            <rect key="frame" x="8" y="102" width="254" height="223"/>
+                        </mapView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="marker_pickup" translatesAutoresizingMaskIntoConstraints="NO" id="mVB-s0-ku3">
+                            <rect key="frame" x="117" y="168" width="36" height="51"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Lu3-bp-kg3" firstAttribute="centerX" secondItem="71M-DC-fhX" secondAttribute="centerX" id="AOM-cU-Cwd"/>
+                        <constraint firstItem="Lu3-bp-kg3" firstAttribute="top" secondItem="Cwh-c8-xLB" secondAttribute="bottom" constant="8" id="L9P-h7-MAd"/>
+                        <constraint firstItem="FEG-am-1br" firstAttribute="top" secondItem="71M-DC-fhX" secondAttribute="top" constant="8" id="MWf-ia-Uip"/>
+                        <constraint firstItem="Cwh-c8-xLB" firstAttribute="width" secondItem="71M-DC-fhX" secondAttribute="width" constant="-16" id="PZF-Zp-rlU"/>
+                        <constraint firstItem="Cwh-c8-xLB" firstAttribute="top" secondItem="FEG-am-1br" secondAttribute="bottom" constant="8" id="XMm-ub-V7s"/>
+                        <constraint firstAttribute="bottom" secondItem="Lu3-bp-kg3" secondAttribute="bottom" constant="8" id="akl-wa-5gu"/>
+                        <constraint firstItem="FEG-am-1br" firstAttribute="centerX" secondItem="71M-DC-fhX" secondAttribute="centerX" id="bVy-2c-ame"/>
+                        <constraint firstItem="Lu3-bp-kg3" firstAttribute="width" secondItem="71M-DC-fhX" secondAttribute="width" constant="-16" id="bmu-Lg-hxQ"/>
+                        <constraint firstItem="Cwh-c8-xLB" firstAttribute="centerX" secondItem="71M-DC-fhX" secondAttribute="centerX" id="d2d-7d-cph"/>
+                        <constraint firstItem="FEG-am-1br" firstAttribute="width" secondItem="71M-DC-fhX" secondAttribute="width" constant="-16" id="fFq-xh-7OT"/>
+                        <constraint firstAttribute="width" constant="270" id="huL-JQ-BFy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="71M-DC-fhX" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="MZc-iL-Gxr"/>
+                <constraint firstItem="71M-DC-fhX" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Tg8-TR-ZDH"/>
+                <constraint firstItem="71M-DC-fhX" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="d0z-TF-Se6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.5" y="-114.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="marker_pickup" width="36" height="51.5"/>
+    </resources>
+</document>

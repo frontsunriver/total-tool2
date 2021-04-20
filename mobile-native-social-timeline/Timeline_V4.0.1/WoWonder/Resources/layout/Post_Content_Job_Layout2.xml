@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="155dp"
+    android:id="@+id/mainLayout"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="0dp">
+    <Button
+        android:text="@string/Lbl_apply_now"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/JobButton"
+        android:background="#ff7166"
+        android:textColor="@color/textLight_color"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp" />
+    <TextView
+        android:layout_below="@+id/JobButton"
+        android:id="@+id/minimum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:layout_marginStart="11dp"
+        android:text="@string/Lbl_minimum"
+        android:layout_gravity="center"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/minimumNumber"
+        android:layout_marginStart="11dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/minimum"
+        android:textSize="12dp" />
+    <TextView
+        android:layout_below="@+id/JobButton"
+        android:id="@+id/maximum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:layout_toEndOf="@+id/minimum"
+        android:layout_marginStart="60dp"
+        android:text="@string/Lbl_maximum"
+        android:layout_gravity="center"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/maximumNumber"
+        android:layout_marginStart="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/minimum"
+        android:layout_below="@+id/maximum"
+        android:layout_centerHorizontal="true"
+        android:textSize="12dp" />
+    <WoWonder.Library.Anjo.SuperTextLibrary.SuperTextView
+        android:id="@+id/description"
+        android:layout_below="@+id/minimumNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_alignParentBottom="true"
+        android:gravity="center|start"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="0dp"
+        android:paddingBottom="0dp"
+        android:paddingStart="1dp"
+        android:paddingEnd="5dp"
+        android:maxLines="2"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:hyphenationFrequency="none"
+        android:textSize="14sp" />
+</RelativeLayout>

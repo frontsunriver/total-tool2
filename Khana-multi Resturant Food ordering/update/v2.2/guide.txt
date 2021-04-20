@@ -1,0 +1,32 @@
+Khana v2.2 Update Documentation
+
+Note:
+
+This update is just for who is using v1.5, if you're still using older verisons, PLEASE UPDATE the script version by version.
+
+// ------------------------------------- //
+
+1) How To Update
+
+- BACKUP, BACKUP, AND BACKUP everything, files, DATABASE.
+
+- upload "update" directory at root/script/am-content/plugins/
+
+- login as admin go to click to update option you will find it on menu bottom 
+
+- upload v2.2.zip file and click to update
+
+
+
+// ------------------------------------- //
+
+you will get every resource from update directory.
+if you're facing any problems, please contact with us we will help u :) 
+
+Created: 7/08/2020
+Last Update: 10/09/2020
+By: AMCoders
+Email: amcoders360@gmail.com
+
+
+Copyright © 2020 Khana All rights reserved

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15400" systemVersion="18G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ColorID" representedClassName="ColorID" syncable="YES" codeGenerationType="class">
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PostColor" inverseName="relationship" inverseEntity="PostColor"/>
+    </entity>
+    <entity name="Get_Site_Setting" representedClassName="Get_Site_Setting" syncable="YES" codeGenerationType="class"/>
+    <entity name="PostColor" representedClassName="PostColor" syncable="YES" codeGenerationType="class">
+        <attribute name="color_1" optional="YES" attributeType="String"/>
+        <attribute name="color_2" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="text_color" optional="YES" attributeType="String"/>
+        <attribute name="time" optional="YES" attributeType="String"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ColorID" inverseName="relationship" inverseEntity="ColorID"/>
+    </entity>
+    <elements>
+        <element name="Get_Site_Setting" positionX="-84.9375" positionY="-133.171875" width="128" height="43"/>
+        <element name="PostColor" positionX="-129.12890625" positionY="-379.3515625" width="179.59375" height="148"/>
+        <element name="ColorID" positionX="120.95703125" positionY="-278.60546875" width="128" height="58"/>
+    </elements>
+</model>

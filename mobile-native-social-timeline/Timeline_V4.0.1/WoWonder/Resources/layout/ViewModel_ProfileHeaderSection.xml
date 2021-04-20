@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="4"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:id="@+id/CountFollowersLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+          android:id="@+id/txtFollowers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Lbl_Followers"
+            android:textColor="@color/colorIcon"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/CountFollowers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="18sp"/> 
+
+    </LinearLayout>
+     
+    <LinearLayout
+        android:id="@+id/CountFollowingLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+          android:id="@+id/txtFollowing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Lbl_Following"
+            android:textColor="@color/colorIcon"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/CountFollowing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+     
+    <LinearLayout
+        android:id="@+id/CountLikesLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Btn_Likes"
+            android:textColor="@color/colorIcon"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/CountLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+     
+    <LinearLayout
+        android:id="@+id/CountPointsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Btn_Points"
+            android:textColor="@color/colorIcon"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/CountPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

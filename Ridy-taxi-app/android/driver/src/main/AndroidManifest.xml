@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.innomalist.taxi.driver"
+    android:hardwareAccelerated="true">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name="com.innomalist.taxi.common.MyTaxiApplication"
+        android:allowBackup="true"
+        android:clearTaskOnLaunch="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
+        android:label="@string/driver_app_name"
+        tools:replace="android:label"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        tools:ignore="UnusedAttribute"
+        android:theme="@style/Theme.Default">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <activity android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="${applicationId}.braintree" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.innomalist.taxi.common.activities.chargeAccount.ChargeAccountActivity" />
+        <activity android:name="com.innomalist.taxi.driver.activities.splash.SplashActivity" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.innomalist.taxi.driver.activities.main.MainActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.innomalist.taxi.driver.activities.profile.ProfileActivity" />
+        <activity android:name="com.innomalist.taxi.driver.activities.waitingForPayment.WaitingForPaymentActivity" />
+        <activity android:name="com.innomalist.taxi.driver.activities.travel.TravelActivity" android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:theme="@style/Theme.Default"/>
+        <activity
+            android:name="com.innomalist.taxi.driver.activities.statistics.StatisticsActivity"/>
+        <activity android:name="com.innomalist.taxi.driver.activities.about.AboutActivity"/>
+        <activity android:name="com.innomalist.taxi.common.activities.payment.PaymentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="driver.payment" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

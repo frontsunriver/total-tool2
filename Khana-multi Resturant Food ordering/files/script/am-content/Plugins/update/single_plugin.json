@@ -1,0 +1,11 @@
+{
+    "Plugin Name": "this plugin will update your application",
+    "Description": "update",
+    "Author": "amcoders",
+    "Author URI": "https://codecanyon.net/user/amcoders",
+    "Version": v1.0,
+    "License": "GNU General Public License v2 or later",
+    "License URI": "http:\/\/www.gnu.org\/licenses\/gpl-2.0.html",
+    "Text Domain": "update",
+    "status": "deactive"
+}

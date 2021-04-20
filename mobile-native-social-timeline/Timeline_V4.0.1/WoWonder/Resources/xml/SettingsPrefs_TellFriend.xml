@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  <!--Privacy SECTION-->
+  <PreferenceCategory android:layout="@xml/divider"></PreferenceCategory>
+  <PreferenceCategory  android:key="SectionEarnings_key" android:title="@string/Lbl_Earnings" >
+
+    <Preference
+      android:key="MyAffiliates_key"
+      android:title="@string/Lbl_MyAffiliates"/>
+
+    <Preference
+      android:key="MyBalance_key"
+      android:title="@string/Lbl_MyBalance"/>
+ 
+    <Preference
+      android:key="MyPoints_key"
+      android:title="@string/Lbl_MyPoints"/>
+
+    <Preference
+      android:key="Withdrawals_key"
+      android:title="@string/Lbl_Withdrawals" />
+
+  </PreferenceCategory>
+
+  <PreferenceCategory android:layout="@xml/divider"></PreferenceCategory>
+  <PreferenceCategory android:key="SectionInvite_key" android:title="@string/Lbl_TellFriend">
+
+    <Preference
+      android:key="InviteFriends_key"
+      android:title="@string/Lbl_Invite_Friends"/>
+
+    <Preference
+      android:key="Share_key"
+      android:title="@string/Lbl_Share"
+      android:summary= "@string/Lbl_Summary_Share"/>
+
+
+  </PreferenceCategory>
+
+
+</PreferenceScreen>

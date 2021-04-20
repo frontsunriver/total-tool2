@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorBubble"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+  <com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+                app:theme="@style/ToolbarTheme"
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:layout_gravity="top"
+      app:titleTextAppearance="@style/Toolbar.TitleText"
+      android:background="?attr/colorFill" /> 
+  </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:layout_marginBottom="1dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="fill_vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/accent"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="0dp"
+                android:padding="10dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+                <TextView
+                  android:id="@+id/myBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="Your balance is $0, minimum withdrawal request is $50"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/textLight_color" />
+            </androidx.cardview.widget.CardView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <!--Withdraw Method Section -->
+            <LinearLayout
+                android:id="@+id/LayoutWithdrawMethod"
+                android:paddingTop="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/IconWithdrawMethod"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="#"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:layout_marginStart="5dp" />
+                <EditText
+                    android:id="@+id/WithdrawMethodEditText"
+                    style="@style/EditTextNormalStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Lbl_WithdrawMethod"
+                    android:textSize="15sp"
+                    android:gravity="start"
+                    android:background="@drawable/EditTextStyleOne"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="3dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <!--Amount Section -->
+            <LinearLayout
+                android:id="@+id/LayoutAmount"
+                android:paddingTop="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/IconAmount"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="#"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:layout_marginStart="5dp" />
+                <EditText
+                    android:id="@+id/AmountEditText"
+                    style="@style/EditTextNormalStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Lbl_Amount"
+                    android:textSize="15sp"
+                    android:gravity="start"
+                    android:inputType="number"
+                    android:background="@drawable/EditTextStyleOne"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="3dp" />
+            </LinearLayout>
+            <!--PayPal Email Section -->
+            <LinearLayout
+                android:id="@+id/LayoutPayPalEmail"
+                android:paddingTop="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/IconPayPalEmail"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="#"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:layout_marginStart="5dp" />
+                <EditText
+                    android:id="@+id/PayPalEmailEditText"
+                    style="@style/EditTextNormalStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Lbl_PayPalEmail"
+                    android:textSize="15sp"
+                    android:inputType="textWebEmailAddress"
+                    android:gravity="start"
+                    android:background="@drawable/EditTextStyleOne"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="3dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LayoutBank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone" 
+                android:layout_gravity="fill_vertical">
+                <!--IBAN Section -->
+                <LinearLayout
+                    android:id="@+id/LayoutAccountNumber"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/IconAccountNumber"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="#"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5dp" />
+                    <EditText
+                        android:id="@+id/AccountNumberEditText"
+                        style="@style/EditTextNormalStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Lbl_AccountNumber"
+                        android:textSize="15sp"
+                        android:gravity="start"
+                        android:background="@drawable/EditTextStyleOne"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="3dp" />
+                </LinearLayout>
+                <!--Country Section -->
+                <LinearLayout
+                    android:id="@+id/LayoutCountry"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/IconCountry"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="#"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5dp" />
+                    <EditText
+                        android:id="@+id/CountryEditText"
+                        style="@style/EditTextNormalStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Lbl_Country"
+                        android:textSize="15sp"
+                        android:gravity="start"
+                        android:background="@drawable/EditTextStyleOne"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="3dp" />
+                </LinearLayout>
+                <!--Account Name Section-->
+                <LinearLayout
+                    android:id="@+id/LayoutAccountName"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/IconAccountName"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="#"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5dp" />
+                    <EditText
+                        android:id="@+id/AccountNameEditText"
+                        style="@style/EditTextNormalStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Lbl_AccountName"
+                        android:textSize="15sp"
+                        android:gravity="start"
+                        android:background="@drawable/EditTextStyleOne"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="3dp" />
+                </LinearLayout>
+                <!--Swift Code Section-->
+                <LinearLayout
+                    android:id="@+id/LayoutSwiftCode"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/IconSwiftCode"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="#"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5dp" />
+                    <EditText
+                        android:id="@+id/SwiftCodeEditText"
+                        style="@style/EditTextNormalStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Lbl_SwiftCode"
+                        android:textSize="15sp"
+                        android:gravity="start"
+                        android:background="@drawable/EditTextStyleOne"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="3dp" />
+                </LinearLayout>
+                <!--Address Section-->
+                <LinearLayout
+                    android:id="@+id/LayoutAddress"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="5dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/IconAddress"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="#"
+                        android:gravity="top|center"
+                        android:layout_gravity="start"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5dp" />
+                    <EditText
+                        android:id="@+id/AddressEditText"
+                        style="@style/EditTextNormalStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/EditTextStyleOne"
+                        android:hint="@string/Lbl_Address"
+                        android:textSize="15sp"
+                        android:gravity="start"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="3dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--Buttons Section -->
+            <LinearLayout
+                android:paddingTop="5dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/RequestWithdrawalButton"
+                    android:background="@drawable/follow_button_profile_friends_pressed"
+                    android:layout_height="36dp"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:text="@string/Lbl_RequestWithdrawal"
+                    android:textColor="@color/textLight_color"
+                    android:textSize="12sp"
+                    android:clickable="true"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="19dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp" />
+            </LinearLayout> 
+            <View 
+	            android:layout_height="20dp"
+	            android:layout_width="match_parent" />
+            <WoWonder.Helpers.Ads.TemplateView
+	            android:id="@+id/my_template"
+	            android:padding="8dp"
+	            android:visibility="gone"
+	            app:gnt_template_type="@layout/gnt_medium_template_view"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="bottom"
+	            android:layout_alignParentBottom="true"
+	            android:layout_centerHorizontal="true" /> 
+            <View 
+	            android:layout_height="?android:attr/actionBarSize"
+	            android:layout_width="match_parent" /> 
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

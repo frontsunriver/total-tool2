@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+      <TextView
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:id="@+id/number" 
+          android:background="@drawable/circle_drawable"
+          android:backgroundTint="#efefef"
+          android:text="T"
+	      android:gravity="center"
+          android:textSize="20sp"  
+          android:foregroundGravity="center_horizontal"
+          android:layout_centerVertical="true"
+          android:layout_marginStart="15dp"
+          android:layout_marginTop="20dp" 
+          android:textColor="@color/accent" 
+          android:layout_marginBottom="2dp" /> 
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/text_input"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:padding="9dp"
+        android:textColorHint="?attr/colorReact"
+        android:textSize="13sp"
+        android:background="@drawable/create_border_edit_text"
+        android:hint="@string/Lbl2_Polls"
+        android:layout_toEndOf="@+id/badge"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="5dp"
+        android:layout_centerVertical="true" />
+    <Button
+        android:id="@+id/Close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="6dp"
+        android:text="X"
+        android:lines="1"
+        android:maxLines="1"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_centerVertical="true" 
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/follow_button_profile_friends"
+        android:tag="false"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textAllCaps="false" />
+</RelativeLayout>

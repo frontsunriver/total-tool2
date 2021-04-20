@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/selectableItemBackground"
+		android:paddingEnd="5dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="0dp"
+	android:focusable="true"
+        android:clickable="true"
+      android:layout_marginStart="3dp"
+	   android:foreground="?attr/selectableItemBackground"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/Image"
+            android:scaleType="centerCrop"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+		  android:layout_marginStart="5dp"
+		  android:layout_marginEnd="10dp"
+			android:src="@drawable/googleg_disabled_color_18"/>
+      
+		<TextView
+        android:id="@+id/groupName"
+			android:layout_toEndOf ="@+id/Image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:textSize="14dp"
+        android:layout_marginTop="2dp"
+        android:focusable="false"
+		android:textStyle="bold"
+		android:ellipsize="end"
+		android:lines="1"
+		android:maxLines="1"
+        android:clickable="false"
+        android:textAlignment="textStart"/>
+
+		<TextView
+        android:id="@+id/groupUsers"
+			android:layout_toEndOf ="@+id/Image"
+			android:layout_below="@+id/groupName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#999"
+        android:textSize="10dp"
+        android:layout_marginTop="3dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:textAlignment="textStart"/>
+
+		<TextView
+        android:id="@+id/groupButtonJoin"
+			android:layout_toEndOf ="@+id/Image"
+			android:layout_below="@+id/groupUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/accent"
+        android:textSize="14dp"
+        android:layout_marginTop="12dp"
+		android:textAllCaps="true"
+        android:text="@string/Lbl_Join"
+		android:focusable="true"
+        android:clickable="true"
+		android:layout_marginStart="-6dp"
+		android:layout_marginEnd="-20dp"
+		android:layout_marginBottom="-7dp"
+		android:paddingStart="6dp"
+		android:paddingEnd="6dp"
+		android:paddingVertical="0dp"
+		android:background="?attr/selectableItemBackground"
+		android:textStyle="bold"
+        android:textAlignment="textStart"/>
+
+	<View android:layout_toEndOf ="@+id/Image"
+			
+		 android:layout_marginTop="15dp"
+		android:layout_alignParentBottom="true"
+		
+		android:layout_width="match_parent"
+        android:layout_height="1dp"
+		android:background="#BDBDBD" />
+    </RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="wrap_content"
+	android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginEnd="8dp"
+    android:id="@+id/Image_container"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/center_content_profile_scroll_over">
+    <ImageView
+        android:id="@+id/ImageGroup"
+        android:scaleType="centerCrop"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/default_group"
+        android:gravity="start" />
+    <TextView
+        android:id="@+id/Group_titile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gnt_black"
+        android:textSize="13dp"
+        android:textStyle="normal"
+        android:focusable="false"
+        android:clickable="false"
+        android:lines="2"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_margin="5dp"/>
+    <ImageView
+        android:id="@+id/colorbutton2"
+        android:layout_width="27dip"
+        android:layout_height="27dip"
+        android:layout_gravity="end"
+		android:background="@drawable/shape_circle_stroke"
+        android:src="@drawable/sharegroup"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:tint="#444"
+        android:visibility="gone"/>
+</LinearLayout>

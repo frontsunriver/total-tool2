@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/textTitle"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:text="@string/Lbl_SocialLinks"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="1dp" />   
+       
+    <LinearLayout
+        android:id="@+id/socialLiner"
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="start"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal" >
+        <at.markushi.ui.CircleButton
+            android:id="@+id/facebook_button"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            app:cb_color="#ff3b5998"
+            app:cb_pressedRingWidth="3dip"
+            android:layout_marginEnd="7dp"
+            android:src="@drawable/ic_facebook_logo"
+            android:layout_weight="0"
+            android:layout_gravity="center" />
+        <at.markushi.ui.CircleButton
+            android:id="@+id/instegram_button"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            app:cb_color="#ff8a3ab9"
+            app:cb_pressedRingWidth="3dip"
+            android:layout_marginEnd="7dp"
+            android:src="@drawable/ic_instagram_logo"
+            android:layout_weight="0"
+            android:layout_gravity="center" />
+        <at.markushi.ui.CircleButton
+            android:id="@+id/twitter_button"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            app:cb_color="#ff55acee"
+            app:cb_pressedRingWidth="3dip"
+            android:layout_marginEnd="7dp"
+            android:src="@drawable/ic_twitter"
+            android:layout_weight="0"
+            android:layout_gravity="center" />
+        <at.markushi.ui.CircleButton
+            android:id="@+id/google_button"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            app:cb_color="#ffdd4b39"
+            app:cb_pressedRingWidth="3dip"
+            android:layout_marginEnd="7dp"
+            android:src="@drawable/ic_google_plus"
+            android:layout_weight="0"
+            android:layout_gravity="center" />
+        <at.markushi.ui.CircleButton
+            android:id="@+id/vk_button"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            app:cb_color="#ff45668e"
+            app:cb_pressedRingWidth="3dip"
+            android:layout_marginEnd="7dp"
+            android:src="@drawable/ic_vk"
+            android:layout_weight="0"
+            android:layout_gravity="center" />
+        <at.markushi.ui.CircleButton
+            android:id="@+id/youtube_button"
+            android:layout_width="40dp"
+            android:layout_height="40dip"
+            app:cb_color="#ff0000"
+            app:cb_pressedRingWidth="3dip"
+            android:layout_marginEnd="7dp"
+            android:src="@drawable/ic_youtube_logo"
+            android:layout_weight="0"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</LinearLayout>

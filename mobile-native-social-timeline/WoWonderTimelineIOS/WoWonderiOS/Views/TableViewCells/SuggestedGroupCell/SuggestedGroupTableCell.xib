@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="suggestedTableCell" rowHeight="217" id="KGk-i7-Jjw" customClass="SuggestedGroupTableCell" customModule="WoWonder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="217"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="217"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="jk1-Sw-fHE">
+                        <rect key="frame" x="10" y="31" width="310" height="178"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gMg-4j-4kO">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vxt-R7-mW5">
+                        <rect key="frame" x="0.0" y="8" width="320" height="15"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChevronRight" translatesAutoresizingMaskIntoConstraints="NO" id="07Z-0q-TRY">
+                                <rect key="frame" x="295" y="0.0" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="EuB-au-h5s"/>
+                                    <constraint firstAttribute="height" constant="15" id="mfB-Tg-5LE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See All" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5q-SE-RxM">
+                                <rect key="frame" x="243" y="-0.5" width="44" height="16"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="9wg-yU-qKb"/>
+                            <constraint firstItem="07Z-0q-TRY" firstAttribute="leading" secondItem="S5q-SE-RxM" secondAttribute="trailing" constant="8" id="Agi-DT-Ihd"/>
+                            <constraint firstAttribute="trailing" secondItem="07Z-0q-TRY" secondAttribute="trailing" constant="10" id="lYV-yK-EWO"/>
+                            <constraint firstItem="07Z-0q-TRY" firstAttribute="centerY" secondItem="Vxt-R7-mW5" secondAttribute="centerY" id="rHh-UP-qdu"/>
+                            <constraint firstItem="S5q-SE-RxM" firstAttribute="centerY" secondItem="Vxt-R7-mW5" secondAttribute="centerY" id="xD5-Ip-fvf"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZb-IM-tWK">
+                        <rect key="frame" x="0.0" y="8" width="320" height="15"/>
+                        <connections>
+                            <action selector="SeeAll:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="34U-iN-8Wv"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="jk1-Sw-fHE" firstAttribute="top" secondItem="Vxt-R7-mW5" secondAttribute="bottom" constant="8" id="Bug-AO-Lxc"/>
+                    <constraint firstItem="pZb-IM-tWK" firstAttribute="trailing" secondItem="Vxt-R7-mW5" secondAttribute="trailing" id="FCU-xo-BWQ"/>
+                    <constraint firstItem="pZb-IM-tWK" firstAttribute="bottom" secondItem="Vxt-R7-mW5" secondAttribute="bottom" id="Gcn-Wu-yx6"/>
+                    <constraint firstItem="pZb-IM-tWK" firstAttribute="leading" secondItem="Vxt-R7-mW5" secondAttribute="leading" id="JM7-Fm-xoO"/>
+                    <constraint firstItem="jk1-Sw-fHE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Sm7-LH-tOr"/>
+                    <constraint firstAttribute="bottom" secondItem="jk1-Sw-fHE" secondAttribute="bottom" constant="8" id="VQi-H2-K2o"/>
+                    <constraint firstItem="pZb-IM-tWK" firstAttribute="top" secondItem="Vxt-R7-mW5" secondAttribute="top" id="Z09-a1-hvb"/>
+                    <constraint firstAttribute="trailing" secondItem="jk1-Sw-fHE" secondAttribute="trailing" id="hnP-Ah-n4q"/>
+                    <constraint firstItem="Vxt-R7-mW5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wOV-Gk-K3f"/>
+                    <constraint firstAttribute="trailing" secondItem="Vxt-R7-mW5" secondAttribute="trailing" id="yY8-3h-igI"/>
+                    <constraint firstItem="Vxt-R7-mW5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="zbi-95-Vcp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="jk1-Sw-fHE" id="UwS-Tv-mRH"/>
+                <outlet property="sellLbl" destination="S5q-SE-RxM" id="XVr-Vl-aSd"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="157.70089285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ChevronRight" width="16" height="25"/>
+    </resources>
+</document>

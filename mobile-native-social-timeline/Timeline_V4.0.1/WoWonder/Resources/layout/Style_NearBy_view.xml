@@ -1,0 +1,84 @@
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="?attr/colorFill"
+    app:cardCornerRadius="2dp" 
+    app:cardElevation="2dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackground">
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <refractored.controls.CircleImageView
+                android:id="@+id/people_profile_sos"
+                android:scaleType="centerCrop"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/textLight_color"
+                android:src="@drawable/no_profile_image"
+                android:background="@drawable/profile_shadow_social" />
+            <refractored.controls.CircleImageView
+                android:id="@+id/ImageLastseen"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/textLight_color"
+                android:layout_alignBottom="@id/people_profile_sos"
+                android:layout_marginBottom="2dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="55dp"
+                android:src="@drawable/green_color"
+                android:layout_above="@id/people_profile_sos" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/people_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/people_profile_sos"
+            android:lines="1"
+            android:maxLines="1" 
+            android:paddingEnd="10dp"
+            android:drawablePadding="4dp"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/people_profile_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/people_profile_name"
+            android:textColor="#b7b7b7"
+            android:textSize="12sp"
+            android:lines="1"
+            android:maxLines="1"
+            android:layout_marginTop="1dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:id="@+id/btn_follow_people"
+            android:textSize="12sp"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_below="@+id/people_profile_time"
+            android:background="@drawable/follow_button_profile_friends"
+            android:tag="false"
+            android:paddingStart="17dp"
+            android:paddingEnd="17dp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:text="@string/Lbl_Follow"
+            android:textColor="@color/accent"
+            android:layout_marginTop="7dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

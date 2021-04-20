@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:background="@drawable/rounded_dialog"
+    android:layout_height="wrap_content">
+    <!--Head Page -->
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:id="@+id/IconBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="&gt;"
+            android:textSize="18sp"
+            android:textColor="#888" 
+            android:paddingEnd="25dp" 
+            android:paddingStart="25dp"/>
+        <TextView
+            android:id="@+id/titlepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_centerVertical="true"
+            android:text="@string/Lbl_Filter"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"
+            
+            android:layout_marginStart="61dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/colorDivider" />
+    </RelativeLayout> 
+     <!--Gender Section -->
+    <RelativeLayout
+        android:paddingTop="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="85dp">
+        
+        <TextView
+             android:layout_marginStart="5dp"
+             android:drawableStart="@drawable/icon_near_gender_vector"
+            style="@style/CustomTextdrawableStyle"
+            android:id="@+id/GenderTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/Lbl_Gender"
+            android:textSize="14sp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/GenderRecyler"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:layout_below="@+id/GenderTextView"
+          android:orientation="horizontal"
+          
+          tools:listitem="@layout/Style_Categories_View"
+          android:layout_marginTop="10dp"
+          android:layout_marginEnd="20dp"
+          android:layout_marginStart="40dp" /> 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+           
+            android:layout_marginStart="50dp"
+            android:background="?attr/colorDivider" />
+    </RelativeLayout>
+    <!--Distance Section -->
+    <RelativeLayout
+        android:paddingTop="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="85dp">
+       
+        <TextView
+              android:layout_marginStart="5dp"
+             android:drawableStart="@drawable/icon_near_distance"
+            style="@style/CustomTextdrawableStyle"
+            android:id="@+id/DistanceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/Lbl_Distance"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/Distancenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignParentEnd="true"
+            android:textSize="12sp"
+              android:layout_marginTop="6dp"
+            android:layout_marginEnd="30dp" />
+        <SeekBar
+            android:id="@+id/distanceSeeker"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="31dp"
+            android:theme="@style/MySeekBar"
+            android:progress="0"
+            android:layout_below="@+id/DistanceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="50dp"
+            android:background="?attr/colorDivider" />
+    </RelativeLayout>
+    <!--Online Section -->
+   <RelativeLayout
+        android:paddingTop="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="86dp">
+     
+        <TextView
+             android:layout_marginStart="5dp"
+             android:drawableStart="@drawable/icon_search_global_vector"
+            style="@style/CustomTextdrawableStyle"
+            android:id="@+id/OnlineTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/Lbl_Status"
+            android:textSize="14sp"
+            android:layout_toEndOf="@+id/IconOnline" />
+        <Button
+            android:id="@+id/OfflineButton"
+            android:layout_below="@+id/OnlineTextView"
+            android:background="@drawable/follow_button_profile_friends"
+            android:layout_height="26dp"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:text="@string/Lbl_Offline"
+            
+            android:textSize="12sp"
+            android:clickable="true"
+            android:textAllCaps="false"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="11dp"
+            android:layout_centerInParent="true"
+            android:gravity="center" />
+        <Button
+            android:id="@+id/OnlineButton"
+            android:layout_below="@+id/OnlineTextView"
+            android:layout_toStartOf="@+id/OfflineButton"
+            android:background="@drawable/follow_button_profile_friends"
+            android:layout_height="26dp"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:text="@string/Lbl_Online"
+            
+            android:textSize="12sp"
+            android:clickable="true"
+            android:textAllCaps="false"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="11dp"
+            android:gravity="center" />
+        <Button
+            android:id="@+id/BothStatusButton"
+            android:layout_below="@+id/OnlineTextView"
+            android:layout_toEndOf="@+id/OfflineButton"
+            android:background="@drawable/follow_button_profile_friends_pressed"
+            android:layout_height="26dp"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:text="@string/Lbl_All"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:clickable="true"
+            android:textAllCaps="false"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="11dp"
+            android:gravity="center" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="50dp"
+            android:background="?attr/colorDivider" />
+    </RelativeLayout>
+	  <!--Relationship Section -->
+    <RelativeLayout
+        android:id="@+id/LayoutRelationship"
+        android:paddingTop="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+      
+        <TextView
+              android:layout_marginStart="5dp"
+             android:drawableStart="@drawable/icon_relationship_vector"
+            style="@style/CustomTextdrawableStyle"
+            android:id="@+id/RelationshipTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_centerVertical="true"
+            android:text="@string/Lbl_Relationship"
+            android:textSize="14sp"
+            android:layout_toEndOf="@+id/IconRelationship" />
+        <TextView
+            android:id="@+id/textRelationship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="12sp"
+            
+            android:layout_marginEnd="40dp" />
+        <TextView
+            android:id="@+id/RelationshipMoreIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="&gt;"
+            android:layout_alignParentEnd="true"
+            android:textSize="13sp"
+             android:textColor="?attr/colorDivider"
+            android:layout_marginEnd="20dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="50dp"
+            android:background="?attr/colorDivider" />
+    </RelativeLayout>  
+    <!--Buttons Section -->
+    <RelativeLayout
+        android:paddingTop="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/Resetbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/Lbl_ResetFilter"
+            android:textSize="12sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/accent"
+            android:textAllCaps="true"
+            android:layout_marginEnd="10dp" />
+        <Button
+            android:id="@+id/ApplyButton"
+            android:layout_below="@+id/Resetbutton"
+            android:background="@drawable/follow_button_profile_friends_pressed"
+            android:layout_height="36dp"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:text="@string/Lbl_ApplyFilter"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:clickable="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="19dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp" />
+    </RelativeLayout>
+</LinearLayout>

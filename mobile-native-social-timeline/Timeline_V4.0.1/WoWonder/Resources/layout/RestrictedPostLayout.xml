@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/main"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+  <LinearLayout
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#E6000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+      android:id="@+id/restrictedIcon"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:focusable="false"
+      android:clickable="false"
+      android:tint="#ffffff"
+      android:src="@drawable/ic_action_eya_password"
+      android:scaleType="centerCrop" />
+    <TextView
+      android:id="@+id/restrictedTextview"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#ffff"
+      android:textSize="14dp"
+      android:layout_centerInParent="true"
+      android:textStyle="normal"
+      android:text="@string/Lbl_ThisPostContainsSensitive"
+      android:layout_marginEnd="15dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginStart="15dp"
+	  android:gravity="center_horizontal"
+	  android:layout_gravity="center_horizontal"
+      android:focusable="false"
+      android:clickable="false" /> 
+    <Button
+      android:id="@+id/seePostButton"
+      android:background="@xml/other_acc_button_bg"
+      android:layout_height="36dp"
+      android:layout_width="match_parent"
+      android:padding="5dp"
+      style="@style/Base.TextAppearance.AppCompat.Body1"
+      android:text="@string/Lbl_SeePost"
+      android:textColor="@android:color/white"
+      android:textSize="12sp"
+      android:textAllCaps="false"
+      android:clickable="true"
+      android:layout_marginEnd="50dp"
+      android:layout_marginStart="50dp"
+      android:layout_marginTop="19dp"
+      android:gravity="center"
+      android:layout_marginBottom="10dp" />
+  </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data />
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/map_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <androidx.fragment.app.FragmentContainerView
+                        android:id="@+id/map"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <com.arlib.floatingsearchview.FloatingSearchView
+                    android:id="@+id/search_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:floatingSearch_close_search_on_keyboard_dismiss="true"
+                    app:floatingSearch_dimBackground="true"
+                    app:floatingSearch_leftActionMode="showHamburger"
+                    app:floatingSearch_menu="@menu/search_view"
+                    app:floatingSearch_searchBarMarginLeft="8dp"
+                    app:floatingSearch_searchBarMarginRight="8dp"
+                    app:floatingSearch_searchBarMarginTop="8dp"
+                    app:floatingSearch_showSearchKey="false"
+                    app:floatingSearch_searchHint=""
+                    app:floatingSearch_suggestionsListAnimDuration="250" >
+
+                    <TextView
+                        android:id="@+id/search_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/search_default"
+                        android:ellipsize="marquee"
+                        android:fadingEdge="horizontal"
+                        android:singleLine="true"
+                        android:layout_marginStart="56dp"
+                        android:layout_marginEnd="150dp"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="25dp"/>
+                </com.arlib.floatingsearchview.FloatingSearchView>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/expanding_marker"
+                    android:layout_width="128dp"
+                    android:layout_height="160dp"
+                    android:layout_marginBottom="120dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_fileName="expanding_marker.json"
+                    app:lottie_scale="2"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_confirm_pickup"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:text="@string/confirm_pickup_location"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:weightSum="2">
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_confirm_destination"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/confirm_destination"
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:visibility="gone"/>
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_add_destination"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_destination"
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:visibility="gone"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bottom_sheet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:behavior_peekHeight="0dp"
+                app:layout_behavior="com.innomalist.taxi.common.components.WABottomSheetBehavior">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/time"
+                        android:text="@string/pickup_time"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_margin="8dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_request"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/confirm_service_empty"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintStart_toEndOf="@id/button_time"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+                    <com.innomalist.taxi.common.components.WrapContentViewPager
+                        android:id="@+id/service_types_view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:clipToPadding="true"
+                        app:layout_constraintBottom_toTopOf="@id/button_request"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tab_categories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/service_types_view_pager"/>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/drawer_header"
+            app:menu="@menu/main_drawer" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

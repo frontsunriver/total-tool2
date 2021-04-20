@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BlockedUsersTableItem" rowHeight="79" id="7Di-hE-6GJ" customClass="BlockedUsersTableItem" customModule="News_Feed" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Di-hE-6GJ" id="FuX-M3-5Di">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ubipro" translatesAutoresizingMaskIntoConstraints="NO" id="zn8-hR-wNG" customClass="Roundimage" customModule="News_Feed" customModuleProvider="target">
+                        <rect key="frame" x="16" y="9.5" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="1XM-b1-DOk"/>
+                            <constraint firstAttribute="height" constant="60" id="4AD-N6-92N"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Xz5-e8-4of">
+                        <rect key="frame" x="92" y="21.5" width="212" height="36"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDc-xN-UeA">
+                                <rect key="frame" x="0.0" y="0.0" width="212" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hy-Kf-YWA">
+                                <rect key="frame" x="0.0" y="20" width="212" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zn8-hR-wNG" firstAttribute="leading" secondItem="FuX-M3-5Di" secondAttribute="leading" constant="16" id="KTf-wL-3jF"/>
+                    <constraint firstAttribute="trailing" secondItem="Xz5-e8-4of" secondAttribute="trailing" constant="16" id="Yfq-Ty-9QP"/>
+                    <constraint firstItem="Xz5-e8-4of" firstAttribute="centerY" secondItem="zn8-hR-wNG" secondAttribute="centerY" id="eKY-7f-ksc"/>
+                    <constraint firstItem="zn8-hR-wNG" firstAttribute="centerY" secondItem="FuX-M3-5Di" secondAttribute="centerY" id="o1K-oK-hza"/>
+                    <constraint firstItem="Xz5-e8-4of" firstAttribute="leading" secondItem="zn8-hR-wNG" secondAttribute="trailing" constant="16" id="rqN-aC-Gd2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="EoH-mi-G9C"/>
+            <connections>
+                <outlet property="profileImage" destination="zn8-hR-wNG" id="FiG-yY-Aa3"/>
+                <outlet property="timeLabel" destination="0hy-Kf-YWA" id="a89-Yf-OPh"/>
+                <outlet property="usernameLabel" destination="BDc-xN-UeA" id="xZN-Ut-zqP"/>
+            </connections>
+            <point key="canvasLocation" x="232" y="86"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ubipro" width="719" height="719"/>
+    </resources>
+</document>

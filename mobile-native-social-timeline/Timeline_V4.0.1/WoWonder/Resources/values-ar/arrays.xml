@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+  <string-array name="job_categories">
+    <item>محاسبة</item>
+    <item>الأعمال العامة</item>
+    <item>الادارية والكتابية</item>
+    <item>العمل العام</item>
+    <item>دليل</item>
+    <item>السيارات</item>
+    <item>الحكومة</item>
+    <item>خدمات احترافية</item>
+    <item>الخدمات المصرفية</item>
+    <item>بقالة</item>
+    <item>المشتريات</item>
+    <item>المشتريات</item>
+    <item>التكنولوجيا الحيوية</item>
+    <item>الرعاية الصحية</item>
+    <item>QA</item>
+    <item>مراقبة الجودة</item>
+    <item>بث</item>
+    <item>الصحافة</item>
+    <item>فندق</item>
+    <item>الضيافة</item>
+    <item>عقارات</item>
+    <item>تطوير الأعمال</item>
+    <item>الموارد البشرية</item>
+    <item>أبحاث</item>
+    <item>البناء</item>
+    <item>تكنولوجيا المعلومات</item>
+    <item>مطعم</item>
+    <item>خدمة الطعام</item>
+    <item>مستشار</item>
+    <item>تركيب</item>
+    <item>الصيانة</item>
+    <item>إصلاح</item>
+    <item>متاجر</item>
+    <item>خدمة العملاء</item>
+    <item>التأمين</item>
+    <item>مبيعات</item>
+    <item>تصميم</item>
+    <item>الجرد</item>
+    <item>علوم</item>
+    <item>توزيع</item>
+    <item>شحن</item>
+    <item>القانونية</item>
+    <item>العمالة الماهرة</item>
+    <item>الصفقات</item>
+    <item>التعليم</item>
+    <item>تعليم</item>
+    <item>مسؤول قانوني</item>
+    <item>استراتيجية</item>
+    <item>التخطيط</item>
+    <item>هندسة</item>
+    <item>إدارة</item>
+    <item>سلسلة التوريد</item>
+    <item>مستوى الإدخال</item>
+    <item>غراد الجديد</item>
+    <item>التصنيع</item>
+    <item>الاتصالات</item>
+    <item>تنفيذي</item>
+    <item>تسويق</item>
+    <item>تدريب</item>
+    <item>منشآت</item>
+    <item>وسائل الإعلام</item>
+    <item>الصحافة</item>
+    <item>صحيفة</item>
+    <item>النقل</item>
+    <item>المالية</item>
+    <item>غير الربحية</item>
+    <item>الخدمات الاجتماعية</item>
+    <item>مستودع</item>
+    <item>الامتياز</item>
+    <item>ممرضة</item>
+    <item>اخر</item>
+  </string-array>
+ 
+  <string-array name="call_action_type">
+    <item>اقرأ المزيد</item>
+    <item>تسوق الآن</item>
+    <item>العرض الآن</item>
+    <item>قم ​​بزيارة الآن</item>
+    <item>احجز الآن</item>
+    <item>تعرف على المزيد</item>
+    <item>العب الآن</item>
+    <item>المراهنة الآن</item>
+    <item>تبرع</item>
+    <item>قدم هنا</item>
+    <item>اقتبس هنا</item>
+    <item>اطلب الآن</item>
+    <item>حجز تذاكر</item>
+    <item>التسجيل الآن</item>
+    <item>ابحث عن بطاقة</item>
+    <item>الحصول على عرض أسعار</item>
+    <item>الحصول على التذاكر</item>
+    <item>تحديد موقع تاجر</item>
+    <item>اطلب عبر الإنترنت</item>
+    <item>احجز الآن</item>
+    <item>الجدول الآن</item>
+    <item>اشترك الآن</item>
+    <item>اشترك</item>
+    <item>سجل الآن</item>
+  </string-array>
+ 
+</resources>

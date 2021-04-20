@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:id="@+id/mainpage"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	app:backgroundTint="#00000000"
+	android:background="@drawable/login_background">
+
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/header"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<ImageView
+			android:id="@+id/iv_back"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:src="@drawable/ic_arrow_back_white"/>
+	</androidx.appcompat.widget.Toolbar>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:scrollbars="vertical"
+		android:layout_below="@id/header">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="23dp"
+			android:orientation="vertical">
+
+			<eightbitlab.com.blurview.BlurView
+				android:id="@+id/bv_create_account"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:paddingTop="30dp"
+					android:paddingBottom="30dp"
+						android:paddingStart="15dp"
+					android:paddingEnd="15dp"
+					android:background="@drawable/login_round">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/create_account"
+						android:textSize="24sp"
+						android:textColor="@color/gnt_white"
+						android:gravity="center"/>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<RelativeLayout
+							android:id="@+id/rl_username"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="30dp"
+							android:padding="15dp"
+							android:background="@drawable/round_stroke_trans">
+							<EditText
+								android:id="@+id/etUsername"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:background="@null"
+								android:hint="@string/Lbl_Username"
+								android:lines="1"
+								android:inputType="text"
+								android:textSize="13sp"
+								android:textColorHint="@color/gnt_white"/>
+						</RelativeLayout>
+
+						<TextView
+							android:id="@+id/tv_username_required"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="3dp"
+							android:text="@string/field_required"
+							android:textSize="12sp"
+							android:textColor="@color/colorLoginHighlightText"
+							android:visibility="gone"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<RelativeLayout
+							android:id="@+id/rl_firstname"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="15dp"
+							android:padding="15dp"
+							android:background="@drawable/round_stroke_trans">
+							<EditText
+								android:id="@+id/etFirstName"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:background="@null"
+								android:hint="@string/Lbl_First_Name"
+								android:lines="1"
+								android:inputType="text"
+								android:textSize="13sp"
+								android:textColorHint="@color/gnt_white"/>
+						</RelativeLayout>
+
+						<TextView
+							android:id="@+id/tv_firstname_required"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="3dp"
+							android:text="@string/field_required"
+							android:textSize="12sp"
+							android:textColor="@color/colorLoginHighlightText"
+							android:visibility="gone"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<RelativeLayout
+							android:id="@+id/rl_lastname"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="15dp"
+							android:padding="15dp"
+							android:background="@drawable/round_stroke_trans">
+							<EditText
+								android:id="@+id/etLastName"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:background="@null"
+								android:hint="@string/Lbl_Last_Name"
+								android:lines="1"
+								android:inputType="text"
+								android:textSize="13sp"
+								android:textColorHint="@color/gnt_white"/>
+						</RelativeLayout>
+
+						<TextView
+							android:id="@+id/tv_lastname_required"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="3dp"
+							android:text="@string/field_required"
+							android:textSize="12sp"
+							android:textColor="@color/colorLoginHighlightText"
+							android:visibility="gone"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<RelativeLayout
+							android:id="@+id/rl_email"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="15dp"
+							android:padding="15dp"
+							android:background="@drawable/round_stroke_trans">
+							<EditText
+								android:id="@+id/etEmail"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:background="@null"
+								android:hint="@string/Lbl_Email"
+								android:lines="1"
+								android:inputType="textEmailAddress"
+								android:textSize="13sp"
+								android:textColorHint="@color/gnt_white"/>
+						</RelativeLayout>
+
+						<TextView
+							android:id="@+id/tv_email_required"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="3dp"
+							android:text="@string/field_required"
+							android:textSize="12sp"
+							android:textColor="@color/colorLoginHighlightText"
+							android:visibility="gone"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<RelativeLayout
+							android:id="@+id/rl_password"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="15dp"
+							android:padding="15dp"
+							android:background="@drawable/round_stroke_trans">
+							<EditText
+								android:id="@+id/etPassword"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:lines="1"
+								android:inputType="textPassword"
+								android:background="@null"
+								android:hint="@string/Lbl_Password"
+								android:textSize="13sp"
+								android:textColorHint="@color/gnt_white"/>
+							<ImageView
+								android:id="@+id/imageShowPass"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:src="@drawable/icon_eye"
+								android:layout_alignParentEnd="true"
+								android:layout_centerVertical="true"/>
+						</RelativeLayout>
+
+						<TextView
+							android:id="@+id/tv_password_required"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="3dp"
+							android:text="@string/field_required"
+							android:textSize="12sp"
+							android:textColor="@color/colorLoginHighlightText"
+							android:visibility="gone"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<RelativeLayout
+							android:id="@+id/rl_confirm_password"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="15dp"
+							android:padding="15dp"
+							android:background="@drawable/round_stroke_trans">
+							<EditText
+								android:id="@+id/etConfirmPassword"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:lines="1"
+								android:inputType="textPassword"
+								android:background="@null"
+								android:hint="@string/Lbl_ConfirmPassword"
+								android:textSize="13sp"
+								android:textColorHint="@color/gnt_white"/>
+							<ImageView
+								android:id="@+id/imageShowConPass"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:src="@drawable/icon_eye"
+								android:layout_alignParentEnd="true"
+								android:layout_centerVertical="true"/>
+						</RelativeLayout>
+
+						<TextView
+							android:id="@+id/tv_confirm_password_required"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="3dp"
+							android:text="@string/field_required"
+							android:textSize="12sp"
+							android:textColor="@color/colorLoginHighlightText"
+							android:visibility="gone"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<RelativeLayout
+							android:id="@+id/rl_gender"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="15dp"
+							android:padding="15dp"
+							android:background="@drawable/round_stroke_trans">
+							<EditText
+								android:id="@+id/etGender"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:lines="1"
+								android:background="@null"
+								android:hint="@string/Lbl_Gender"
+								android:textSize="13sp"
+								android:textColorHint="@color/gnt_white"/>
+						</RelativeLayout>
+
+						<TextView
+							android:id="@+id/tv_gender_required"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="3dp"
+							android:text="@string/field_required"
+							android:textSize="12sp"
+							android:textColor="@color/colorLoginHighlightText"
+							android:visibility="gone"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:id="@+id/phoneNumLayout"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:visibility="gone"
+						android:orientation="vertical">
+
+						<RelativeLayout
+							android:id="@+id/rl_phoneNum"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="15dp"
+							android:padding="15dp"
+							android:background="@drawable/round_stroke_trans">
+							<EditText
+								android:id="@+id/etPhoneNum"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:lines="1"
+								android:background="@null"
+								android:hint="@string/Lbl_Phone"
+								android:inputType="phone"
+								android:textSize="13sp"
+								android:textColorHint="@color/gnt_white"/>
+						</RelativeLayout>
+
+						<TextView
+							android:id="@+id/tv_phoneNum_required"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="3dp"
+							android:text="@string/field_required"
+							android:textSize="12sp"
+							android:textColor="@color/colorLoginHighlightText"
+							android:visibility="gone"/>
+
+					</LinearLayout>
+
+					<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="30dp">
+						<ProgressBar
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:id="@+id/progressBar"
+							android:layout_centerInParent="true"
+							android:indeterminate="true"
+							android:visibility="invisible"
+							android:gravity="center_horizontal"
+							android:layout_gravity="center_horizontal"
+							android:progressTint="@color/textLight_color" />
+						<Button
+							android:id="@+id/btn_create_account"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:background="@drawable/button_background"
+							android:text="@string/Lbl_Create_Account"
+							android:textSize="13sp"
+							android:textColor="@color/gnt_white"
+							android:textAppearance="?android:attr/textAppearanceSmall"/>
+					</RelativeLayout>
+
+				</LinearLayout>
+
+			</eightbitlab.com.blurview.BlurView>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="25dp"
+				android:orientation="vertical"
+				android:gravity="center">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="5dp"
+					android:text="@string/Lbl_ByCreatingAnAccountYou"
+					android:textSize="12sp"
+					android:textColor="@color/gnt_white"/>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:gravity="center">
+
+					<CheckBox
+						android:id="@+id/terms_of_use"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/Lbl_I_agree_to_the"
+						android:textSize="12sp"
+						android:textColor="@color/gnt_white"
+						app:buttonTint="@color/gnt_white"  />
+					<TextView
+						android:id="@+id/terms_of_service"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:clickable="true"
+						android:layout_marginStart="5dp"
+						android:text="@string/Terms_of_service"
+						android:textSize="12sp"
+						android:textColor="@color/colorLoginHighlightText"
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+						android:textStyle="bold" />
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<View
+				android:layout_height="?android:attr/actionBarSize"
+				android:layout_width="match_parent" />
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

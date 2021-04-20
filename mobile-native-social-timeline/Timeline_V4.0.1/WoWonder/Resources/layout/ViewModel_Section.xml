@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:descendantFocusability="blocksDescendants" >
+    <TextView
+        android:hyphenationFrequency="none"
+        android:id="@+id/headText"
+        android:inputType="textMultiLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="25dp"
+        android:layout_alignParentTop="true"
+        android:text="@string/Lbl_Stories"
+        android:textSize="14dp" 
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:lineSpacingExtra="3dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp" />
+    <TextView
+        android:hyphenationFrequency="none"
+        android:id="@+id/moreText"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignParentEnd="true"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:lineSpacingExtra="3dp"
+        android:padding="10dp"/>
+    <TextView
+        android:hyphenationFrequency="none"
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="7dp"
+        android:layout_marginEnd="13dp"
+        android:textColor="#d2d2d2" />
+</RelativeLayout>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" >
+  <!--Privacy SECTION-->
+  <PreferenceCategory android:layout="@xml/divider" />
+  <PreferenceCategory  android:key="Privacy_key" android:title="@string/Lbl_Privacy" >
+      
+     <!--Who can follow me ?-->
+    <Preference
+      android:key="whocanfollow_key"
+      android:title="@string/Lbl_Who_can_follow_me"
+      android:defaultValue="@string/Lbl_Everyone"
+      app:iconSpaceReserved="false"/>
+    
+      <!--Who can message me ?-->
+    <Preference
+      android:key="whocanMessage_key"
+      android:title="@string/Lbl_Who_can_message_me"
+      android:defaultValue="@string/Lbl_Everyone"
+      app:iconSpaceReserved="false"/>
+    
+ <!--Who can see my friends?-->
+    <Preference
+        android:key="whoCanSeeMyfriends_key"
+      android:title="@string/Lbl_CanSeeMyfriends"
+      android:defaultValue="@string/Lbl_Everyone"
+         app:iconSpaceReserved="false"/>
+
+<!--Who can post on my timeline ?-->
+    <Preference
+      android:key="whoCanPostOnMyTimeline_key"
+       android:title="@string/Lbl_CanPostOnMyTimeline"
+       android:defaultValue="@string/Lbl_Everyone"
+       app:iconSpaceReserved="false"/>
+
+ <!--Who can see my birthday?-->
+    <Preference
+      android:key="whoCanSeeMyBirthday_key"
+      android:title="@string/Lbl_Who_can_see_my_birthday"
+      android:defaultValue="@string/Lbl_Everyone"
+      app:iconSpaceReserved="false"/>
+
+  <!--Confirm request when someone follows you-->
+    <SwitchPreferenceCompat
+      android:title="@string/Lbl_ConfirmRequestFollows"
+      android:summary="@string/Lbl_Summary_ConfirmRequestFollows"
+      android:key="ConfirmRequestFollows_key"
+      app:iconSpaceReserved="false"
+      style="@style/SwitchCompatTheme"
+      android:defaultValue="false" />
+          
+<!--Show my activities-->
+    <SwitchPreferenceCompat
+      android:title="@string/Lbl_ShowMyActivities"
+      android:key="ShowMyActivities_key"
+      app:iconSpaceReserved="false"
+      style="@style/SwitchCompatTheme"
+      android:defaultValue="true" /> 
+  
+  <!--Status-->
+     <SwitchPreferenceCompat
+       android:title="@string/Lbl_ShowOnlineUsers"
+       android:summary="@string/Lbl_Summary_OnlineUsers"
+       android:key="onlineUser_key"
+       app:iconSpaceReserved="false"
+       style="@style/SwitchCompatTheme"
+       android:defaultValue="true" />
+
+   <!--Share my location with public-->
+    <SwitchPreferenceCompat
+      android:title="@string/Lbl_ShareMyLocation"
+      android:key="ShareMyLocation_key"
+      app:iconSpaceReserved="false"
+      style="@style/SwitchCompatTheme"
+      android:defaultValue="true" /> 
+         
+  </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:background="@drawable/rounded_dialog"
+    android:layout_height="wrap_content">
+    <!--Head Page -->
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:id="@+id/IconBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="X"
+            android:textSize="23sp"
+            android:paddingEnd="25dp" 
+            android:paddingStart="25dp" />
+        <TextView
+            android:id="@+id/titlepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_centerVertical="true"
+            android:text="@string/Lbl_VoiceRecord"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:layout_marginStart="61dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/colorDivider" />
+    </RelativeLayout>
+    <!--Distance Section -->
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/iconMicrophone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IC"
+            android:textColor="@color/accent"
+            android:textSize="62sp" />
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recordLayout"
+            android:visibility="gone"
+            layout="@layout/recourdsoundfragment" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/colorDivider" />
+    </LinearLayout>
+    <!--Buttons Section -->
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <at.markushi.ui.CircleButton
+            android:id="@+id/startRecordButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cb_color="@color/gnt_red"
+            app:cb_pressedRingWidth="13dip"
+            app:layout_columnWeight="1"
+            android:padding="10dp"
+            app:layout_rowWeight="3"
+            android:layout_gravity="center_vertical" />
+    </RelativeLayout>
+</LinearLayout>

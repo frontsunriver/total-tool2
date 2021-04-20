@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification CheckVC-->
+        <scene sceneID="2M3-k7-Am3">
+            <objects>
+                <viewController storyboardIdentifier="NotificationCheckVC" id="SXX-BR-tSu" customClass="NotificationCheckVC" customModule="News_Feed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TIQ-Vh-xyo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VIl-Xi-LXo">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="SXX-BR-tSu" id="jXe-24-qrq"/>
+                                    <outlet property="delegate" destination="SXX-BR-tSu" id="pM4-PN-Xni"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VIl-Xi-LXo" firstAttribute="leading" secondItem="a2X-3g-Nbv" secondAttribute="leading" id="Y1J-VR-wnm"/>
+                            <constraint firstItem="VIl-Xi-LXo" firstAttribute="top" secondItem="a2X-3g-Nbv" secondAttribute="top" id="n4v-wh-Jmj"/>
+                            <constraint firstItem="a2X-3g-Nbv" firstAttribute="bottom" secondItem="VIl-Xi-LXo" secondAttribute="bottom" id="rKX-V2-g2J"/>
+                            <constraint firstItem="a2X-3g-Nbv" firstAttribute="trailing" secondItem="VIl-Xi-LXo" secondAttribute="trailing" id="uhu-O5-Y34"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a2X-3g-Nbv"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="VIl-Xi-LXo" id="9rc-qg-kme"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3xB-LU-UuR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-46" y="79"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="w9y-qS-rBV">
+            <objects>
+                <viewController id="Oi3-FS-N0K" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sch-S0-zE7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="N2a-GG-qYa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KYq-AL-0ei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="620" y="78"/>
+        </scene>
+    </scenes>
+</document>

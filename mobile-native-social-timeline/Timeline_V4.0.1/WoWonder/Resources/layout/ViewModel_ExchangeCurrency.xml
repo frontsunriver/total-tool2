@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="?attr/selectableItemBackground"
+               android:orientation="vertical">
+    
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" 
+		android:textSize="14dp"
+		android:padding="10dp"  
+		android:textColor="@color/accent"
+		android:text="@string/Lbl_ExchangeCurrency"
+		android:textStyle="bold"
+		android:layout_gravity="start|center" /> 
+
+	<RelativeLayout  
+		android:id="@+id/CurrencyLayout1"  
+		android:focusable="true"
+        android:clickable="true"
+        android:padding="10dp" 
+        android:layout_centerHorizontal="true" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	    
+        <TextView
+            android:id="@+id/CurrencyText1"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"  
+            android:focusable="false"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+			android:text="USD"
+            android:clickable="false"
+            android:textAlignment="textStart" />  
+	    
+        <TextView
+            android:id="@+id/CurrencyValue1"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:textSize="15dp"
+	    	android:layout_alignParentEnd="true" 
+            android:layout_marginEnd="10dp" 
+            android:focusable="false"
+            android:lines="1"
+            android:maxLines="1"  />  
+	</RelativeLayout>
+	 
+	<RelativeLayout  
+		android:id="@+id/CurrencyLayout2"
+		android:focusable="true"
+        android:clickable="true"
+        android:padding="10dp" 
+        android:layout_centerHorizontal="true" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	    
+        <TextView
+            android:id="@+id/CurrencyText2"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"  
+            android:focusable="false"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:clickable="false"
+            android:textAlignment="textStart" />  
+	    
+        <TextView
+            android:id="@+id/CurrencyValue2"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:textSize="15dp"
+	    	android:layout_alignParentEnd="true" 
+            android:layout_marginEnd="10dp" 
+            android:focusable="false"
+            android:lines="1"
+            android:maxLines="1"  />  
+	</RelativeLayout>
+	 
+	<RelativeLayout  
+		android:id="@+id/CurrencyLayout3"
+		android:focusable="true"
+        android:clickable="true"
+        android:padding="10dp" 
+        android:layout_centerHorizontal="true" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	    
+        <TextView
+            android:id="@+id/CurrencyText3"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"  
+            android:focusable="false"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:clickable="false"
+            android:textAlignment="textStart" />  
+	    
+        <TextView
+            android:id="@+id/CurrencyValue3"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:textSize="15dp"
+	    	android:layout_alignParentEnd="true" 
+            android:layout_marginEnd="10dp" 
+            android:focusable="false"
+            android:lines="1"
+            android:maxLines="1"  />  
+	</RelativeLayout>
+	 
+	<TextView
+		android:id="@+id/CurrencyTime"  
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:textSize="14dp"
+		android:layout_alignParentEnd="true" 
+		android:padding="10dp" 
+		android:focusable="false"
+		android:text="@string/Lbl_UpdatedAt"
+		android:textColor="@color/text_color_in_between"
+		android:lines="1"
+		android:maxLines="1"  />  
+
+</LinearLayout> 

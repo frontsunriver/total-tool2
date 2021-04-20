@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_item_travels"
+        android:icon="@drawable/nav_item_travels"
+        android:title="@string/drawer_travels" />
+    <item
+        android:id="@+id/nav_item_statistics"
+        android:icon="@drawable/nav_item_statistics"
+        android:title="@string/drawer_earnings" />
+    <item
+        android:id="@+id/nav_item_charge_account"
+        android:icon="@drawable/nav_item_charge_account"
+        android:title="@string/drawer_wallet" />
+    <item
+        android:id="@+id/nav_item_transactions"
+        android:icon="@drawable/nav_item_transactions"
+        android:title="@string/drawer_transactions" />
+
+    <item android:title="@string/drawer_support">
+        <menu>
+            <item
+                android:id="@+id/nav_item_about"
+                android:icon="@drawable/nav_item_about"
+                android:title="@string/drawer_about" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/nav_item_exit"
+        android:icon="@drawable/nav_item_exit"
+        android:title="@string/drawer_exit" />
+</menu>

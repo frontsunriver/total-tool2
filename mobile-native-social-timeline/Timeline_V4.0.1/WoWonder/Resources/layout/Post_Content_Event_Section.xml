@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:app="http://schemas.android.com/apk/res-auto" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@drawable/center_content_profile_scroll_over"
+    android:layout_marginEnd="15dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="2dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:id="@+id/linklinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/Image"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:layout_height="185dp"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        app:riv_corner_radius_top_left="5dp"
+        app:riv_corner_radius_top_right="5dp"
+        android:src="@drawable/imageplacholder" />
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="13dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:backgroundTint="#FF6600"
+        android:background="@drawable/shape_radius_btn"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:maxLines="1"
+        android:text="@string/Lbl_Event"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_below="@+id/Image"
+        android:id="@+id/event_titile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="5dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:lines="1"
+        android:layout_marginTop="6dp"
+        android:maxLines="1"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="3dp" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_below="@+id/event_titile"
+        android:id="@+id/event_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textStyle="normal"
+        android:layout_marginEnd="5dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:maxLines="1"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="10dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:layout_below="@id/event_description">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_calendar"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/event_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"/>
+        <ImageView
+            android:id="@+id/placeImage"
+            android:scaleType="centerCrop"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_pin" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/event_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:layout_marginEnd="29dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:capitalize="characters"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

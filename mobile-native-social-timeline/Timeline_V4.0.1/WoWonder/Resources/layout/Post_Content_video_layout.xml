@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="5dp"
+             android:minHeight="190dp"
+             android:layout_gravity="fill"
+             android:background="#000"
+             android:id="@+id/media_container">
+  <ImageView
+    android:id="@+id/image"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxHeight="800dp"
+    android:minHeight="200dp"
+    android:layout_marginBottom="0dp"
+    android:adjustViewBounds="true"
+    android:scaleType="fitXY"
+    android:layout_marginTop="0dp" />
+  <ImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:src="@drawable/ic_video_players"
+    android:layout_gravity="center"
+    android:id="@+id/Play_control"/>
+  <ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/progressBar"
+    style="?android:attr/progressBarStyle"
+    android:visibility="gone"
+    android:layout_gravity="center" />
+</FrameLayout>

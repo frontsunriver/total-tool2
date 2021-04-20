@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorFill"
+	android:fitsSystemWindows="true"
+    android:clickable="true"
+    android:focusable="true">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="false"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+		<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyler"
+                android:clickable="true"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                app:adSize="SMART_BANNER"
+                app:adUnitId="@string/banner_ad_unit_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout> 
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <ViewStub
+        android:id="@+id/viewStub"
+        android:inflatedId="@+id/subView"
+        android:layout="@layout/EmptyStateLayout"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/sectionProgress"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+</RelativeLayout>

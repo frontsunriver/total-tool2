@@ -1,0 +1,21 @@
+<resources>
+    <string name="email" translatable="false"></string>
+    <string name="website" translatable="false"></string>
+    <string name="privacy_policy_url" translatable="false"></string>
+    <string name="twitter" translatable="false"></string>
+    <string name="instagram" translatable="false"></string>
+    <string name="facebook" translatable="false"></string>
+    <string name="play_store_rider" translatable="false"></string>
+    <string name="play_store_driver" translatable="false"></string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false"></string>
+    <string name="default_location" translatable="false">40.1792,44.4991</string>
+    <string name="default_language">en_US</string>
+    <bool name="single_point_mode">false</bool>
+    <integer name="maximum_destinations">5</integer>
+    <integer name="charge_first">10</integer>
+    <integer name="charge_second">20</integer>
+    <integer name="charge_third">50</integer>
+    <bool name="use_miles">false</bool>
+    <string-array name="places_countries">
+    </string-array>
+</resources>

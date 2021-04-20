@@ -1,0 +1,11 @@
+{
+    "Plugin Name": "QrMenu Plugin For Khana Script",
+    "Description": "QrMenu",
+    "Author": "https://codecanyon.net/user/amcoders",
+    "Author URI": "https://codecanyon.net/user/amcoders",
+    "Version": 1,
+    "License": "GNU General Public License v2 or later",
+    "License URI": "http:\/\/www.gnu.org\/licenses\/gpl-2.0.html",
+    "Text Domain": "qrmenu",
+    "status": "deactive"
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Help And SupportVC-->
+        <scene sceneID="hop-ll-Q6K">
+            <objects>
+                <viewController storyboardIdentifier="HelpAndSupportVC" id="AZ8-Cd-hU1" customClass="HelpAndSupportVC" customModule="News_Feed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZUO-Cz-lgC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SOa-E6-cpa">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="AZ8-Cd-hU1" id="do9-Vm-1Xg"/>
+                                    <outlet property="delegate" destination="AZ8-Cd-hU1" id="LSc-R0-Oxi"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="g92-Gl-Ndd" firstAttribute="trailing" secondItem="SOa-E6-cpa" secondAttribute="trailing" id="4zZ-1J-HiE"/>
+                            <constraint firstItem="g92-Gl-Ndd" firstAttribute="bottom" secondItem="SOa-E6-cpa" secondAttribute="bottom" id="U3c-HX-Cua"/>
+                            <constraint firstItem="SOa-E6-cpa" firstAttribute="top" secondItem="g92-Gl-Ndd" secondAttribute="top" id="jG6-9c-rNG"/>
+                            <constraint firstItem="SOa-E6-cpa" firstAttribute="leading" secondItem="g92-Gl-Ndd" secondAttribute="leading" id="o7X-oS-oth"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g92-Gl-Ndd"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="SOa-E6-cpa" id="SIr-Hx-dVI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cJz-g1-OvM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="108"/>
+        </scene>
+        <!--Help Web ViewVC-->
+        <scene sceneID="UNs-Wa-lpJ">
+            <objects>
+                <viewController storyboardIdentifier="HelpWebViewVC" id="8mv-Jg-DaR" customClass="HelpWebViewVC" customModule="News_Feed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="23G-P9-HXS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtw-Xc-vaF">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gtw-Xc-vaF" firstAttribute="top" secondItem="Tbe-K8-vxV" secondAttribute="top" id="1tx-US-7BH"/>
+                            <constraint firstItem="gtw-Xc-vaF" firstAttribute="leading" secondItem="Tbe-K8-vxV" secondAttribute="leading" id="JfC-GM-aiF"/>
+                            <constraint firstItem="Tbe-K8-vxV" firstAttribute="trailing" secondItem="gtw-Xc-vaF" secondAttribute="trailing" id="dX5-hJ-QBb"/>
+                            <constraint firstItem="Tbe-K8-vxV" firstAttribute="bottom" secondItem="gtw-Xc-vaF" secondAttribute="bottom" id="hgc-eF-d9U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tbe-K8-vxV"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="gtw-Xc-vaF" id="FFi-Gz-YOX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jFi-HX-FFp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="116"/>
+        </scene>
+    </scenes>
+</document>

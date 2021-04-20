@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_weight="1"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.material.tabs.TabLayout>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+        <LinearLayout
+            android:id="@+id/contact_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/enable_verification_button"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:tint="#9E9E9E"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic_key_black_24dp"
+                android:focusable="true" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/chat_button"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:tint="#9E9E9E"
+                android:padding="10dp"
+                app:srcCompat="@drawable/chat_button"
+                android:focusable="true" />
+            <ng.max.slideview.SlideView
+                android:id="@+id/slide_call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                app:sv_buttonBackgroundColor="@color/accent_cyan"
+                app:sv_buttonImage="@drawable/call"
+                app:sv_slideBackgroundColor="?attr/colorSurface"
+                app:sv_slideTextColor="?attr/colorOnSurface"
+                app:sv_strokeColor="?attr/colorOnSurface"
+                app:sv_slideText="@string/call"
+                app:sv_reverseSlide="true"/>
+        </LinearLayout>
+
+        <ng.max.slideview.SlideView
+            android:id="@+id/slide_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            app:sv_buttonBackgroundColor="@color/accent_red"
+            app:sv_buttonImage="@drawable/cancel"
+            app:sv_slideBackgroundColor="?attr/colorSurface"
+            app:sv_slideTextColor="?attr/colorOnSurface"
+            app:sv_strokeColor="?attr/colorOnSurface"
+            app:sv_slideText="@string/cancel_travel"/>
+
+    </LinearLayout>
+</layout>

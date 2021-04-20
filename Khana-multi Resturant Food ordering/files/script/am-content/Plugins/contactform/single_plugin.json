@@ -1,0 +1,9 @@
+ {
+ 	"Plugin Name": "Contactform",
+ 	"Version": 1.1,
+ 	"Description": "Contactform plugin for Lpress cms",
+ 	"Author": "Amcoders",
+ 	"Author URI": "https://codecanyon.net/user/amcoders",
+ 	"Text Domain": "contactform",
+ 	"status": "deactive"
+ }

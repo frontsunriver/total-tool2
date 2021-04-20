@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_friend_Request"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp"
+    android:background="?attr/selectableItemBackground">
+    <RelativeLayout
+        android:id="@+id/layout_user_pages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/layout_Friends_description">
+        <ImageView
+            android:id="@+id/image_page_1"
+            android:scaleType="centerCrop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/image_page_2"
+            android:padding="5dp" />
+        <ImageView
+            android:id="@+id/image_page_2"
+            android:scaleType="centerCrop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="-30dp"
+            android:layout_toStartOf="@+id/image_page_3"
+            android:padding="5dp" />
+        <ImageView
+            android:id="@+id/image_page_3"
+            android:scaleType="centerCrop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="-30dp"
+            android:padding="5dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_Friends_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/tv_Friends_connection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Lbl_FriendRequest"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:id="@+id/count_view"
+            android:foregroundGravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="2dp"
+            android:textSize="12dp"
+            android:text="14"
+			android:gravity="center" 
+            android:visibility="gone"
+			android:textColor="@color/gnt_white"
+            android:background="@drawable/circlegradient5" 
+            android:layout_toEndOf="@id/tv_Friends_connection" />
+        <TextView
+            android:id="@+id/tv_Friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/tv_Friends_connection"
+            android:text="@string/Lbl_View_All_FriendRequest"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</RelativeLayout>

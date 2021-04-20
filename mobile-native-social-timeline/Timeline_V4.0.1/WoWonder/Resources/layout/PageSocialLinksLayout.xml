@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="?attr/colorBubble"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+                app:theme="@style/ToolbarTheme"
+            app:title="@string/Lbl_SocialLinks"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            android:background="?attr/colorFill">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Lbl_Save"
+                android:layout_gravity="end"
+                android:textSize="15sp"
+                android:textStyle="bold" 
+                android:padding="15dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/toolbar_title" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:layout_marginBottom="1dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="fill_vertical"
+            android:layout_below="@+id/title_pic_s03"> 
+            <!--Facebook Section -->
+            <LinearLayout
+              android:id="@+id/LayoutFacebook"
+              android:paddingTop="5dp"
+              android:layout_marginTop="5dp"
+              android:layout_marginEnd="5dp"
+              android:layout_width="match_parent"
+              android:orientation="horizontal"
+              android:layout_height="wrap_content">
+              <TextView
+                android:id="@+id/IconFacebook"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="#"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp" />
+              <EditText
+                android:id="@+id/FacebookEditText"
+                style="@style/EditTextNormalStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="@string/Lbl_Facebook"
+                android:textSize="15sp"
+                android:gravity="start"
+                android:background="@drawable/EditTextStyleOne"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="3dp" />
+            </LinearLayout>
+            <!--Twitter Section -->
+            <LinearLayout
+              android:id="@+id/LayoutTwitter"
+              android:paddingTop="5dp"
+              android:layout_marginTop="5dp"
+              android:layout_marginEnd="5dp"
+              android:layout_width="match_parent"
+              android:orientation="horizontal"
+              android:layout_height="wrap_content">
+              <TextView
+                android:id="@+id/IconTwitter"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="#"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp" />
+              <EditText
+                android:id="@+id/TwitterEditText"
+                style="@style/EditTextNormalStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="@string/Lbl_Twitter"
+                android:textSize="15sp"
+                android:gravity="start"
+                android:background="@drawable/EditTextStyleOne"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="3dp" />
+            </LinearLayout>
+            <!--Instagram Section -->
+            <LinearLayout
+              android:id="@+id/LayoutInstagram"
+              android:paddingTop="5dp"
+              android:layout_marginTop="5dp"
+              android:layout_marginEnd="5dp"
+              android:layout_width="match_parent"
+              android:orientation="horizontal"
+              android:layout_height="wrap_content">
+              <TextView
+                android:id="@+id/IconInstagram"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="#"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp" />
+              <EditText
+                android:id="@+id/InstagramEditText"
+                style="@style/EditTextNormalStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="@string/Lbl_Instagram"
+                android:textSize="15sp"
+                android:gravity="start"
+                android:background="@drawable/EditTextStyleOne"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="3dp" />
+            </LinearLayout>
+			<!--Vk Section -->
+            <LinearLayout
+              android:id="@+id/LayoutVk"
+              android:paddingTop="5dp"
+              android:layout_marginTop="5dp"
+              android:layout_marginEnd="5dp"
+              android:layout_width="match_parent"
+              android:orientation="horizontal"
+              android:layout_height="wrap_content">
+              <TextView
+                android:id="@+id/IconVk"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="#"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp" />
+              <EditText
+                android:id="@+id/VkEditText"
+                style="@style/EditTextNormalStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="@string/Lbl_Vk"
+                android:textSize="15sp"
+                android:gravity="start"
+                android:background="@drawable/EditTextStyleOne"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="3dp" />
+            </LinearLayout>
+            <!--Linkedin Section -->
+            <LinearLayout
+              android:id="@+id/LayoutLinkedin"
+              android:paddingTop="5dp"
+              android:layout_marginTop="5dp"
+              android:layout_marginEnd="5dp"
+              android:layout_width="match_parent"
+              android:orientation="horizontal"
+              android:layout_height="wrap_content">
+              <TextView
+                android:id="@+id/IconLinkedin"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="#"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp" />
+              <EditText
+                android:id="@+id/LinkedinEditText"
+                style="@style/EditTextNormalStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="@string/Lbl_Linkedin"
+                android:textSize="15sp"
+                android:gravity="start"
+                android:background="@drawable/EditTextStyleOne"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="3dp" />
+            </LinearLayout>
+            <!--YouTube Section -->
+            <LinearLayout
+              android:id="@+id/LayoutYouTube"
+              android:paddingTop="5dp"
+              android:layout_marginTop="5dp"
+              android:layout_marginEnd="5dp"
+              android:layout_width="match_parent"
+              android:orientation="horizontal"
+              android:layout_height="wrap_content">
+              <TextView
+                android:id="@+id/IconYouTube"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="#"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp" />
+              <EditText
+                android:id="@+id/YouTubeEditText"
+                style="@style/EditTextNormalStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="@string/Lbl_YouTube"
+                android:textSize="15sp"
+                android:gravity="start"
+                android:background="@drawable/EditTextStyleOne"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="3dp" />
+            </LinearLayout> 
+            <View
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:layout_width="match_parent" />
+                <com.google.android.gms.ads.doubleclick.PublisherAdView
+                    android:id="@+id/multiple_ad_sizes_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    app:adSize="MEDIUM_RECTANGLE,120x20,250x250,320x100,SMART_BANNER"
+                    app:adUnitId="@string/banner_multiple_ad_sizes_id" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

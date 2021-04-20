@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/colorBubble"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+                app:theme="@style/ToolbarTheme"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            android:background="?attr/colorFill">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Lbl_Create"
+                android:layout_gravity="end"
+                android:textSize="15sp"
+                android:textStyle="bold" 
+                android:padding="15dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/toolbar_title" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorBubble"
+            android:clipToPadding="false"
+            android:scrollbars="none"
+            android:scrollingCache="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout
+                android:id="@+id/lyt_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="0dp">
+                <!--Image Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/LayoutImage"
+                    android:background="@drawable/create_border_edit_text"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+                    <RelativeLayout
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:background="?attr/colorBubble">
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/grey_offline" />
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/addImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/Lbl_SelectImage"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                </LinearLayout>
+                <!--discount type Section -->
+                <LinearLayout
+                    android:id="@+id/LayoutDiscountType"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/IconDiscountType"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="#"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5dp" />
+                    <EditText
+                        android:id="@+id/DiscountTypeEditText"
+                        style="@style/EditTextNormalStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:hint="@string/Lbl_DiscountType"
+                        android:textSize="15sp"
+                        android:gravity="start"
+                        android:background="@drawable/EditTextStyleOne"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="3dp" />
+                </LinearLayout> 
+                <androidx.recyclerview.widget.RecyclerView
+                  android:id="@+id/Recyler"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:nestedScrollingEnabled="true"
+                  android:scrollbars="vertical"
+                  android:paddingTop="5dp"
+                  android:visibility="gone"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginEnd="5dp" /> 
+                <!--discount items Section-->
+                <LinearLayout
+                    android:id="@+id/LayoutDiscountItems"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/IconDiscountItems"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="#"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5dp" />
+                    <EditText
+                        android:id="@+id/DiscountItemsEditText"
+                        style="@style/EditTextNormalStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:hint="@string/Lbl_DiscountItems"
+                        android:textSize="15sp"
+                        android:gravity="start"
+                        android:background="@drawable/EditTextStyleOne"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="3dp" />
+                </LinearLayout>
+                <!--currency Section-->
+                <LinearLayout
+                  android:id="@+id/LayoutCurrency"
+                  android:paddingTop="5dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginEnd="5dp"
+                  android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_height="wrap_content">
+                  <TextView
+                    android:id="@+id/IconCurrency"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="#"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:layout_marginStart="5dp" />
+                  <EditText
+                    android:id="@+id/CurrencyEditText"
+                    style="@style/EditTextNormalStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="@string/Lbl_Currency"
+                    android:textSize="15sp"
+                    android:gravity="start"
+                    android:background="@drawable/EditTextStyleOne"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="3dp" />
+                </LinearLayout> 
+                <!--Description Section-->
+                <LinearLayout
+                  android:id="@+id/LayoutDescription"
+                  android:paddingTop="5dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_marginEnd="5dp"
+                  android:layout_height="wrap_content">
+                  <TextView
+                    android:id="@+id/IconDescription"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="#"
+                    android:gravity="top|center"
+                    android:layout_gravity="start"
+                    android:textSize="20sp"
+                    android:layout_marginStart="5dp" />
+                  <EditText
+                    android:id="@+id/DescriptionEditText"
+                    style="@style/EditTextNormalStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/EditTextStyleOne"
+                    android:hint="@string/Lbl_Description"
+                    android:textSize="15sp"
+                    android:gravity="start"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="3dp" />
+                </LinearLayout> 
+                <!--End Date Section-->
+                <LinearLayout
+                    android:id="@+id/LayoutDate"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/IconDate"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="#"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5dp" />
+                    <EditText
+                        android:id="@+id/DateEditText"
+                        style="@style/EditTextNormalStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:hint="@string/Lbl_End_Date"
+                        android:textSize="15sp"
+                        android:gravity="start"
+                        android:background="@drawable/EditTextStyleOne"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="3dp" />
+                </LinearLayout>
+                <!--Time Section-->
+                <LinearLayout
+                  android:id="@+id/LayoutTime"
+                  android:paddingTop="5dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginEnd="5dp"
+                  android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_height="wrap_content">
+                  <TextView
+                    android:id="@+id/IconTime"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="#"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:layout_marginStart="5dp" />
+                  <EditText
+                    android:id="@+id/TimeEditText"
+                    style="@style/EditTextNormalStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="@string/Lbl_Time"
+                    android:textSize="15sp"
+                    android:gravity="start"
+                    android:background="@drawable/EditTextStyleOne"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="3dp" />
+                </LinearLayout> 
+                <View
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

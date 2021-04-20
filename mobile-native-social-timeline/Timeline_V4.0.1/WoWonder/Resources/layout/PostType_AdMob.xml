@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+  <WoWonder.Helpers.Ads.TemplateView
+    android:id="@+id/my_template"
+    app:gnt_template_type="@layout/gnt_medium_template_view"
+    android:layout_margin="10dp"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+</LinearLayout>

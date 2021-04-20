@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+	android:paddingBottom="35dp"
+    android:layout_height="wrap_content">
+	 <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/Recyler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="true"
+                    android:scrollbars="vertical"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+		 android:descendantFocusability="beforeDescendants"
+                    android:layout_gravity="bottom"
+                    android:foregroundGravity="bottom" />
+	<Button
+		android:layout_below="@id/Recyler"
+		android:layout_width="wrap_content"
+		android:layout_height="25dp"
+		android:id="@+id/addanswer"
+		android:textSize="13sp"
+		android:layout_marginStart="18dp"
+		android:layout_marginEnd="8dp"
+		android:layout_marginTop="5dp"
+		android:background="@drawable/follow_button_profile_friends_pressed"
+		android:tag="false"
+		android:paddingTop="1dp"
+		android:paddingStart="17dp"
+		android:paddingEnd="17dp"
+		android:textAlignment="center"
+		android:textAllCaps="false"
+		android:text="@string/Lbl_AddAnswer"
+		android:textColor="@color/textLight_color"
+		
+		android:layout_alignParentEnd="true" />
+		</RelativeLayout>

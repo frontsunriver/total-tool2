@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="130dp"
+    android:layout_height="145dp"
+    android:gravity="center">
+    <RelativeLayout
+        android:id="@+id/ImageLayout"
+        android:layout_width="125dp"
+        android:layout_height="140dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/Image"
+            android:scaleType="centerCrop"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:gravity="center"
+            android:src="@drawable/Grey_Offline"
+            android:layout_centerVertical="false" />
+    </RelativeLayout>
+    <at.markushi.ui.CircleButton
+        android:id="@+id/ImageCircle"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:cb_pressedRingWidth="2dip"
+        android:tint="@color/gnt_white"
+        android:src="@drawable/icon_close_vector"
+        android:layout_alignTop="@id/Image"
+        android:layout_marginBottom="2dp"
+        android:layout_alignParentEnd="true"
+		android:padding="7dp"
+        app:cb_color="#ff7043"
+        android:layout_marginEnd="0dp"
+        android:layout_alignWithParentIfMissing="false" />
+    <ImageView
+        android:id="@+id/AttachType"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:civ_border_width="4dp"
+        app:civ_border_color="@color/textLight_color"
+        android:layout_alignTop="@id/Image"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/ic_file_video"
+        app:civ_border_overlay="false"
+        android:layout_marginEnd="10dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:tint="@color/textLight_color"
+        android:visibility="invisible"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

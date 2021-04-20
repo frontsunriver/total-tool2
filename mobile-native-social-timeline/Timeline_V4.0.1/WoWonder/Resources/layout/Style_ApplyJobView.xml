@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/selectableItemBackground"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview2"
+        android:layout_gravity="start"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/textLight_color"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="130dp"
+            android:layout_height="120dp"
+            android:foreground="#1A000000"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imageplacholder" />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_toEndOf="@id/cardview2"
+        android:layout_marginStart="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"           
+            android:maxLines="1"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/addressIcon"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:text="Ic"
+                android:textColor="#ff5722"
+                android:textSize="15sp"
+                android:layout_marginEnd="5dp" />
+            <TextView
+                android:id="@+id/addressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/timeIcon"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:text="Ic"
+                android:textColor="#4caf50"
+                android:textSize="15sp"
+                android:layout_marginEnd="5dp" />
+            <TextView
+                android:id="@+id/timeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/phoneIcon"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:text="Ic"
+                android:textColor="#2196f3"
+                android:textSize="15sp"
+                android:layout_marginEnd="5dp" />
+            <TextView
+                android:id="@+id/phoneText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/emailIcon"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:text="Ic"
+                android:textColor="#e91e63"
+                android:textSize="15sp"
+                android:layout_marginEnd="5dp" />
+            <TextView
+                android:id="@+id/emailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_below="@+id/cardview2"
+        android:text="@string/Lbl_Message"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/messageButton"
+        android:background="#009688"
+        android:textColor="@color/textLight_color"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp" />
+    <RelativeLayout
+        android:layout_below="@+id/messageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="-3dp"
+        android:background="?attr/colorFill">
+        <TextView
+            android:id="@+id/Work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            
+            android:textSize="15dp"
+            android:layout_marginStart="11dp"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/WorkText"
+            android:layout_marginStart="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Work"
+            android:textSize="12dp" />
+        <TextView
+            android:layout_below="@+id/WorkText"
+            android:id="@+id/Position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" 
+            android:textSize="15dp"
+            android:layout_marginStart="11dp"
+            android:text="@string/Lbl_Position"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/PositionText"
+            android:layout_marginStart="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Position"
+            android:textSize="12dp" />
+        <TextView
+            android:layout_below="@+id/PositionText"
+            android:id="@+id/startDat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            
+            android:textSize="15dp"
+            android:layout_marginStart="11dp"
+            android:text="@string/Lbl_Start_Date"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/startDateText"
+            android:layout_marginStart="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startDat"
+            android:textSize="12dp" />
+        <TextView
+            android:layout_below="@+id/PositionText"
+            android:id="@+id/endDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" 
+            android:textSize="15dp"
+            android:layout_toEndOf="@+id/startDat"
+            android:layout_marginStart="60dp"
+            android:text="@string/Lbl_End_Date"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/endDateText"
+            android:layout_marginStart="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/startDat"
+            android:layout_below="@+id/endDate"
+            android:layout_centerHorizontal="true"
+            android:textSize="12dp" />
+        <WoWonder.Library.Anjo.SuperTextLibrary.SuperTextView
+            android:layout_below="@+id/startDateText"
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start" 
+            android:gravity="center|start"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="6dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="1dp"
+            android:paddingEnd="5dp"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:hyphenationFrequency="none"
+            android:textSize="14sp"
+             />
+    </RelativeLayout>
+</RelativeLayout>

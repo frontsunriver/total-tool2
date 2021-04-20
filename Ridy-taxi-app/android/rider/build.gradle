@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion '30.0.2'
+    defaultConfig {
+        applicationId "com.minimal.taxi.rider"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 67
+        versionName "3.2.5"
+        vectorDrawables.useSupportLibrary = true
+        dexOptions {
+            jumboMode true
+        }
+    }
+    if (project.hasProperty("RELEASE_KEY_ALIAS")) {
+        signingConfigs {
+            release {
+                storeFile file(RELEASE_STORE_FILE)
+                storePassword RELEASE_STORE_PASSWORD
+                keyAlias RELEASE_KEY_ALIAS
+                keyPassword RELEASE_KEY_PASSWORD
+            }
+        }
+        buildTypes {
+            release {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+    buildTypes {
+        debug {
+            firebaseCrashlytics {
+                mappingFileUploadEnabled false
+            }
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures {
+        dataBinding true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    api project(':common')
+    implementation 'com.github.Innomalist:floatingsearchview:0.3'
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+    testImplementation 'junit:junit:4.13.1'
+}
+configurations {
+    all*.exclude group: 'com.google.guava', module: 'listenablefuture'
+}
+apply plugin: 'com.google.gms.google-services'

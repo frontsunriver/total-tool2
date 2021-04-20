@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="15dp" 
+              android:id="@+id/searchForPostsLayout"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"  >
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:padding="5dp" 
+        android:layout_marginStart="5dp" 
+        android:layout_centerInParent="true"
+        android:src="@drawable/search_for_post"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="16sp"
+        	android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/create_border_edit_text"
+        android:backgroundTint="#F6ECEC"
+        android:text="@string/Lbl_SearchForPosts"
+        android:textColor="@color/accent"
+        android:drawableStart="@drawable/ic_action_search_color"
+        android:drawablePadding="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+</LinearLayout>

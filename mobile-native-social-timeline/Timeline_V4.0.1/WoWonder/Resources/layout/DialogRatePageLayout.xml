@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="?attr/colorBubble"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minHeight="200dp"
+    android:minWidth="500dp"
+    android:layout_margin="5dp"
+    android:padding="10dp" >
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rate"
+    android:layout_marginEnd="6dp"
+    android:layout_marginStart="6dp"
+    android:layout_marginTop="5dp"
+    android:text="@string/Lbl_Rate"
+    android:textStyle="bold" /> 
+  <LinearLayout
+        android:id="@+id/ratingLiner" 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="8dp"
+        android:foregroundGravity="center|center_horizontal"
+        android:gravity="center"
+        android:layout_gravity="center" >
+        <RatingBar
+          android:id="@+id/ratingBar"
+          android:layout_marginTop="-2dp"
+          android:layout_width="wrap_content"
+          android:layout_height="50dp"
+          android:padding="0dp" 
+          style="@style/Widget.AppCompat.RatingBar"
+          android:secondaryProgressTint="@android:color/transparent"
+          android:progressTint="#FF9800"
+          android:foregroundGravity="center"
+          android:gravity="center"
+          android:layout_gravity="center" 
+          android:numStars="5" /> 
+    </LinearLayout>
+    <EditText
+        android:id="@+id/ReviewEditText"
+        style="@style/EditTextNormalStyle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/EditTextStyleOne"
+        android:hint="@string/Lbl_WriteYourReview"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:layout_alignParentEnd="true" />
+    <Button
+      android:id="@+id/ApplyButton"
+      android:layout_below="@+id/Resetbutton"
+      android:background="@drawable/follow_button_profile_friends_pressed"
+      android:layout_height="36dp"
+      android:layout_width="match_parent"
+      android:padding="5dp"
+      style="@style/Base.TextAppearance.AppCompat.Body1"
+      android:text="@string/Lbl_Save"
+      android:textColor="@color/textLight_color"
+      android:textSize="12sp"
+      android:clickable="true"
+      android:layout_marginEnd="30dp"
+      android:layout_marginStart="30dp"
+      android:layout_marginTop="19dp"
+      android:gravity="center"
+      android:layout_marginBottom="10dp" /> 
+</LinearLayout>

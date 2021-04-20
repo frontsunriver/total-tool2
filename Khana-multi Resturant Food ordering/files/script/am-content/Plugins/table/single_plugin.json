@@ -1,0 +1,11 @@
+{
+    "Plugin Name": "Lpress plugin for table management",
+    "Description": "Khana table plugin",
+    "Author": "Amcoders",
+    "Author URI": "https://codecanyon.net/user/amcoders/portfolio",
+    "Version": 1.0,
+    "License": "GNU General Public License v2 or later",
+    "License URI": "http:\/\/www.gnu.org\/licenses\/gpl-2.0.html",
+    "Text Domain": "table",
+    "status": "deactive"
+}

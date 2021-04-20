@@ -1,0 +1,36 @@
+Khana v1.5 Update Documentation
+
+Note:
+
+This update is just for who is using v1.0, if you're still using older verisons, PLEASE UPDATE the script version by version.
+
+// ------------------------------------- //
+
+1) How To Update
+
+- BACKUP, BACKUP, AND BACKUP everything, files, DATABASE.
+
+- replace Featured.php from root/script/app/Featured.php 
+
+- replace Usermeta.php from root/script/app/Usermeta.php
+
+- replace WelcomeController.php from root/script/am-content/Themes/khana/http/controllers/WelcomeController.php
+
+- replace shop plugin from root/script/am-content/Plugins/shop replace everything
+
+- replace payout.blade.php from root/script/am-content/Themes/khana/views/rider/statement/payout.blade.php
+
+
+
+// ------------------------------------- //
+
+you will get every resource from update directory.
+if you're facing any problems, please contact with us we will help u :) 
+
+Created: 7/08/2020
+Last Update: 12/08/2020
+By: AMCoders
+Email: amcoders360@gmail.com
+
+
+Copyright © 2020 Khana All rights reserved

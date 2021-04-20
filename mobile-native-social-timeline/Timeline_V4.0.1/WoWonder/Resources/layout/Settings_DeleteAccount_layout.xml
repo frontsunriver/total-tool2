@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/colorBubble"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	 <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+                app:theme="@style/ToolbarTheme"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            android:background="?attr/colorFill"> 
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+   <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:clipToPadding="false"
+            android:scrollbars="none"
+            android:scrollingCache="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout
+                android:id="@+id/lyt_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="0dp">
+                <!--Password Section -->
+                <LinearLayout
+                  android:id="@+id/LayoutPassword"
+                  android:paddingTop="5dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginEnd="5dp"
+                  android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_height="wrap_content">
+                  <TextView
+                    android:id="@+id/IconPassword"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="#"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:layout_marginStart="5dp" />
+                  <EditText
+                    android:id="@+id/PasswordEditText"
+                    style="@style/EditTextNormalStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="@string/Lbl_Password"
+                    android:textSize="15sp"
+                    android:gravity="start"
+                    android:inputType="textPassword"
+                    android:background="@drawable/EditTextStyleOne"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="3dp" />
+                </LinearLayout>   
+                <LinearLayout
+                  android:paddingTop="5dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginEnd="5dp"
+                  android:layout_marginStart="10dp"
+                  android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_height="wrap_content">
+                  <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:id="@+id/DeleteCheckBox"
+                    android:textColor="?attr/colorReact"
+                    app:buttonTint="@color/accent" />
+                </LinearLayout> 
+                <LinearLayout
+                  android:layout_height="match_parent"
+                  android:layout_width="match_parent"
+                  android:layout_gravity="bottom"
+                  android:layout_marginBottom="20dp"
+                  android:layout_marginTop="10dp">  
+                  <Button
+                    android:id="@+id/DeleteButton"
+                    android:background="@drawable/follow_button_profile_friends_pressed"
+                    android:layout_height="36dp"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:text="@string/Btn_DeleteAccount"
+                    android:textColor="@color/textLight_color"
+                    android:textSize="12sp"
+                    android:clickable="true"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="19dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp" /> 
+                </LinearLayout>
+                <View 
+                  android:layout_height="20dp"
+                  android:layout_width="match_parent" />
+                <WoWonder.Helpers.Ads.TemplateView
+                  android:id="@+id/my_template"
+                  android:padding="8dp"
+                  android:visibility="gone"
+                  app:gnt_template_type="@layout/gnt_medium_template_view"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="bottom" 
+                  android:layout_alignParentBottom="true"
+                  android:layout_centerHorizontal="true" />
+                <View 
+					android:layout_height="?android:attr/actionBarSize"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView> 
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>  

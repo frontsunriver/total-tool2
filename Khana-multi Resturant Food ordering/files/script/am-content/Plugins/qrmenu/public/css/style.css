@@ -1,0 +1,14 @@
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.single-qr-style {
+    border: 1px solid #ddd;
+    padding: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.single-template img {
+    border-radius: 5px;
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp">
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|start"
+        android:text="@string/Lbl_aboutMe"
+        android:textSize="16sp"
+        android:textColor="@color/gnt_black"/>
+    <WoWonder.Library.Anjo.SuperTextLibrary.SuperTextView
+        android:id="@+id/tv_aboutdescUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorCommentText"
+        android:textSize="14sp" />
+</LinearLayout>

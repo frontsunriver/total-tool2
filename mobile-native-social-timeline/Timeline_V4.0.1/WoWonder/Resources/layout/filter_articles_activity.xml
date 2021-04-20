@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <RelativeLayout
+            android:id="@+id/rl_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cancel"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_shareTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text="@string/Lbl_FilterByCategory"
+            android:textColor="@color/primary"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/transparent_border"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_filter_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        	android:paddingStart="15dp"
+        android:paddingEnd="15dp"/>
+
+</LinearLayout>

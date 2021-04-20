@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="?attr/colorBubble"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+                app:theme="@style/ToolbarTheme"
+            app:title="@string/Lbl_Go_Pro"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            android:background="?attr/colorFill">
+            <ImageView
+                android:id="@+id/iv1"
+                android:scaleType="centerCrop"
+                android:layout_gravity="end"
+                android:tint="@color/accent"
+                android:layout_centerHorizontal="true" 
+                android:src="@drawable/icon_close_vector"
+                android:padding="18dp"
+                android:layout_marginEnd="5dp"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:orientation="vertical"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="?attr/colorBubble"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/headText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/Lbl_HeadTextGoPro"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:gravity="center"
+                android:layout_gravity="center" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="0dp" />
+            <TextView
+                android:id="@+id/headSecoundText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"  
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/Lbl_HeadSecondTextGoPro"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:gravity="center"
+                android:layout_gravity="center" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="0dp" />
+            <View 
+              android:layout_height="?android:attr/actionBarSize"
+              android:layout_width="match_parent" /> 
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

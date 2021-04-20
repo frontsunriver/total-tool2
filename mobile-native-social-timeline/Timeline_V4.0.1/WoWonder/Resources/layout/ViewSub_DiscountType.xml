@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LayoutDiscountMain"
+    android:padding="5dp"
+    android:background="?attr/colorBubble"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/DiscountFirstEditText"
+        style="@style/EditTextNormalStyle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Discount Percent"
+        android:textSize="15sp"
+        android:gravity="start"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/EditTextStyleOne"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="3dp" />
+    <LinearLayout
+        android:id="@+id/LayoutDiscount"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_height="45dp">
+        <EditText
+            android:id="@+id/DiscountSecEditText"
+            style="@style/EditTextNormalStyle"
+            android:layout_width="match_parent"
+            android:layout_weight="50"
+            android:ems="10"
+            android:layout_height="wrap_content"
+            android:background="@drawable/EditTextStyleOne"
+            android:layout_alignParentEnd="true"
+            android:hint="Buy"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:gravity="start"
+            android:inputType="number"
+            android:layout_marginStart="3dp" />
+        <EditText
+            android:id="@+id/DiscountThrEditText"
+            style="@style/EditTextNormalStyle"
+            android:layout_width="match_parent"
+            android:layout_weight="50"
+            android:ems="10"
+            android:layout_height="wrap_content"
+            android:background="@drawable/EditTextStyleOne"
+            android:layout_alignParentEnd="true"
+            android:hint="Get"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:gravity="start"
+            android:inputType="number"
+            android:layout_marginStart="3dp" />
+    </LinearLayout>
+</LinearLayout>

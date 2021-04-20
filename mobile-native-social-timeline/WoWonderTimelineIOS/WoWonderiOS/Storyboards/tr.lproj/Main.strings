@@ -1,0 +1,324 @@
+
+/* Class = "UIButton"; normalTitle = "   Share"; ObjectID = "0GR-fF-e2A"; */
+"0GR-fF-e2A.normalTitle" = "   Share";
+
+/* Class = "UIButton"; normalTitle = "     Notifications"; ObjectID = "0nM-gg-ZDs"; */
+"0nM-gg-ZDs.normalTitle" = "     Notifications";
+
+/* Class = "UIButton"; normalTitle = " "; ObjectID = "1FW-Iu-vfs"; */
+"1FW-Iu-vfs.normalTitle" = " ";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "1VD-8B-i4G"; */
+"1VD-8B-i4G.text" = "0";
+
+/* Class = "UIButton"; normalTitle = "NO"; ObjectID = "1tr-py-eow"; */
+"1tr-py-eow.normalTitle" = "NO";
+
+/* Class = "UILabel"; text = "Show / Hide last seen"; ObjectID = "26r-L6-6Kt"; */
+"26r-L6-6Kt.text" = "Show / Hide last seen";
+
+/* Class = "UIButton"; normalTitle = "   Groups"; ObjectID = "28V-yO-rhR"; */
+"28V-yO-rhR.normalTitle" = "   Groups";
+
+/* Class = "UILabel"; text = "Groups"; ObjectID = "2KC-5y-pAH"; */
+"2KC-5y-pAH.text" = "Groups";
+
+/* Class = "UILabel"; text = "Share Post"; ObjectID = "3Qb-Eh-iUq"; */
+"3Qb-Eh-iUq.text" = "Share Post";
+
+/* Class = "UILabel"; text = "More"; ObjectID = "3rS-q2-6Yc"; */
+"3rS-q2-6Yc.text" = "More";
+
+/* Class = "UILabel"; text = "ubaid Javaid"; ObjectID = "4YG-BW-iIH"; */
+"4YG-BW-iIH.text" = "ubaid Javaid";
+
+/* Class = "UIButton"; normalTitle = "Add Funds"; ObjectID = "4h4-by-A9F"; */
+"4h4-by-A9F.normalTitle" = "Add Funds";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "4jv-q0-46A"; */
+"4jv-q0-46A.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "   Share to a Group"; ObjectID = "4ow-85-WhE"; */
+"4ow-85-WhE.normalTitle" = "   Share to a Group";
+
+/* Class = "UIButton"; normalTitle = "Share"; ObjectID = "4t1-ah-aSy"; */
+"4t1-ah-aSy.normalTitle" = "Share";
+
+/* Class = "UIButton"; normalTitle = "   Share"; ObjectID = "4ur-UE-8pa"; */
+"4ur-UE-8pa.normalTitle" = "   Share";
+
+/* Class = "UILabel"; text = "Post Reaction"; ObjectID = "59R-cH-EBK"; */
+"59R-cH-EBK.text" = "Post Reaction";
+
+/* Class = "UILabel"; text = "Posts promotion"; ObjectID = "7oS-g5-9pR"; */
+"7oS-g5-9pR.text" = "Posts promotion";
+
+/* Class = "UILabel"; text = "Following"; ObjectID = "8Nn-Gu-yCa"; */
+"8Nn-Gu-yCa.text" = "Following";
+
+/* Class = "UILabel"; text = "Share"; ObjectID = "8OG-gv-dg1"; */
+"8OG-gv-dg1.text" = "Share";
+
+/* Class = "UIButton"; normalTitle = "Copy Link"; ObjectID = "998-pj-T2E"; */
+"998-pj-T2E.normalTitle" = "Copy Link";
+
+/* Class = "UILabel"; text = "Feature member"; ObjectID = "9tu-a2-h1D"; */
+"9tu-a2-h1D.text" = "Feature member";
+
+/* Class = "UILabel"; text = "Show / Hide last seen"; ObjectID = "B0U-E7-8fP"; */
+"B0U-E7-8fP.text" = "Show / Hide last seen";
+
+/* Class = "UILabel"; text = "Discount"; ObjectID = "BAQ-MU-eQd"; */
+"BAQ-MU-eQd.text" = "Discount";
+
+/* Class = "UITextField"; placeholder = "Email OR UserName"; ObjectID = "BAY-qG-3Ly"; */
+"BAY-qG-3Ly.placeholder" = "Email OR UserName";
+
+/* Class = "UITextView"; text = "Add a comment here"; ObjectID = "BKg-Cb-rR6"; */
+"BKg-Cb-rR6.text" = "Add a comment here";
+
+/* Class = "UIButton"; normalTitle = "   Comment"; ObjectID = "C6V-Pp-TpT"; */
+"C6V-Pp-TpT.normalTitle" = "   Comment";
+
+/* Class = "UIButton"; normalTitle = "      Funding"; ObjectID = "CKu-Uk-pcl"; */
+"CKu-Uk-pcl.normalTitle" = "      Funding";
+
+/* Class = "UILabel"; text = "Current Balance"; ObjectID = "Ch4-dl-5E3"; */
+"Ch4-dl-5E3.text" = "Current Balance";
+
+/* Class = "UIButton"; normalTitle = "Share"; ObjectID = "Cn7-L8-ZVZ"; */
+"Cn7-L8-ZVZ.normalTitle" = "Share";
+
+/* Class = "UIButton"; normalTitle = "    Blogs"; ObjectID = "EGo-B1-Xae"; */
+"EGo-B1-Xae.normalTitle" = "    Blogs";
+
+/* Class = "UILabel"; text = "Profile Picture"; ObjectID = "Epq-Ge-6q6"; */
+"Epq-Ge-6q6.text" = "Profile Picture";
+
+/* Class = "UITextField"; placeholder = "Amount"; ObjectID = "FPb-1z-6Ue"; */
+"FPb-1z-6Ue.placeholder" = "Amount";
+
+/* Class = "UIButton"; normalTitle = "   Albums"; ObjectID = "GGN-LW-YgU"; */
+"GGN-LW-YgU.normalTitle" = "   Albums";
+
+/* Class = "UIButton"; normalTitle = "    Saved Posts"; ObjectID = "Gr2-UW-lW7"; */
+"Gr2-UW-lW7.normalTitle" = "    Saved Posts";
+
+/* Class = "UILabel"; text = "12.52"; ObjectID = "Gub-Of-yGu"; */
+"Gub-Of-yGu.text" = "12.52";
+
+/* Class = "UIButton"; normalTitle = "   My Profile"; ObjectID = "H60-NM-hQV"; */
+"H60-NM-hQV.normalTitle" = "   My Profile";
+
+/* Class = "UIButton"; normalTitle = "   Comment"; ObjectID = "Hch-Oc-vga"; */
+"Hch-Oc-vga.normalTitle" = "   Comment";
+
+/* Class = "UILabel"; text = "Pick Your Plan"; ObjectID = "IFE-MV-TiZ"; */
+"IFE-MV-TiZ.text" = "Pick Your Plan";
+
+/* Class = "UIButton"; normalTitle = "   Following"; ObjectID = "IiS-OL-eWN"; */
+"IiS-OL-eWN.normalTitle" = "   Following";
+
+/* Class = "UILabel"; text = "Select Friend"; ObjectID = "JdY-YO-0Ak"; */
+"JdY-YO-0Ak.text" = "Select Friend";
+
+/* Class = "UILabel"; text = "Last seen 15 h ago"; ObjectID = "JuW-x7-TUb"; */
+"JuW-x7-TUb.text" = "Last seen 15 h ago";
+
+/* Class = "UIButton"; normalTitle = "     Events"; ObjectID = "KLb-01-SzA"; */
+"KLb-01-SzA.normalTitle" = "     Events";
+
+/* Class = "UILabel"; text = "Posts promotion"; ObjectID = "KYh-nY-kez"; */
+"KYh-nY-kez.text" = "Posts promotion";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "LLp-BF-44f"; */
+"LLp-BF-44f.normalTitle" = "Cancel";
+
+/* Class = "UIButton"; normalTitle = "   Share to a Page"; ObjectID = "MIt-SP-euK"; */
+"MIt-SP-euK.normalTitle" = "   Share to a Page";
+
+/* Class = "UILabel"; text = "Pages"; ObjectID = "MMM-Pp-OEc"; */
+"MMM-Pp-OEc.text" = "Pages";
+
+/* Class = "UILabel"; text = "Current Balance"; ObjectID = "O94-hi-Uih"; */
+"O94-hi-Uih.text" = "Current Balance";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "ORz-BV-1wq"; */
+"ORz-BV-1wq.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "$3"; ObjectID = "Odc-f0-LxV"; */
+"Odc-f0-LxV.text" = "$3";
+
+/* Class = "UIButton"; normalTitle = "       Help & Support"; ObjectID = "PIM-cs-N0O"; */
+"PIM-cs-N0O.normalTitle" = "       Help & Support";
+
+/* Class = "UIButton"; normalTitle = "Block"; ObjectID = "PIh-hJ-Gwo"; */
+"PIh-hJ-Gwo.normalTitle" = "Block";
+
+/* Class = "UIButton"; normalTitle = "  Like"; ObjectID = "Q1H-uH-l4h"; */
+"Q1H-uH-l4h.normalTitle" = "  Like";
+
+/* Class = "UIButton"; normalTitle = "   Share to my Timeline"; ObjectID = "Qyh-7f-62w"; */
+"Qyh-7f-62w.normalTitle" = "   Share to my Timeline";
+
+/* Class = "UIButton"; normalTitle = "   My Videos"; ObjectID = "RJZ-dX-6VK"; */
+"RJZ-dX-6VK.normalTitle" = "   My Videos";
+
+/* Class = "UISearchBar"; placeholder = "Search..."; ObjectID = "VJb-aZ-Vo2"; */
+"VJb-aZ-Vo2.placeholder" = "Search...";
+
+/* Class = "UIButton"; normalTitle = "     Offers"; ObjectID = "VcC-ga-6o7"; */
+"VcC-ga-6o7.normalTitle" = "     Offers";
+
+/* Class = "UITextView"; text = "What's going on ? #Hashtag.. @Mention."; ObjectID = "VmS-z7-D0r"; */
+"VmS-z7-D0r.text" = "What's going on ? #Hashtag.. @Mention.";
+
+/* Class = "UIButton"; normalTitle = "  Like"; ObjectID = "Vt6-UL-sAy"; */
+"Vt6-UL-sAy.normalTitle" = "  Like";
+
+/* Class = "UILabel"; text = "Replenish my balance"; ObjectID = "XTL-2x-z4k"; */
+"XTL-2x-z4k.text" = "Replenish my balance";
+
+/* Class = "UILabel"; text = "Send money to Friends"; ObjectID = "YXC-ch-oGl"; */
+"YXC-ch-oGl.text" = "Send money to Friends";
+
+/* Class = "UIButton"; normalTitle = "YES"; ObjectID = "Yev-R6-E2J"; */
+"Yev-R6-E2J.normalTitle" = "YES";
+
+/* Class = "UILabel"; text = "Your Story"; ObjectID = "YjC-2p-TXd"; */
+"YjC-2p-TXd.text" = "Your Story";
+
+/* Class = "UIButton"; normalTitle = "   Tell a Friends"; ObjectID = "ZAR-Hd-22j"; */
+"ZAR-Hd-22j.normalTitle" = "   Tell a Friends";
+
+/* Class = "UIButton"; normalTitle = " "; ObjectID = "ZHf-UE-6cA"; */
+"ZHf-UE-6cA.normalTitle" = " ";
+
+/* Class = "UIButton"; normalTitle = "     Pages"; ObjectID = "Zti-DW-C4N"; */
+"Zti-DW-C4N.normalTitle" = "     Pages";
+
+/* Class = "UILabel"; text = "No Comments to be displayed"; ObjectID = "a75-Es-Rc2"; */
+"a75-Es-Rc2.text" = "No Comments to be displayed";
+
+/* Class = "UILabel"; text = "Featured member"; ObjectID = "aZ3-6y-O7N"; */
+"aZ3-6y-O7N.text" = "Featured member";
+
+/* Class = "UIButton"; normalTitle = "CONTINUE"; ObjectID = "acm-aw-jsC"; */
+"acm-aw-jsC.normalTitle" = "CONTINUE";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bfq-ud-z7G"; */
+"bfq-ud-z7G.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Activities"; ObjectID = "cGA-RL-DUI"; */
+"cGA-RL-DUI.title" = "Activities";
+
+/* Class = "UILabel"; text = "See Profile visitor"; ObjectID = "csI-Md-hhD"; */
+"csI-Md-hhD.text" = "See Profile visitor";
+
+/* Class = "UITextField"; placeholder = "Amount"; ObjectID = "d2v-B3-fCt"; */
+"d2v-B3-fCt.placeholder" = "Amount";
+
+/* Class = "UILabel"; text = "STAR"; ObjectID = "dze-be-cdz"; */
+"dze-be-cdz.text" = "STAR";
+
+/* Class = "UITextView"; text = "Add a comment here"; ObjectID = "e7r-fk-ljU"; */
+"e7r-fk-ljU.text" = "Add a comment here";
+
+/* Class = "UILabel"; text = "Verified badge"; ObjectID = "fIe-VZ-jUP"; */
+"fIe-VZ-jUP.text" = "Verified badge";
+
+/* Class = "UIButton"; normalTitle = "     Popular Posts"; ObjectID = "fes-C3-g5K"; */
+"fes-C3-g5K.normalTitle" = "     Popular Posts";
+
+/* Class = "UILabel"; text = "Verified badge"; ObjectID = "g76-FV-GUj"; */
+"g76-FV-GUj.text" = "Verified badge";
+
+/* Class = "UILabel"; text = "More"; ObjectID = "g7n-ZK-OHR"; */
+"g7n-ZK-OHR.text" = "More";
+
+/* Class = "UIButton"; normalTitle = "   Pokes"; ObjectID = "gGh-GV-lEp"; */
+"gGh-GV-lEp.normalTitle" = "   Pokes";
+
+/* Class = "UILabel"; text = "Photos"; ObjectID = "gJP-ke-klv"; */
+"gJP-ke-klv.text" = "Photos";
+
+/* Class = "UIButton"; normalTitle = "Send Gift"; ObjectID = "gVb-eW-cUc"; */
+"gVb-eW-cUc.normalTitle" = "Send Gift";
+
+/* Class = "UIButton"; normalTitle = "     MarketPlace"; ObjectID = "ght-S6-2Ug"; */
+"ght-S6-2Ug.normalTitle" = "     MarketPlace";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "gkl-AB-Ja7"; */
+"gkl-AB-Ja7.text" = "0";
+
+/* Class = "UILabel"; text = "Pages promotion"; ObjectID = "hPz-LJ-hkn"; */
+"hPz-LJ-hkn.text" = "Pages promotion";
+
+/* Class = "UIButton"; normalTitle = "Upgrade Now"; ObjectID = "hSB-zf-Dli"; */
+"hSB-zf-Dli.normalTitle" = "Upgrade Now";
+
+/* Class = "UIButton"; normalTitle = "   General Account"; ObjectID = "hpp-fu-Vll"; */
+"hpp-fu-Vll.normalTitle" = "   General Account";
+
+/* Class = "UILabel"; text = "12.52"; ObjectID = "inJ-I2-Gf8"; */
+"inJ-I2-Gf8.text" = "12.52";
+
+/* Class = "UINavigationItem"; title = "Notifications"; ObjectID = "iy3-W7-yOB"; */
+"iy3-W7-yOB.title" = "Notifications";
+
+/* Class = "UILabel"; text = "View Liked Pages By User"; ObjectID = "jUW-qK-bcJ"; */
+"jUW-qK-bcJ.text" = "View Liked Pages By User";
+
+/* Class = "UILabel"; text = "Share to my Timeline"; ObjectID = "kXl-kN-cO2"; */
+"kXl-kN-cO2.text" = "Share to my Timeline";
+
+/* Class = "UIButton"; normalTitle = "   My Images"; ObjectID = "mAc-tL-Q0b"; */
+"mAc-tL-Q0b.normalTitle" = "   My Images";
+
+/* Class = "UIButton"; normalTitle = "Poke"; ObjectID = "pQO-35-gx5"; */
+"pQO-35-gx5.normalTitle" = "Poke";
+
+/* Class = "UIButton"; normalTitle = "     Logout"; ObjectID = "qcn-Rv-CNf"; */
+"qcn-Rv-CNf.normalTitle" = "     Logout";
+
+/* Class = "UINavigationItem"; title = "More"; ObjectID = "r6i-SN-n64"; */
+"r6i-SN-n64.title" = "More";
+
+/* Class = "UIButton"; normalTitle = "Close"; ObjectID = "rH0-rw-jJ9"; */
+"rH0-rw-jJ9.normalTitle" = "Close";
+
+/* Class = "UIButton"; normalTitle = "   Message"; ObjectID = "v0J-MM-xgi"; */
+"v0J-MM-xgi.normalTitle" = "   Message";
+
+/* Class = "UILabel"; text = "Pro Features give you Complete control over your Profile"; ObjectID = "v8V-7D-lw3"; */
+"v8V-7D-lw3.text" = "Pro Features give you Complete control over your Profile";
+
+/* Class = "UIButton"; normalTitle = "   More Options"; ObjectID = "vHl-3p-6GF"; */
+"vHl-3p-6GF.normalTitle" = "   More Options";
+
+/* Class = "UILabel"; text = "Pages promotions"; ObjectID = "vht-J5-Vcq"; */
+"vht-J5-Vcq.text" = "Pages promotions";
+
+/* Class = "UILabel"; text = "Per Week"; ObjectID = "wHY-er-ZTW"; */
+"wHY-er-ZTW.text" = "Per Week";
+
+/* Class = "UIButton"; normalTitle = "CONTINUE"; ObjectID = "wIm-Dy-GWc"; */
+"wIm-Dy-GWc.normalTitle" = "CONTINUE";
+
+/* Class = "UILabel"; text = "What's going on?#Hashtag..@Mention"; ObjectID = "wll-Bo-SbX"; */
+"wll-Bo-SbX.text" = "What's going on?#Hashtag..@Mention";
+
+/* Class = "UILabel"; text = "See profile visitors"; ObjectID = "wqO-Om-aib"; */
+"wqO-Om-aib.text" = "See profile visitors";
+
+/* Class = "UILabel"; text = "GoPro"; ObjectID = "y4J-ZZ-o8n"; */
+"y4J-ZZ-o8n.text" = "GoPro";
+
+/* Class = "UIButton"; normalTitle = "   Privacy"; ObjectID = "yuk-fk-DkZ"; */
+"yuk-fk-DkZ.normalTitle" = "   Privacy";
+
+/* Class = "UINavigationItem"; title = "Menu"; ObjectID = "zEN-8P-Q1V"; */
+"zEN-8P-Q1V.title" = "Menu";
+
+/* Class = "UILabel"; text = "you can send money to your Firend acquaintances or anyone"; ObjectID = "zoE-qT-Jji"; */
+"zoE-qT-Jji.text" = "you can send money to your Firend acquaintances or anyone";

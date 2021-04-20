@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:app="http://schemas.android.com/apk/res-auto" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="3dp"
+    android:layout_height="350dp"
+    	android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/Image"
+        android:layout_height="350dp"
+        android:layout_width="match_parent"
+        android:maxHeight="350dp"
+        android:scaleType="fitXY"
+        android:background="?attr/colorFill"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp" />
+    <WoWonder.Library.Anjo.SuperTextLibrary.SuperTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:hyphenationFrequency="none"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:paddingVertical="5dp"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp" />
+</RelativeLayout>
+ 
